@@ -34,8 +34,8 @@ public class PatientCaseTest extends BaseClass{
 	
 	SoftAssert softAssert = new SoftAssert();
 	Action action = new Action();
-	//@Parameters("browser")
 	
+	//@Parameters("browser")
 	@BeforeClass
 	public void setup() {
 		launchApp(prop.getProperty("browser")); 
