@@ -1,77 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="10" total="12" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-17T03:43:38 EST" name="Suite" finished-at="2022-12-17T03:45:22 EST" duration-ms="103705">
+  <suite started-at="2022-12-17T23:08:29 PKT" name="Default suite" finished-at="2022-12-17T23:10:22 PKT" duration-ms="113317">
     <groups>
     </groups>
-    <test started-at="2022-12-17T03:43:38 EST" name="Test_All" finished-at="2022-12-17T03:45:22 EST" duration-ms="103705">
+    <test started-at="2022-12-17T23:08:29 PKT" name="Default test" finished-at="2022-12-17T23:10:22 PKT" duration-ms="113317">
       <class name="com.ipclinical.testcases.PatientCaseTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:43:38 EST" name="loadConfig" finished-at="2022-12-17T03:43:38 EST" duration-ms="368" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T23:08:28 PKT" name="loadConfig" finished-at="2022-12-17T23:08:29 PKT" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:43:38 EST" name="setup" finished-at="2022-12-17T03:43:58 EST" duration-ms="19791" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T23:08:29 PKT" name="setup" finished-at="2022-12-17T23:09:25 PKT" duration-ms="55930" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="patientCase_TC1_toNavigatePatientCase()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:43:58 EST" name="patientCase_TC1_toNavigatePatientCase" finished-at="2022-12-17T03:44:15 EST" duration-ms="16841" status="PASS">
+        <test-method signature="patientCase_TC1_toNavigatePatientCase()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T23:09:25 PKT" name="patientCase_TC1_toNavigatePatientCase" finished-at="2022-12-17T23:09:37 PKT" duration-ms="12078" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://staging.pemr.com/Patient/PatientList.aspx] but found [https://staging.pemr.com/dashboard.aspx]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://staging.pemr.com/Patient/PatientList.aspx] but found [https://staging.pemr.com/dashboard.aspx]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.ipclinical.testcases.PatientCaseTest.patientCase_TC1_toNavigatePatientCase(PatientCaseTest.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientCase_TC1_toNavigatePatientCase -->
-        <test-method signature="patientCase_TC1a_toValidateFields_PatientCase()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:15 EST" name="patientCase_TC1a_toValidateFields_PatientCase" finished-at="2022-12-17T03:44:19 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC1_toNavigatePatientCase" duration-ms="3895" status="PASS">
+        <test-method signature="patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed()[pri:8, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T23:09:37 PKT" name="patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed" finished-at="2022-12-17T23:10:22 PKT" duration-ms="45048" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2022/12/17 23:09:44] but found [2022/12/17 22:32:13]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2022/12/17 23:09:44] but found [2022/12/17 22:32:13]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at com.ipclinical.testcases.PatientCaseTest.patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed(PatientCaseTest.java:492)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- patientCase_TC1a_toValidateFields_PatientCase -->
-        <test-method signature="patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed()[pri:2, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:19 EST" name="patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed" finished-at="2022-12-17T03:44:20 EST" duration-ms="729" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed -->
-        <test-method signature="patientCase_TC3_toValidateFields_PatientCaseModel()[pri:3, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:20 EST" name="patientCase_TC3_toValidateFields_PatientCaseModel" finished-at="2022-12-17T03:44:31 EST" duration-ms="11481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC3_toValidateFields_PatientCaseModel -->
-        <test-method signature="patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel()[pri:4, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:31 EST" name="patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel" finished-at="2022-12-17T03:44:32 EST" duration-ms="651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel -->
-        <test-method signature="patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed()[pri:4, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:32 EST" name="patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed" finished-at="2022-12-17T03:44:32 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed -->
-        <test-method signature="patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed()[pri:5, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:32 EST" name="patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed" finished-at="2022-12-17T03:44:33 EST" duration-ms="899" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed -->
-        <test-method signature="patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed()[pri:5, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:33 EST" name="patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed" finished-at="2022-12-17T03:44:33 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed" duration-ms="94" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed -->
-        <test-method signature="patientCase_TC4a_toValidateFields_SelectPatientModel()[pri:6, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:33 EST" name="patientCase_TC4a_toValidateFields_SelectPatientModel" finished-at="2022-12-17T03:44:36 EST" duration-ms="3135" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC4a_toValidateFields_SelectPatientModel -->
-        <test-method signature="patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected()[pri:7, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:36 EST" name="patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected" finished-at="2022-12-17T03:44:40 EST" duration-ms="4312" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected -->
-        <test-method signature="patientCase_TC6_clickSaveScheduler_withSelectingPatient_SchulderPageShouldBeDisplayed()[pri:8, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:44:40 EST" name="patientCase_TC6_clickSaveScheduler_withSelectingPatient_SchulderPageShouldBeDisplayed" finished-at="2022-12-17T03:45:03 EST" duration-ms="22687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC6_clickSaveScheduler_withSelectingPatient_SchulderPageShouldBeDisplayed -->
-        <test-method signature="patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()[pri:9, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:45:03 EST" name="patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase" finished-at="2022-12-17T03:45:22 EST" duration-ms="18816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:45:22 EST" name="tearDown" finished-at="2022-12-17T03:45:22 EST" duration-ms="0" status="PASS">
+        </test-method> <!-- patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T23:10:22 PKT" name="tearDown" finished-at="2022-12-17T23:10:22 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T03:45:22 EST" name="afterSuite" finished-at="2022-12-17T03:45:23 EST" duration-ms="579" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@76908cc0]" started-at="2022-12-17T23:10:23 PKT" name="afterSuite" finished-at="2022-12-17T23:10:23 PKT" duration-ms="19" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- com.ipclinical.testcases.PatientCaseTest -->
-    </test> <!-- Test_All -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

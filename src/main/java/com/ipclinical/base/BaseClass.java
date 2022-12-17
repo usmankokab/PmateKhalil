@@ -3,6 +3,10 @@ package com.ipclinical.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -10,12 +14,15 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.ietf.jgss.Oid;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -24,6 +31,7 @@ import org.testng.annotations.Parameters;
 import com.beust.jcommander.Parameter;
 import com.ipclinical.actiondriver.Action;
 import com.ipclinical.utility.ExtentManager;
+import com.ipclinical.utility.Log;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 /**
@@ -37,6 +45,7 @@ public class BaseClass {
 	// Declare ThreadLocal Driver
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 
+	
 	//loadConfig method is to load the configuration
 	@BeforeSuite(groups = { "Smoke", "Sanity", "Regression" })
 	public void loadConfig() {

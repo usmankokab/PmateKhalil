@@ -5,10 +5,11 @@
     <classes>
       <class name="com.ipclinical.testcases.PatientCaseTest">
         <methods>
-          <include name="patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase"/>
+          <include name="patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed"/>
           <include name="afterSuite"/>
           <include name="tearDown"/>
           <include name="loadConfig"/>
+          <include name="patientCase_TC1_toNavigatePatientCase"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.ipclinical.testcases.PatientCaseTest -->
