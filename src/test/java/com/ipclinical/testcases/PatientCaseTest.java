@@ -576,7 +576,6 @@ public class PatientCaseTest extends BaseClass{
 
 
 	
-	
 	@Test(priority = 9, enabled=true)
 	public void patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
 	{
