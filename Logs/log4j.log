@@ -26181,3 +26181,373 @@
 2022-12-17 01:17:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view_en.ftl"): Not found
 2022-12-17 01:17:52 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view.ftl"): Found
 2022-12-17 01:17:52 DEBUG cache:45 - Loading template for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/Usman%20Ali%20Kokab/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/logs-view/v3-html-testrunner-logs-view.ftl"
+2022-12-17 03:43:58 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-17 03:44:01 INFO  Log:22 - User is logged in
+2022-12-17 03:44:08 INFO  Log:22 - Patient Widget is clicked
+2022-12-17 03:44:08 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-17 03:44:08 INFO  Log:22 - User is on Patient List Page
+2022-12-17 03:44:08 INFO  Log:22 - Patients Menu is clicked
+2022-12-17 03:44:09 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-17 03:44:10 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-17 03:44:10 INFO  Log:22 - User landed on Patient case page
+2022-12-17 03:44:10 INFO  Log:22 - LabelPatient Nameis present
+2022-12-17 03:44:10 INFO  Log:22 - Patient Nameis matched with Patient Name(Expected Text)
+2022-12-17 03:44:11 INFO  Log:22 - values entered in /Test Patient
+2022-12-17 03:44:11 INFO  Log:22 - /Test Patient TextBox is present
+2022-12-17 03:44:11 INFO  Log:22 - /Test Patient TextBox is editable
+2022-12-17 03:44:11 INFO  Log:22 - 0 checkBox is selected
+2022-12-17 03:44:12 INFO  Log:22 - 1 checkBox is selected
+2022-12-17 03:44:12 INFO  Log:22 - 2 checkBox is selected
+2022-12-17 03:44:12 INFO  Log:22 - 0 checkBox is selected
+2022-12-17 03:44:12 INFO  Log:22 - 1 checkBox is selected
+2022-12-17 03:44:13 INFO  Log:22 - 2 checkBox is selected
+2022-12-17 03:44:13 INFO  Log:22 - 3 checkBox is selected
+2022-12-17 03:44:13 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-17 03:44:13 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-17 03:44:14 INFO  Log:22 - Open = Open(Actual Matched with Expected
+2022-12-17 03:44:14 INFO  Log:22 - User can select Open value from the dropdown field
+2022-12-17 03:44:14 INFO  Log:22 - Close = Close(Actual Matched with Expected
+2022-12-17 03:44:14 INFO  Log:22 - User can select Close value from the dropdown field
+2022-12-17 03:44:14 INFO  Log:22 - Expected values matched with Actual values, and user can select any value
+2022-12-17 03:44:14 INFO  Log:22 - Search/null Button is displayed
+2022-12-17 03:44:14 INFO  Log:22 - Search/null Button is enabled to click
+2022-12-17 03:44:14 INFO  Log:22 - Add Patient Case/ Button is displayed
+2022-12-17 03:44:14 INFO  Log:22 - Add Patient Case/ Button is enabled to click
+2022-12-17 03:44:14 INFO  Log:22 - Date Textbox is displayed with current date of 12/17/2022
+2022-12-17 03:44:14 INFO  Log:22 - 12/17/2022
+2022-12-17 03:44:14 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-17 03:44:14 INFO  Log:22 - Date Textbox is displayed with current date of 12/17/2022
+2022-12-17 03:44:14 INFO  Log:22 - 12/17/2022
+2022-12-17 03:44:14 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-17 03:44:14 INFO  Log:22 - MR Number = MR Number
+2022-12-17 03:44:15 INFO  Log:22 - Patient Name = Patient Name
+2022-12-17 03:44:15 INFO  Log:22 - Location Name = Location Name
+2022-12-17 03:44:15 INFO  Log:22 - Provider Name = Provider Name
+2022-12-17 03:44:15 INFO  Log:22 - Source = Source
+2022-12-17 03:44:15 INFO  Log:22 - Recipient = Recipient
+2022-12-17 03:44:15 INFO  Log:22 - Edit = Edit
+2022-12-17 03:44:15 INFO  Log:22 - All expected headings are present in search table
+2022-12-17 03:44:15 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-17 03:44:15 INFO  Log:11 - =====================================patientCase_TC1a_toValidateFields_PatientCase TEST START=========================================
+2022-12-17 03:44:15 INFO  Log:22 - LabelPatient Nameis present
+2022-12-17 03:44:15 INFO  Log:22 - Patient Nameis matched with Patient Name(Expected Text)
+2022-12-17 03:44:15 INFO  Log:22 - values entered in /Test Patient
+2022-12-17 03:44:16 INFO  Log:22 - /Test Patient TextBox is present
+2022-12-17 03:44:16 INFO  Log:22 - /Test Patient TextBox is editable
+2022-12-17 03:44:16 INFO  Log:22 - 0 checkBox is selected
+2022-12-17 03:44:16 INFO  Log:22 - 1 checkBox is selected
+2022-12-17 03:44:16 INFO  Log:22 - 2 checkBox is selected
+2022-12-17 03:44:17 INFO  Log:22 - 0 checkBox is selected
+2022-12-17 03:44:17 INFO  Log:22 - 1 checkBox is selected
+2022-12-17 03:44:17 INFO  Log:22 - 2 checkBox is selected
+2022-12-17 03:44:18 INFO  Log:22 - 3 checkBox is selected
+2022-12-17 03:44:18 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-17 03:44:18 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-17 03:44:18 INFO  Log:22 - Open = Open(Actual Matched with Expected
+2022-12-17 03:44:18 INFO  Log:22 - User can select Open value from the dropdown field
+2022-12-17 03:44:18 INFO  Log:22 - Close = Close(Actual Matched with Expected
+2022-12-17 03:44:18 INFO  Log:22 - User can select Close value from the dropdown field
+2022-12-17 03:44:18 INFO  Log:22 - Expected values matched with Actual values, and user can select any value
+2022-12-17 03:44:18 INFO  Log:22 - Search/null Button is displayed
+2022-12-17 03:44:18 INFO  Log:22 - Search/null Button is enabled to click
+2022-12-17 03:44:18 INFO  Log:22 - Add Patient Case/ Button is displayed
+2022-12-17 03:44:18 INFO  Log:22 - Add Patient Case/ Button is enabled to click
+2022-12-17 03:44:18 INFO  Log:22 - Date Textbox is displayed with current date of 12/17/2022
+2022-12-17 03:44:18 INFO  Log:22 - 12/17/2022
+2022-12-17 03:44:18 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-17 03:44:18 INFO  Log:22 - Date Textbox is displayed with current date of 12/17/2022
+2022-12-17 03:44:18 INFO  Log:22 - 12/17/2022
+2022-12-17 03:44:18 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-17 03:44:19 INFO  Log:22 - MR Number = MR Number
+2022-12-17 03:44:19 INFO  Log:22 - Patient Name = Patient Name
+2022-12-17 03:44:19 INFO  Log:22 - Location Name = Location Name
+2022-12-17 03:44:19 INFO  Log:22 - Provider Name = Provider Name
+2022-12-17 03:44:19 INFO  Log:22 - Source = Source
+2022-12-17 03:44:19 INFO  Log:22 - Recipient = Recipient
+2022-12-17 03:44:19 INFO  Log:22 - Edit = Edit
+2022-12-17 03:44:19 INFO  Log:22 - All expected headings are present in search table
+2022-12-17 03:44:19 INFO  Log:15 - =====================================patientCase_TC1a_toValidateFields_PatientCase TEST END=========================================
+2022-12-17 03:44:19 INFO  Log:11 - =====================================patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed TEST START=========================================
+2022-12-17 03:44:20 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:44:20 INFO  Log:15 - =====================================patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed TEST END=========================================
+2022-12-17 03:44:20 INFO  Log:11 - =====================================patientCase_TC3_toValidateFields_PatientCaseModel TEST START=========================================
+2022-12-17 03:44:20 INFO  Log:22 - /Close Button is displayed
+2022-12-17 03:44:20 INFO  Log:22 - /Close Button is enabled to click
+2022-12-17 03:44:20 INFO  Log:22 - /Print Button is displayed
+2022-12-17 03:44:20 INFO  Log:22 - /Print Button is disabled to click
+2022-12-17 03:44:20 INFO  Log:22 - /Save Button is displayed
+2022-12-17 03:44:20 INFO  Log:22 - /Save Button is disabled to click
+2022-12-17 03:44:20 INFO  Log:22 - /Save & Schedule Button is displayed
+2022-12-17 03:44:20 INFO  Log:22 - /Save & Schedule Button is disabled to click
+2022-12-17 03:44:21 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-17 03:44:21 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-17 03:44:21 INFO  Log:22 - Patient = Patient(Actual Matched with Expected
+2022-12-17 03:44:21 INFO  Log:22 - User can select Patient value from the dropdown field
+2022-12-17 03:44:21 INFO  Log:22 - Parent/Care Giver = Parent/Care Giver(Actual Matched with Expected
+2022-12-17 03:44:21 INFO  Log:22 - User can select Parent/Care Giver value from the dropdown field
+2022-12-17 03:44:21 INFO  Log:22 - Spouse/Partner = Spouse/Partner(Actual Matched with Expected
+2022-12-17 03:44:21 INFO  Log:22 - User can select Spouse/Partner value from the dropdown field
+2022-12-17 03:44:21 INFO  Log:22 - Pharmacy = Pharmacy(Actual Matched with Expected
+2022-12-17 03:44:21 INFO  Log:22 - User can select Pharmacy value from the dropdown field
+2022-12-17 03:44:21 INFO  Log:22 - Lab = Lab(Actual Matched with Expected
+2022-12-17 03:44:22 INFO  Log:22 - User can select Lab value from the dropdown field
+2022-12-17 03:44:22 INFO  Log:22 - PcP = PcP(Actual Matched with Expected
+2022-12-17 03:44:22 INFO  Log:22 - User can select PcP value from the dropdown field
+2022-12-17 03:44:22 INFO  Log:22 - Specialist = Specialist(Actual Matched with Expected
+2022-12-17 03:44:22 INFO  Log:22 - User can select Specialist value from the dropdown field
+2022-12-17 03:44:22 INFO  Log:22 - Clinical Staff = Clinical Staff(Actual Matched with Expected
+2022-12-17 03:44:22 INFO  Log:22 - User can select Clinical Staff value from the dropdown field
+2022-12-17 03:44:22 INFO  Log:22 - Hospital = Hospital(Actual Matched with Expected
+2022-12-17 03:44:22 INFO  Log:22 - User can select Hospital value from the dropdown field
+2022-12-17 03:44:22 INFO  Log:22 - Other = Other(Actual Matched with Expected
+2022-12-17 03:44:23 INFO  Log:22 - User can select Other value from the dropdown field
+2022-12-17 03:44:23 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-17 03:44:23 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-17 03:44:23 INFO  Log:22 - Administrative = Administrative(Actual Matched with Expected
+2022-12-17 03:44:23 INFO  Log:22 - User can select Administrative value from the dropdown field
+2022-12-17 03:44:23 INFO  Log:22 - Clinical Question = Clinical Question(Actual Matched with Expected
+2022-12-17 03:44:23 INFO  Log:22 - User can select Clinical Question value from the dropdown field
+2022-12-17 03:44:23 INFO  Log:22 - Medical Record- Electronic = Medical Record- Electronic(Actual Matched with Expected
+2022-12-17 03:44:23 INFO  Log:22 - User can select Medical Record- Electronic value from the dropdown field
+2022-12-17 03:44:23 INFO  Log:22 - Medical Record - Paper = Medical Record - Paper(Actual Matched with Expected
+2022-12-17 03:44:23 INFO  Log:22 - User can select Medical Record - Paper value from the dropdown field
+2022-12-17 03:44:23 INFO  Log:22 - Medication = Medication(Actual Matched with Expected
+2022-12-17 03:44:23 INFO  Log:22 - User can select Medication value from the dropdown field
+2022-12-17 03:44:23 INFO  Log:22 - Referral = Referral(Actual Matched with Expected
+2022-12-17 03:44:24 INFO  Log:22 - User can select Referral value from the dropdown field
+2022-12-17 03:44:24 INFO  Log:22 - Refill = Refill(Actual Matched with Expected
+2022-12-17 03:44:24 INFO  Log:22 - User can select Refill value from the dropdown field
+2022-12-17 03:44:24 INFO  Log:22 - Patient No Show = Patient No Show(Actual Matched with Expected
+2022-12-17 03:44:24 INFO  Log:22 - User can select Patient No Show value from the dropdown field
+2022-12-17 03:44:24 INFO  Log:22 - Lab = Lab(Actual Matched with Expected
+2022-12-17 03:44:24 INFO  Log:22 - User can select Lab value from the dropdown field
+2022-12-17 03:44:24 INFO  Log:22 - Imaging = Imaging(Actual Matched with Expected
+2022-12-17 03:44:24 INFO  Log:22 - User can select Imaging value from the dropdown field
+2022-12-17 03:44:24 INFO  Log:22 - Procedure = Procedure(Actual Matched with Expected
+2022-12-17 03:44:25 INFO  Log:22 - User can select Procedure value from the dropdown field
+2022-12-17 03:44:25 INFO  Log:22 - DME = DME(Actual Matched with Expected
+2022-12-17 03:44:25 INFO  Log:22 - User can select DME value from the dropdown field
+2022-12-17 03:44:25 INFO  Log:22 - Refund = Refund(Actual Matched with Expected
+2022-12-17 03:44:25 INFO  Log:22 - User can select Refund value from the dropdown field
+2022-12-17 03:44:25 INFO  Log:22 - Other = Other(Actual Matched with Expected
+2022-12-17 03:44:25 INFO  Log:22 - User can select Other value from the dropdown field
+2022-12-17 03:44:25 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-17 03:44:25 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-17 03:44:25 INFO  Log:22 - Ahmar, Wasim = Ahmar, Wasim(Actual Matched with Expected
+2022-12-17 03:44:25 INFO  Log:22 - User can select Ahmar, Wasim value from the dropdown field
+2022-12-17 03:44:25 INFO  Log:22 - Rosselot, Eric = Rosselot, Eric(Actual Matched with Expected
+2022-12-17 03:44:26 INFO  Log:22 - User can select Rosselot, Eric value from the dropdown field
+2022-12-17 03:44:26 INFO  Log:22 - TEHRANI, ALI REZAZADEH = TEHRANI, ALI REZAZADEH(Actual Matched with Expected
+2022-12-17 03:44:26 INFO  Log:22 - User can select TEHRANI, ALI REZAZADEH value from the dropdown field
+2022-12-17 03:44:26 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-17 03:44:26 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-17 03:44:26 INFO  Log:22 - High = High(Actual Matched with Expected
+2022-12-17 03:44:26 INFO  Log:22 - User can select High value from the dropdown field
+2022-12-17 03:44:26 INFO  Log:22 - Medium = Medium(Actual Matched with Expected
+2022-12-17 03:44:26 INFO  Log:22 - User can select Medium value from the dropdown field
+2022-12-17 03:44:26 INFO  Log:22 - Low = Low(Actual Matched with Expected
+2022-12-17 03:44:26 INFO  Log:22 - User can select Low value from the dropdown field
+2022-12-17 03:44:26 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-17 03:44:26 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-17 03:44:27 INFO  Log:22 - Facility = Facility(Actual Matched with Expected
+2022-12-17 03:44:27 INFO  Log:22 - User can select Facility value from the dropdown field
+2022-12-17 03:44:27 INFO  Log:22 - North Bethesda Maryland = North Bethesda Maryland(Actual Matched with Expected
+2022-12-17 03:44:27 INFO  Log:22 - User can select North Bethesda Maryland value from the dropdown field
+2022-12-17 03:44:27 INFO  Log:22 - All checkboxes are displayed and checkable
+2022-12-17 03:44:27 INFO  Log:22 - values entered in /Person to Call
+2022-12-17 03:44:28 INFO  Log:22 - /Person to Call TextBox is present
+2022-12-17 03:44:28 INFO  Log:22 - /Person to Call TextBox is editable
+2022-12-17 03:44:28 INFO  Log:22 - values entered in /Test Subject
+2022-12-17 03:44:28 INFO  Log:22 - /Test Subject TextBox is present
+2022-12-17 03:44:28 INFO  Log:22 - /Test Subject TextBox is editable
+2022-12-17 03:44:28 INFO  Log:22 - values entered in /
+2022-12-17 03:44:28 INFO  Log:22 - / TextBox is present
+2022-12-17 03:44:28 INFO  Log:22 - / TextBox is disabled to type
+2022-12-17 03:44:29 INFO  Log:22 - 0 textarea is present
+2022-12-17 03:44:29 INFO  Log:22 - 0 Textarea's description verified
+2022-12-17 03:44:29 INFO  Log:22 - 1 textarea is present
+2022-12-17 03:44:29 INFO  Log:22 - 1 Textarea's description verified
+2022-12-17 03:44:29 INFO  Log:22 - 1 option is checked
+2022-12-17 03:44:29 INFO  Log:22 - 1 only option is checked
+2022-12-17 03:44:30 INFO  Log:22 - 2 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 3 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 4 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 5 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 2 option is checked
+2022-12-17 03:44:30 INFO  Log:22 - 1 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 2 only option is checked
+2022-12-17 03:44:30 INFO  Log:22 - 3 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 4 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 5 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 3 option is checked
+2022-12-17 03:44:30 INFO  Log:22 - 1 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 2 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 3 only option is checked
+2022-12-17 03:44:30 INFO  Log:22 - 4 other option is unchecked
+2022-12-17 03:44:30 INFO  Log:22 - 5 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 4 option is checked
+2022-12-17 03:44:31 INFO  Log:22 - 1 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 2 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 3 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 4 only option is checked
+2022-12-17 03:44:31 INFO  Log:22 - 5 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 5 option is checked
+2022-12-17 03:44:31 INFO  Log:22 - 1 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 2 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 3 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 4 other option is unchecked
+2022-12-17 03:44:31 INFO  Log:22 - 5 only option is checked
+2022-12-17 03:44:31 INFO  Log:15 - =====================================patientCase_TC3_toValidateFields_PatientCaseModel TEST END=========================================
+2022-12-17 03:44:31 INFO  Log:11 - =====================================patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel TEST START=========================================
+2022-12-17 03:44:31 INFO  Log:22 - One of values from the dropdown field is selected
+2022-12-17 03:44:31 INFO  Log:22 - One of values from the dropdown field is selected
+2022-12-17 03:44:32 INFO  Log:22 - All mandatory fields are filled
+2022-12-17 03:44:32 INFO  Log:22 - mandatory fields are verified
+2022-12-17 03:44:32 INFO  Log:15 - =====================================patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel TEST END=========================================
+2022-12-17 03:44:32 INFO  Log:11 - =====================================patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed TEST START=========================================
+2022-12-17 03:44:32 INFO  Log:22 - Alert Present(Please Select Patient)
+2022-12-17 03:44:32 INFO  Log:15 - =====================================patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed TEST END=========================================
+2022-12-17 03:44:32 INFO  Log:11 - =====================================patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed TEST START=========================================
+2022-12-17 03:44:33 INFO  Log:22 - Select PatientModel/Popup appears
+2022-12-17 03:44:33 INFO  Log:15 - =====================================patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed TEST END=========================================
+2022-12-17 03:44:33 INFO  Log:11 - =====================================patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed TEST START=========================================
+2022-12-17 03:44:33 INFO  Log:22 - Alert Present(Please select patient first)
+2022-12-17 03:44:33 INFO  Log:15 - =====================================patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed TEST END=========================================
+2022-12-17 03:44:33 INFO  Log:11 - =====================================patientCase_TC4_toValidateFields_SelectPatientModel TEST START=========================================
+2022-12-17 03:44:33 INFO  Log:22 - values entered in /Patient Name
+2022-12-17 03:44:33 INFO  Log:22 - /Patient Name TextBox is present
+2022-12-17 03:44:34 INFO  Log:22 - /Patient Name TextBox is editable
+2022-12-17 03:44:34 INFO  Log:22 - values entered in /786-868-0792
+2022-12-17 03:44:34 INFO  Log:22 - /786-868-0792 TextBox is present
+2022-12-17 03:44:34 INFO  Log:22 - /786-868-0792 TextBox is editable
+2022-12-17 03:44:34 INFO  Log:22 - values entered in /8680792
+2022-12-17 03:44:34 INFO  Log:22 - /8680792 TextBox is present
+2022-12-17 03:44:34 INFO  Log:22 - /8680792 TextBox is editable
+2022-12-17 03:44:35 INFO  Log:22 - values entered in /0792
+2022-12-17 03:44:35 INFO  Log:22 - /0792 TextBox is present
+2022-12-17 03:44:35 INFO  Log:22 - /0792 TextBox is editable
+2022-12-17 03:44:35 INFO  Log:22 - values entered in /01/01/1981
+2022-12-17 03:44:35 INFO  Log:22 - /01/01/1981 TextBox is present
+2022-12-17 03:44:35 INFO  Log:22 - /01/01/1981 TextBox is editable
+2022-12-17 03:44:35 INFO  Log:22 - 1 option is checked
+2022-12-17 03:44:35 INFO  Log:22 - 1 only option is checked
+2022-12-17 03:44:35 INFO  Log:22 - 0 other option is unchecked
+2022-12-17 03:44:36 INFO  Log:22 - 0 option is checked
+2022-12-17 03:44:36 INFO  Log:22 - 1 other option is unchecked
+2022-12-17 03:44:36 INFO  Log:22 - 0 only option is checked
+2022-12-17 03:44:36 INFO  Log:22 - Search/ Button is displayed
+2022-12-17 03:44:36 INFO  Log:22 - Search/ Button is enabled to click
+2022-12-17 03:44:36 INFO  Log:22 - Close/ Button is displayed
+2022-12-17 03:44:36 INFO  Log:22 - Close/ Button is enabled to click
+2022-12-17 03:44:36 INFO  Log:22 - Select/ Button is displayed
+2022-12-17 03:44:36 INFO  Log:22 - Select/ Button is enabled to click
+2022-12-17 03:44:36 INFO  Log:15 - =====================================patientCase_TC4_toValidateFields_SelectPatientModel TEST END=========================================
+2022-12-17 03:44:36 INFO  Log:11 - =====================================patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected TEST START=========================================
+2022-12-17 03:44:38 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:44:39 INFO  Log:22 - Typing the MR No. to search patient
+2022-12-17 03:44:39 INFO  Log:22 - Clicking search button to search patient
+2022-12-17 03:44:39 INFO  Log:22 - Selecting required patient from the resulted table
+2022-12-17 03:44:40 INFO  Log:22 - Clicking Select button to Select patient
+2022-12-17 03:44:40 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:44:40 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-17 03:44:40 INFO  Log:15 - =====================================patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected TEST END=========================================
+2022-12-17 03:44:40 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_SchulderPageShouldBeDisplayed TEST START=========================================
+2022-12-17 03:44:43 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:44:43 INFO  Log:22 - Typing the MR No. to search patient
+2022-12-17 03:44:43 INFO  Log:22 - Clicking search button to search patient
+2022-12-17 03:44:43 INFO  Log:22 - Selecting required patient from the resulted table
+2022-12-17 03:44:43 INFO  Log:22 - Clicking Select button to Select patient
+2022-12-17 03:44:44 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:44:44 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-17 03:44:44 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-17 03:44:45 INFO  Log:22 - One of values from the dropdown field is selected
+2022-12-17 03:44:45 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-17 03:44:45 INFO  Log:22 - One of values from the dropdown field is selected
+2022-12-17 03:44:45 INFO  Log:22 - Typing 2022/12/17 03:44:45 currentDateTime into the Subject textBox
+2022-12-17 03:44:45 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-17 03:44:45 INFO  Log:22 - Clicking Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-17 03:44:49 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-17 03:44:49 INFO  Log:22 - User is redirected
+2022-12-17 03:45:02 INFO  Log:22 - Going to click on last result edit button
+2022-12-17 03:45:02 INFO  Log:22 - clicked on last result edit button
+2022-12-17 03:45:03 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:45:03 INFO  Log:22 - Comparing Actual DateTime-2022/12/17 03:44:45 with CurrentDateTime-2022/12/17 03:44:45
+2022-12-17 03:45:03 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the Schedular screen
+2022-12-17 03:45:03 INFO  Log:15 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_SchulderPageShouldBeDisplayed TEST END=========================================
+2022-12-17 03:45:03 INFO  Log:11 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST START=========================================
+2022-12-17 03:45:05 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:45:05 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-17 03:45:05 INFO  Log:22 - One of values from the dropdown field is selected
+2022-12-17 03:45:05 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-17 03:45:06 INFO  Log:22 - One of values from the dropdown field is selected
+2022-12-17 03:45:06 INFO  Log:22 - Typing 2022/12/17 03:45:06 currentDateTime into the Subject textBox
+2022-12-17 03:45:06 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-17 03:45:06 INFO  Log:22 - Typing the MR No. to search patient
+2022-12-17 03:45:07 INFO  Log:22 - Clicking search button to search patient
+2022-12-17 03:45:07 INFO  Log:22 - Selecting required patient from the resulted table
+2022-12-17 03:45:07 INFO  Log:22 - Clicking Select button to Select patient
+2022-12-17 03:45:08 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:45:08 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-17 03:45:08 INFO  Log:22 - Clicking Save button to add the automated test case that will close this patient case model
+2022-12-17 03:45:08 INFO  Log:22 - Save button is clicked
+2022-12-17 03:45:21 INFO  Log:22 - Going to click on last result edit button
+2022-12-17 03:45:21 INFO  Log:22 - clicked on last result edit button
+2022-12-17 03:45:22 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-17 03:45:22 INFO  Log:22 - Comparing Actual DateTime-2022/12/17 03:45:06 with CurrentDateTime-2022/12/17 03:45:06
+2022-12-17 03:45:22 INFO  Log:22 - Patient case is saved successfully
+2022-12-17 03:45:22 INFO  Log:15 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST END=========================================
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-index.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-index.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/v3-html-index.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-index.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-head.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-head_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-head.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/v3-html-head.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-head.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-nav_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/v3-html-nav.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/v3-html-nav.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/v3-html-nav.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-test-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-test-view-charts.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-test-view-charts.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-test-view-charts.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-standard_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/test-view/v3-html-standard.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/test-view/v3-html-standard.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - "v3html/test-view/v3-html-standard.ftl"("en", UTF-8, parsed) cached copy not yet stale; using cached.
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/category-view/v3-html-category-view.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/category-view/v3-html-category-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/category-view/v3-html-category-view.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/exception-view/v3-html-exception-view.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/exception-view/v3-html-exception-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/exception-view/v3-html-exception-view.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/author-view/v3-html-author-view.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/author-view/v3-html-author-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/author-view/v3-html-author-view.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/dashboard-view/v3-html-dashboard-view.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/dashboard-view/v3-html-dashboard-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/dashboard-view/v3-html-dashboard-view.ftl"
+2022-12-17 03:45:22 DEBUG cache:45 - Couldn't find template in cache for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed); will try to load it.
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view_en.ftl"): Not found
+2022-12-17 03:45:22 DEBUG cache:45 - TemplateLoader.findTemplateSource("v3html/logs-view/v3-html-testrunner-logs-view.ftl"): Found
+2022-12-17 03:45:22 DEBUG cache:45 - Loading template for "v3html/logs-view/v3-html-testrunner-logs-view.ftl"("en", UTF-8, parsed) from "jar:file:/C:/Users/uali/.m2/repository/com/aventstack/extentreports/4.0.9/extentreports-4.0.9.jar!/com/aventstack/extentreports/view/v3html/logs-view/v3-html-testrunner-logs-view.ftl"
