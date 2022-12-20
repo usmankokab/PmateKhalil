@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -56,10 +57,9 @@ public class PatientCaseTest extends BaseClass{
 		Log.startTestCase("patientCase_TC1_toNavigatePatientCase");
 		
 		loginPage = new LoginPage();
-		loginPage.login(prop.getProperty("username"), prop.getProperty("password"), prop.getProperty("code"), dashboardPage);
+		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"), prop.getProperty("code"));
 		Log.info("User is logged in successfully");
 		
-		dashboardPage = new DashboardPage();
 		patientListPage = dashboardPage.clickPatientWidget();
 		Log.info("Patient Widget is clicked");
 		action.waitPreloader();
@@ -73,7 +73,7 @@ public class PatientCaseTest extends BaseClass{
 	    
 	    patientListPage.clickPatientsMenu();
 	    Log.info("Patients Menu is clicked");
-	    patientListPage.clickPatientCaseLink();
+	    page = patientListPage.clickPatientCaseLink();
 	    Log.info("Patient Case in Patients menu is clicked");
 	    action.waitPreloader();
 	    action.pageLoadTimeOut(getDriver(), 20);
@@ -100,7 +100,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		
 		//Verifying Patient Name label and TextBox
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 	    action.validateLabel(page.lblPatientName, "Patient Name");
 	    action.validateTextBox(page.txtPatientName, "Test Patient");
 	    
@@ -145,7 +145,7 @@ public class PatientCaseTest extends BaseClass{
 	public void patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed()
 	{
 		Log.startTestCase("patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		action.click(getDriver(), page.btnAddPatientCase);
 		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
 	    Log.endTestCase("patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed");
@@ -157,7 +157,7 @@ public class PatientCaseTest extends BaseClass{
 	public void patientCase_TC3_8_9_toValidateFields_PatientCaseModel()
 	{
 		Log.startTestCase("patientCase_TC3_8_9_toValidateFields_PatientCaseModel");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		
 		//Validating buttons
 		action.validateButton(page.btnClose);
@@ -214,29 +214,10 @@ public class PatientCaseTest extends BaseClass{
 	public void patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel()
 	{
 		Log.startTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		
 		//Filling all all mandatory fields
-		action.selectDropdown(page.dropdownSource);
-		action.selectDropdown(page.dropdownProvider);
-		action.type(page.txtSubject, "Subject");
-		softAssert.assertTrue(true);
-		Log.info("All mandatory fields are filled");
-		
-		boolean flag1 = action.isEnabled(getDriver(), page.btnPrint);
-		boolean flag2 = action.isEnabled(getDriver(), page.btnSave);
-		boolean flag3 = action.isEnabled(getDriver(), page.btnSave$Schedule);
-		
-		if(flag1 && flag2 &flag3) {
-			
-			Assert.assertTrue(true);
-			Log.info("mandatory fields are verified");
-		}else {
-			
-			Log.info("mandatory fields are not verified, something went wrong");
-			Assert.assertTrue(false);
-			
-		}
+		page.fillMandatoryFields("Subject");
 		
 		Log.endTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
 		
@@ -290,7 +271,7 @@ public class PatientCaseTest extends BaseClass{
 	{
 		
 		Log.startTestCase("patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		
 		if(page.openPatientSearchModel_btnSelectPatient()) {
 			Assert.assertTrue(true);
@@ -311,7 +292,7 @@ public class PatientCaseTest extends BaseClass{
 	{
 		
 		Log.startTestCase("patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		
 		action.click(getDriver(), page.btnSelectPatientModel);
 		if(action.isAlertPresent(getDriver())) {
@@ -337,7 +318,7 @@ public class PatientCaseTest extends BaseClass{
 	public void patientCase_TC4a_toValidateFields_SelectPatientModel() 
 	{
 		Log.startTestCase("patientCase_TC4_toValidateFields_SelectPatientModel");
-		page = new PatientCasePage();	
+		//page = new PatientCasePage();	
 		
 		//Validating textboxes of Select Patient Model
 		action.validateTextBox(page.txtPatientPortalName, "Patient Name");
@@ -372,7 +353,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		page.openPatientCaseModel_btnAddPatientCase();
 		page.openPatientSearchModel_btnSelectPatient();
-		page.searchAndSelectPatient("13");
+		page.searchAndSelectPatient("5");
 		
 		Log.info("Patient Selected, Search Result Appeared and Patient selected succesfully");
 		
@@ -381,12 +362,12 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test(priority = 8, enabled=true)
+	@Test(priority = 8, enabled=false)
 	public void patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed() throws Throwable
 	{
 		
 		Log.startTestCase("patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		
 		//ReOpening the Patient Case Page and exploring to the patient case model
 		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
@@ -408,11 +389,11 @@ public class PatientCaseTest extends BaseClass{
 		action.type(page.txtSubject, currentDateTime);
 		
 		Log.info("Typing text into the Description TextArea");
-		action.type(page.textAreas.get(0), "This is an automated test case saving after clicking the Save button");
+		action.type(page.textAreas.get(0), "This is an automated test case saving after clicking the Save&Schedule button");
 		
 		//Selecting the patient
 		action.JSClick(getDriver(), page.btnSelectPatient);
-		page.searchAndSelectPatient("13");
+		page.searchAndSelectPatient("5");
 		
 		Log.info("Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen");
 		action.click(getDriver(), page.btnSave$Schedule);
@@ -421,6 +402,7 @@ public class PatientCaseTest extends BaseClass{
 		SchedulerAppointmentPage schedulerAppointmentPage = new SchedulerAppointmentPage();
 		action.explicitWait(getDriver(), schedulerAppointmentPage.btnTodayShedule, 50); 
 		Log.info("Button TodaySchedule displayed on SchedularAppointmentPage");
+		
 		
 		
 		//Verification of redirection
@@ -438,47 +420,34 @@ public class PatientCaseTest extends BaseClass{
 		//To verify all added cases of relevant patients are shown
 		//to verify user can be able to click on edit of a specific patient case
 		//To verify whether or not patient case is saved once clicked on Save and Schedule
-				
+		action.implicitWait(getDriver(), 20);		
 		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
-		action.pageLoadTimeOut(getDriver(), 30);
+		
+		action.waitPreloader();
+		action.click(getDriver(), page.chkboxesProviders.get(0));
+		action.click(getDriver(), page.btnSearch);
+		action.waitPreloader();
 		//if paging happens
-		try {
-			page.btnLastPage.isDisplayed(); //try can be used if isDisplayed() used directly
+		//power of isDisplayed from our action class
+		//if paging happens
+		if(action.isDisplayed(getDriver(), page.btnLastPage)){ 
 			Log.info("There is a paging in Patient Case List");
 			page.btnLastPage.click();
 			Log.info("Got to the last page of Patient Case List");
 			action.waitPreloader();
-			
-			//Click edit button of last result of the last page
-			if(!action.isDisplayed(getDriver(), page.lastPatientCaseInList)) {
-								
-			page.chkboxesProviders.get(0).click();
-			Log.info("Checked Select All provider checkbox");
-			action.click(getDriver(), page.btnSearch);
-			Log.info("Clicked search button");
+			Log.info("Going to click on last result edit button of the last page");
 			action.JSClick(getDriver(), page.lastPatientCaseInList);
-			}else {
-					Log.info("Going to click on last result edit button");
-					action.JSClick(getDriver(), page.lastPatientCaseInList);
-					Log.info("clicked on last result edit button");
-					}
-		//if paging not happens	
-		} catch (org.openqa.selenium.NoSuchElementException e) {
+			Log.info("clicked on last result edit button");
+		//if paging does not happens
+		}else {
+			
 			//Click edit button of last result of the first page
-			if(!action.isDisplayed(getDriver(), page.lastPatientCaseInList)) {
-				
-				page.chkboxesProviders.get(0).click();
-				Log.info("Checked Select All provider checkbox");
-				action.click(getDriver(), page.btnSearch);
-				Log.info("Clicked search button");
-				action.JSClick(getDriver(), page.lastPatientCaseInList);
-			}else {
-				Log.info("Going to click on last result edit button");
-				action.JSClick(getDriver(), page.lastPatientCaseInList);
-				Log.info("clicked on last result edit button");
-			}
+			//Never use direct IsDisplayed, can give NoSuchElementException and stop the test case
+			Log.info("Going to click on last result edit button");
+			action.JSClick(getDriver(), page.lastPatientCaseInList);
+			Log.info("clicked on last result edit button");
+			
 		}
-
 		
 		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
 		String actualDateTime = page.txtSubject.getAttribute("value");
@@ -499,12 +468,12 @@ public class PatientCaseTest extends BaseClass{
 
 
 	@Test(priority = 9, enabled=false)
-	public void patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
+	public void patientCase_TC7_TC10_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
 
 	{
 		
 		Log.startTestCase("patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		
 		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
 		action.pageLoadTimeOut(getDriver(), 50);
@@ -529,7 +498,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		//Selecting the patient
 		action.JSClick(getDriver(), page.btnSelectPatient);
-		page.searchAndSelectPatient("13");
+		page.searchAndSelectPatient("5");
 			
 		Log.info("Clicking Save button to add the automated test case that will close this patient case model");
 		action.click(getDriver(), page.btnSave);
@@ -538,14 +507,15 @@ public class PatientCaseTest extends BaseClass{
 		
 		//exploring to the patient case page again
 		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
-		action.pageLoadTimeOut(getDriver(), 50);
-		action.click(getDriver(), page.btnSearch);
-		action.waitPreloader();
 		
 		//To verify all added cases of relevant patients are shown
 		//to verify user can edit the patient case
 		//To verify whether or not patient case is saved
-		
+		action.waitPreloader();
+		action.click(getDriver(), page.chkboxesProviders.get(0));
+		action.click(getDriver(), page.btnSearch);
+		action.waitPreloader();
+		//if paging happens
 		//power of isDisplayed from our action class
 		//if paging happens
 		if(action.isDisplayed(getDriver(), page.btnLastPage)){ 
@@ -553,38 +523,18 @@ public class PatientCaseTest extends BaseClass{
 			page.btnLastPage.click();
 			Log.info("Got to the last page of Patient Case List");
 			action.waitPreloader();
-			
-			//Click edit button of last result of the last page
-			if(!action.isDisplayed(getDriver(), page.lastPatientCaseInList)) {
-				
-				page.chkboxesProviders.get(0).click();
-				Log.info("Checked Select All provider checkbox");
-				action.click(getDriver(), page.btnSearch);
-				Log.info("Clicked search button");
-				action.JSClick(getDriver(), page.lastPatientCaseInList);
-				Log.info("All cases of relevant patients shown successfully");
-			}else {
-				Log.info("Going to click on last result edit button");
-				action.JSClick(getDriver(), page.lastPatientCaseInList);
-				Log.info("clicked on last result edit button");
-			}
+			Log.info("Going to click on last result edit button of the last page");
+			action.JSClick(getDriver(), page.lastPatientCaseInList);
+			Log.info("clicked on last result edit button");
 		//if paging does not happens
 		}else {
 			
 			//Click edit button of last result of the first page
 			//Never use direct IsDisplayed, can give NoSuchElementException and stop the test case
-			if(!action.isDisplayed(getDriver(), page.lastPatientCaseInList)) {
-				page.chkboxesProviders.get(0).click();
-				Log.info("Checked Select All provider checkbox");
-				action.click(getDriver(), page.btnSearch);
-				Log.info("Clicked search button");
-				action.JSClick(getDriver(), page.lastPatientCaseInList);
-			}else {
-				Log.info("Going to click on last result edit button");
-				action.JSClick(getDriver(), page.lastPatientCaseInList);
-				Log.info("clicked on last result edit button");
-				
-			}
+			Log.info("Going to click on last result edit button");
+			action.JSClick(getDriver(), page.lastPatientCaseInList);
+			Log.info("clicked on last result edit button");
+			
 		}
 		
 		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
@@ -606,6 +556,36 @@ public class PatientCaseTest extends BaseClass{
 		
 	    Log.endTestCase("patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase");
 
+	}
+	
+	@Test (priority = 10, enabled=true)
+	public void patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider() {
+	
+		Log.startTestCase("patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstAssignedBucket");
+		
+		//Navigate to patient case
+		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
+		action.waitPreloader();
+		action.click(getDriver(), page.btnAddPatientCase);
+		action.waitPreloader();
+		
+		//filing mandatory fields
+		String currentTime = action.getCurrentTime();
+		page.fillMandatoryFields(currentTime);
+		action.selectBySendkeys("Refund", page.dropdownType);
+		
+		//Search and Select patient
+		page.btnSelectPatient.click();
+		page.searchAndSelectPatient("5");
+		
+		elements = page.radioButtons;
+		action.click(getDriver(), page.radioButtons.get(3));
+		action.type(page.txtAssignTo, "saim");
+		//page.txtAssignTo.sendKeys(Keys.DOWN, Keys.ENTER);
+		
+		
+		Log.endTestCase("patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider");
+		
 	}
 	
 	

@@ -161,6 +161,10 @@ public class PatientCasePage extends BaseClass{
 	@FindBy(xpath="(//a[@class='Style5'])[1]")
 	public WebElement btnLastPage;
 	
+	@FindBy(id="assignTo")
+	public WebElement txtAssignTo;
+	
+	
 	
 	
 	
@@ -224,7 +228,29 @@ public class PatientCasePage extends BaseClass{
 		
 	}
 	
+	public void fillMandatoryFields(String Subject) {
+		
+		action.selectDropdown(dropdownSource);
+		action.selectDropdown(dropdownProvider);
+		action.type(txtSubject, Subject);
+		Log.info("All mandatory fields are filled");
+		
+		boolean flag1 = action.isEnabled(getDriver(), btnPrint);
+		boolean flag2 = action.isEnabled(getDriver(), btnSave);
+		boolean flag3 = action.isEnabled(getDriver(), btnSave$Schedule);
+		
+		if(flag1 && flag2 &flag3) {
+			
+			Assert.assertTrue(true);
+			Log.info("mandatory fields are verified");
+		}else {
+			
+			Log.info("mandatory fields are not verified, something went wrong");
+			Assert.assertTrue(false);
+			
+		}
+		
+		
+	}
 	
-
-
 }

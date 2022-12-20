@@ -33,7 +33,7 @@ public class LoginPageTest extends BaseClass{
 	public void loginTest() {
 		Log.startTestCase("loginTest");		
 		LoginPage loginPage = new LoginPage();
-		loginPage.login(prop.getProperty("username"), prop.getProperty("password"), prop.getProperty("code"), dashboardPage);
+		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"), prop.getProperty("code"));
 				
 		Log.info("Verifying if user is able to login");
 		WebElement element = getDriver().findElement(By.id("MainContentArea_hSignOut"));

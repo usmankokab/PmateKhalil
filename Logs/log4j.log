@@ -29252,3 +29252,1212 @@ TEHRANI, ALI REZAZADEH
 2022-12-17 23:10:22 INFO  Log:22 - Add Patient CaseModel/Popup appears
 2022-12-17 23:10:22 INFO  Log:22 - Comparing Actual DateTime-2022/12/17 22:32:13 with CurrentDateTime-2022/12/17 23:09:44
 2022-12-17 23:10:22 INFO  Log:22 - Patient case is not saved before or after redirecting to the Schedular screen
+2022-12-20 06:10:48 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 06:10:51 INFO  Log:22 - User is logged in successfully
+2022-12-20 06:10:57 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 06:10:57 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 06:10:57 INFO  Log:22 - User is on Patient List Page
+2022-12-20 06:10:57 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 06:10:59 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 06:10:59 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 06:10:59 INFO  Log:22 - User landed on Patient case page
+2022-12-20 06:10:59 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 06:10:59 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 06:11:01 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:11:01 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 06:11:01 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 06:11:01 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 06:11:02 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 06:11:02 INFO  Log:22 - Typing 2022/12/20 06:11:02 currentDateTime into the Subject textBox
+2022-12-20 06:11:02 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 06:14:14 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 06:14:17 INFO  Log:22 - User is logged in successfully
+2022-12-20 06:14:23 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 06:14:24 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 06:14:24 INFO  Log:22 - User is on Patient List Page
+2022-12-20 06:14:24 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 06:14:25 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 06:14:25 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 06:14:25 INFO  Log:22 - User landed on Patient case page
+2022-12-20 06:14:25 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 06:14:25 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 06:14:27 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:14:27 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 06:14:27 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 06:14:27 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 06:14:27 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 06:14:27 INFO  Log:22 - Typing 2022/12/20 06:14:27 currentDateTime into the Subject textBox
+2022-12-20 06:14:28 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 06:14:30 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:14:30 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 06:14:30 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 06:14:30 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 06:14:33 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 06:14:33 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-20 06:14:33 INFO  Log:22 - User is redirected
+2022-12-20 06:14:54 INFO  Log:22 - Checked Select All provider checkbox
+2022-12-20 06:14:55 INFO  Log:22 - Clicked search button
+2022-12-20 06:14:56 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:14:56 INFO  Log:22 - Comparing Actual DateTime-Testing Automation with CurrentDateTime-2022/12/20 06:14:27
+2022-12-20 06:14:56 INFO  Log:22 - Patient case is not saved before or after redirecting to the Schedular screen
+2022-12-20 06:56:50 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 06:56:52 INFO  Log:22 - User is logged in successfully
+2022-12-20 06:56:55 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 06:56:56 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 06:56:56 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 06:56:59 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:56:59 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 06:56:59 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 06:56:59 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 06:57:00 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 06:57:00 INFO  Log:22 - Typing 2022/12/20 06:57:00 currentDateTime into the Subject textBox
+2022-12-20 06:57:00 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 06:57:02 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:57:02 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 06:57:02 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 06:57:02 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 06:57:05 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 06:57:54 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:57:54 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 06:57:00 with CurrentDateTime-2022/12/20 06:57:00
+2022-12-20 06:57:54 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the Schedular screen
+2022-12-20 06:57:54 INFO  Log:15 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST END=========================================
+2022-12-20 06:59:35 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 06:59:37 INFO  Log:22 - User is logged in successfully
+2022-12-20 06:59:43 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 06:59:43 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 06:59:43 INFO  Log:22 - User is on Patient List Page
+2022-12-20 06:59:43 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 06:59:45 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 06:59:45 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 06:59:45 INFO  Log:22 - User landed on Patient case page
+2022-12-20 06:59:45 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 06:59:45 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 06:59:47 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:59:47 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 06:59:47 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 06:59:47 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 06:59:47 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 06:59:47 INFO  Log:22 - Typing 2022/12/20 06:59:47 currentDateTime into the Subject textBox
+2022-12-20 06:59:48 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 06:59:50 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 06:59:50 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 06:59:50 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 06:59:50 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 06:59:53 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 07:13:07 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 07:13:10 INFO  Log:22 - User is logged in successfully
+2022-12-20 07:13:16 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 07:13:16 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 07:13:16 INFO  Log:22 - User is on Patient List Page
+2022-12-20 07:13:16 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 07:13:18 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 07:13:18 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 07:13:18 INFO  Log:22 - User landed on Patient case page
+2022-12-20 07:13:18 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 07:13:18 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 07:13:20 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:13:20 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 07:13:21 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 07:13:21 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 07:13:21 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 07:13:22 INFO  Log:22 - Typing 2022/12/20 07:13:22 currentDateTime into the Subject textBox
+2022-12-20 07:13:23 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 07:13:27 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:13:27 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 07:13:27 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 07:13:27 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 07:13:30 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 07:13:30 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-20 07:13:30 INFO  Log:22 - User is redirected
+2022-12-20 07:13:53 INFO  Log:22 - Checked Select All provider checkbox
+2022-12-20 07:13:53 INFO  Log:22 - Clicked search button
+2022-12-20 07:13:54 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:13:54 INFO  Log:22 - Comparing Actual DateTime-Testing Automation with CurrentDateTime-2022/12/20 07:13:22
+2022-12-20 07:13:54 INFO  Log:22 - Patient case is not saved before or after redirecting to the Schedular screen
+2022-12-20 07:46:50 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 07:46:53 INFO  Log:22 - User is logged in successfully
+2022-12-20 07:46:59 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 07:46:59 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 07:46:59 INFO  Log:22 - User is on Patient List Page
+2022-12-20 07:46:59 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 07:47:00 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 07:47:00 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 07:47:00 INFO  Log:22 - User landed on Patient case page
+2022-12-20 07:47:00 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 07:47:00 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 07:47:02 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:47:02 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 07:47:02 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 07:47:02 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 07:47:03 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 07:47:03 INFO  Log:22 - Typing 2022/12/20 07:47:03 currentDateTime into the Subject textBox
+2022-12-20 07:47:03 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 07:47:05 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:47:05 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 07:47:05 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 07:47:06 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 07:47:08 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 07:47:08 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-20 07:47:08 INFO  Log:22 - User is redirected
+2022-12-20 07:47:21 INFO  Log:22 - Going to click on last result edit button
+2022-12-20 07:56:05 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 07:56:07 INFO  Log:22 - User is logged in successfully
+2022-12-20 07:56:13 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 07:56:13 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 07:56:13 INFO  Log:22 - User is on Patient List Page
+2022-12-20 07:56:13 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 07:56:14 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 07:56:15 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 07:56:15 INFO  Log:22 - User landed on Patient case page
+2022-12-20 07:56:15 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 07:56:15 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 07:56:17 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:56:17 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 07:56:17 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 07:56:17 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 07:56:17 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 07:56:17 INFO  Log:22 - Typing 2022/12/20 07:56:17 currentDateTime into the Subject textBox
+2022-12-20 07:56:17 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 07:56:20 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:56:20 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 07:56:20 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 07:56:20 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 07:56:25 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 07:56:25 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-20 07:56:25 INFO  Log:22 - User is redirected
+2022-12-20 07:56:28 INFO  Log:22 - There is a paging in Patient Case List
+2022-12-20 07:56:28 INFO  Log:22 - Got to the last page of Patient Case List
+2022-12-20 07:56:29 INFO  Log:22 - Going to click on last result edit button of the last page
+2022-12-20 07:56:29 INFO  Log:22 - clicked on last result edit button
+2022-12-20 07:56:30 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 07:56:30 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 07:56:17 with CurrentDateTime-2022/12/20 07:56:17
+2022-12-20 07:56:30 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the Schedular screen
+2022-12-20 07:56:30 INFO  Log:15 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST END=========================================
+2022-12-20 08:02:13 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 08:02:15 INFO  Log:22 - User is logged in successfully
+2022-12-20 08:02:21 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 08:02:21 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 08:02:21 INFO  Log:22 - User is on Patient List Page
+2022-12-20 08:02:22 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 08:02:23 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 08:02:23 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 08:02:23 INFO  Log:22 - User landed on Patient case page
+2022-12-20 08:02:23 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 08:02:23 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 08:02:25 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 08:02:25 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 08:02:26 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 08:02:26 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 08:02:26 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 08:02:26 INFO  Log:22 - Typing 2022/12/20 08:02:26 currentDateTime into the Subject textBox
+2022-12-20 08:02:26 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 08:02:29 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 08:02:29 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 08:02:29 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 08:02:29 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 08:02:31 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 08:02:31 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-20 08:02:31 INFO  Log:22 - User is redirected
+2022-12-20 08:02:34 INFO  Log:22 - There is a paging in Patient Case List
+2022-12-20 08:02:34 INFO  Log:22 - Got to the last page of Patient Case List
+2022-12-20 08:02:35 INFO  Log:22 - Going to click on last result edit button of the last page
+2022-12-20 08:02:35 INFO  Log:22 - clicked on last result edit button
+2022-12-20 08:02:35 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 08:02:36 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 08:02:26 with CurrentDateTime-2022/12/20 08:02:26
+2022-12-20 08:02:36 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the Schedular screen
+2022-12-20 08:02:36 INFO  Log:15 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST END=========================================
+2022-12-20 08:02:36 INFO  Log:11 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST START=========================================
+2022-12-20 08:02:37 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 08:02:37 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 08:02:37 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 08:02:37 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 08:02:38 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 08:02:38 INFO  Log:22 - Typing 2022/12/20 08:02:38 currentDateTime into the Subject textBox
+2022-12-20 08:02:38 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 08:02:40 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 08:02:40 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 08:02:40 INFO  Log:22 - Clicking Save button to add the automated test case that will close this patient case model
+2022-12-20 08:02:40 INFO  Log:22 - Save button is clicked
+2022-12-20 08:02:43 INFO  Log:22 - There is a paging in Patient Case List
+2022-12-20 08:02:43 INFO  Log:22 - Got to the last page of Patient Case List
+2022-12-20 08:02:44 INFO  Log:22 - Going to click on last result edit button of the last page
+2022-12-20 08:02:44 INFO  Log:22 - clicked on last result edit button
+2022-12-20 08:02:45 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 08:02:45 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 08:02:38 with CurrentDateTime-2022/12/20 08:02:38
+2022-12-20 08:02:45 INFO  Log:22 - Patient case is saved successfully
+2022-12-20 08:02:45 INFO  Log:22 - Patient Case Edited successfully
+2022-12-20 08:02:45 INFO  Log:15 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST END=========================================
+2022-12-20 09:54:47 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 09:54:50 INFO  Log:22 - User is logged in successfully
+2022-12-20 09:54:56 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 09:54:56 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 09:54:56 INFO  Log:22 - User is on Patient List Page
+2022-12-20 09:54:56 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 09:54:58 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 09:54:58 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 09:54:58 INFO  Log:22 - User landed on Patient case page
+2022-12-20 09:54:58 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 09:54:58 INFO  Log:11 - =====================================patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel TEST START=========================================
+2022-12-20 10:06:57 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 10:07:00 INFO  Log:22 - User is logged in successfully
+2022-12-20 10:07:08 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 10:07:08 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 10:07:08 INFO  Log:22 - User is on Patient List Page
+2022-12-20 10:07:08 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 10:07:09 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 10:07:09 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 10:07:09 INFO  Log:22 - User landed on Patient case page
+2022-12-20 10:07:09 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 10:07:09 INFO  Log:11 - =====================================patientCase_TC1a_toValidateFields_page TEST START=========================================
+2022-12-20 10:07:09 INFO  Log:22 - LabelPatient Nameis present
+2022-12-20 10:07:09 INFO  Log:22 - Patient Nameis matched with Patient Name(Expected Text)
+2022-12-20 10:07:10 INFO  Log:22 - values entered in /Test Patient
+2022-12-20 10:07:10 INFO  Log:22 - /Test Patient TextBox is present
+2022-12-20 10:07:10 INFO  Log:22 - /Test Patient TextBox is editable
+2022-12-20 10:07:10 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 10:07:10 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 10:07:11 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 10:07:11 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 10:07:11 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 10:07:12 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 10:07:12 INFO  Log:22 - 3 checkBox is selected
+2022-12-20 10:07:12 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:07:12 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:07:12 INFO  Log:22 - Open = Open(Actual Matched with Expected
+2022-12-20 10:07:12 INFO  Log:22 - User can select Open value from the dropdown field
+2022-12-20 10:07:12 INFO  Log:22 - Close = Close(Actual Matched with Expected
+2022-12-20 10:07:12 INFO  Log:22 - User can select Close value from the dropdown field
+2022-12-20 10:07:12 INFO  Log:22 - Expected values matched with Actual values, and user can select any value
+2022-12-20 10:07:13 INFO  Log:22 - Search/null Button is displayed
+2022-12-20 10:07:13 INFO  Log:22 - Search/null Button is enabled to click
+2022-12-20 10:07:13 INFO  Log:22 - Add Patient Case/ Button is displayed
+2022-12-20 10:07:13 INFO  Log:22 - Add Patient Case/ Button is enabled to click
+2022-12-20 10:07:13 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 10:07:13 INFO  Log:22 - 12/20/2022
+2022-12-20 10:07:13 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 10:07:13 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 10:07:13 INFO  Log:22 - 12/20/2022
+2022-12-20 10:07:13 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 10:07:13 INFO  Log:22 - MR Number = MR Number
+2022-12-20 10:07:13 INFO  Log:22 - Patient Name = Patient Name
+2022-12-20 10:07:13 INFO  Log:22 - Location Name = Location Name
+2022-12-20 10:07:13 INFO  Log:22 - Provider Name = Provider Name
+2022-12-20 10:07:13 INFO  Log:22 - Source = Source
+2022-12-20 10:07:13 INFO  Log:22 - Recipient = Recipient
+2022-12-20 10:07:13 INFO  Log:22 - Edit = Edit
+2022-12-20 10:07:13 INFO  Log:22 - All expected headings are present in search table
+2022-12-20 10:07:13 INFO  Log:15 - =====================================patientCase_TC1a_toValidateFields_page TEST END=========================================
+2022-12-20 10:09:23 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 10:09:26 INFO  Log:22 - User is logged in successfully
+2022-12-20 10:09:33 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 10:09:33 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 10:09:33 INFO  Log:22 - User is on Patient List Page
+2022-12-20 10:09:33 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 10:09:34 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 10:09:35 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 10:09:35 INFO  Log:22 - User landed on Patient case page
+2022-12-20 10:09:35 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 10:09:35 INFO  Log:11 - =====================================patientCase_TC1a_toValidateFields_page TEST START=========================================
+2022-12-20 10:09:35 INFO  Log:22 - LabelPatient Nameis present
+2022-12-20 10:09:35 INFO  Log:22 - Patient Nameis matched with Patient Name(Expected Text)
+2022-12-20 10:09:35 INFO  Log:22 - values entered in /Test Patient
+2022-12-20 10:09:35 INFO  Log:22 - /Test Patient TextBox is present
+2022-12-20 10:09:35 INFO  Log:22 - /Test Patient TextBox is editable
+2022-12-20 10:09:36 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 10:09:36 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 10:09:36 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 10:09:37 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 10:09:37 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 10:09:37 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 10:09:38 INFO  Log:22 - 3 checkBox is selected
+2022-12-20 10:09:38 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:09:38 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:09:38 INFO  Log:22 - Open = Open(Actual Matched with Expected
+2022-12-20 10:09:38 INFO  Log:22 - User can select Open value from the dropdown field
+2022-12-20 10:09:38 INFO  Log:22 - Close = Close(Actual Matched with Expected
+2022-12-20 10:09:38 INFO  Log:22 - User can select Close value from the dropdown field
+2022-12-20 10:09:38 INFO  Log:22 - Expected values matched with Actual values, and user can select any value
+2022-12-20 10:09:38 INFO  Log:22 - Search/null Button is displayed
+2022-12-20 10:09:38 INFO  Log:22 - Search/null Button is enabled to click
+2022-12-20 10:09:38 INFO  Log:22 - Add Patient Case/ Button is displayed
+2022-12-20 10:09:38 INFO  Log:22 - Add Patient Case/ Button is enabled to click
+2022-12-20 10:09:39 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 10:09:39 INFO  Log:22 - 12/20/2022
+2022-12-20 10:09:39 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 10:09:39 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 10:09:39 INFO  Log:22 - 12/20/2022
+2022-12-20 10:09:39 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 10:09:39 INFO  Log:22 - MR Number = MR Number
+2022-12-20 10:09:39 INFO  Log:22 - Patient Name = Patient Name
+2022-12-20 10:09:39 INFO  Log:22 - Location Name = Location Name
+2022-12-20 10:09:39 INFO  Log:22 - Provider Name = Provider Name
+2022-12-20 10:09:39 INFO  Log:22 - Source = Source
+2022-12-20 10:09:39 INFO  Log:22 - Recipient = Recipient
+2022-12-20 10:09:39 INFO  Log:22 - Edit = Edit
+2022-12-20 10:09:39 INFO  Log:22 - All expected headings are present in search table
+2022-12-20 10:09:39 INFO  Log:15 - =====================================patientCase_TC1a_toValidateFields_page TEST END=========================================
+2022-12-20 10:41:07 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 10:41:10 INFO  Log:22 - User is logged in successfully
+2022-12-20 10:41:16 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 10:41:17 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 10:41:17 INFO  Log:22 - User is on Patient List Page
+2022-12-20 10:41:17 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 10:41:18 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 10:41:19 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 10:41:19 INFO  Log:22 - User landed on Patient case page
+2022-12-20 10:41:19 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 10:41:19 INFO  Log:11 - =====================================patientCase_TC1a_toValidateFields_page TEST START=========================================
+2022-12-20 10:41:19 INFO  Log:22 - LabelPatient Nameis present
+2022-12-20 10:41:19 INFO  Log:22 - Patient Nameis matched with Patient Name(Expected Text)
+2022-12-20 10:41:19 INFO  Log:22 - values entered in /Test Patient
+2022-12-20 10:41:19 INFO  Log:22 - /Test Patient TextBox is present
+2022-12-20 10:41:19 INFO  Log:22 - /Test Patient TextBox is editable
+2022-12-20 10:41:20 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 10:41:20 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 10:41:20 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 10:41:21 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 10:41:21 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 10:41:21 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 10:41:22 INFO  Log:22 - 3 checkBox is selected
+2022-12-20 10:41:22 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:41:22 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:41:22 INFO  Log:22 - Open = Open(Actual Matched with Expected
+2022-12-20 10:41:22 INFO  Log:22 - User can select Open value from the dropdown field
+2022-12-20 10:41:22 INFO  Log:22 - Close = Close(Actual Matched with Expected
+2022-12-20 10:41:22 INFO  Log:22 - User can select Close value from the dropdown field
+2022-12-20 10:41:22 INFO  Log:22 - Expected values matched with Actual values, and user can select any value
+2022-12-20 10:41:22 INFO  Log:22 - Search/null Button is displayed
+2022-12-20 10:41:22 INFO  Log:22 - Search/null Button is enabled to click
+2022-12-20 10:41:22 INFO  Log:22 - Add Patient Case/ Button is displayed
+2022-12-20 10:41:22 INFO  Log:22 - Add Patient Case/ Button is enabled to click
+2022-12-20 10:41:22 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 10:41:22 INFO  Log:22 - 12/20/2022
+2022-12-20 10:41:23 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 10:41:23 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 10:41:23 INFO  Log:22 - 12/20/2022
+2022-12-20 10:41:23 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 10:41:23 INFO  Log:22 - MR Number = MR Number
+2022-12-20 10:41:23 INFO  Log:22 - Patient Name = Patient Name
+2022-12-20 10:41:23 INFO  Log:22 - Location Name = Location Name
+2022-12-20 10:41:23 INFO  Log:22 - Provider Name = Provider Name
+2022-12-20 10:41:23 INFO  Log:22 - Source = Source
+2022-12-20 10:41:23 INFO  Log:22 - Recipient = Recipient
+2022-12-20 10:41:23 INFO  Log:22 - Edit = Edit
+2022-12-20 10:41:23 INFO  Log:22 - All expected headings are present in search table
+2022-12-20 10:41:23 INFO  Log:15 - =====================================patientCase_TC1a_toValidateFields_page TEST END=========================================
+2022-12-20 10:41:23 INFO  Log:11 - =====================================patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed TEST START=========================================
+2022-12-20 10:41:24 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:41:24 INFO  Log:15 - =====================================patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed TEST END=========================================
+2022-12-20 10:41:24 INFO  Log:11 - =====================================patientCase_TC3_8_9_toValidateFields_PatientCaseModel TEST START=========================================
+2022-12-20 10:41:24 INFO  Log:22 - /Close Button is displayed
+2022-12-20 10:41:24 INFO  Log:22 - /Close Button is enabled to click
+2022-12-20 10:41:24 INFO  Log:22 - /Print Button is displayed
+2022-12-20 10:41:24 INFO  Log:22 - /Print Button is disabled to click
+2022-12-20 10:41:24 INFO  Log:22 - /Save Button is displayed
+2022-12-20 10:41:25 INFO  Log:22 - /Save Button is disabled to click
+2022-12-20 10:41:25 INFO  Log:22 - /Save & Schedule Button is displayed
+2022-12-20 10:41:25 INFO  Log:22 - /Save & Schedule Button is disabled to click
+2022-12-20 10:41:25 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:41:25 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:41:25 INFO  Log:22 - Patient = Patient(Actual Matched with Expected
+2022-12-20 10:41:25 INFO  Log:22 - User can select Patient value from the dropdown field
+2022-12-20 10:41:25 INFO  Log:22 - Parent/Care Giver = Parent/Care Giver(Actual Matched with Expected
+2022-12-20 10:41:25 INFO  Log:22 - User can select Parent/Care Giver value from the dropdown field
+2022-12-20 10:41:25 INFO  Log:22 - Spouse/Partner = Spouse/Partner(Actual Matched with Expected
+2022-12-20 10:41:25 INFO  Log:22 - User can select Spouse/Partner value from the dropdown field
+2022-12-20 10:41:25 INFO  Log:22 - Pharmacy = Pharmacy(Actual Matched with Expected
+2022-12-20 10:41:25 INFO  Log:22 - User can select Pharmacy value from the dropdown field
+2022-12-20 10:41:25 INFO  Log:22 - Lab = Lab(Actual Matched with Expected
+2022-12-20 10:41:26 INFO  Log:22 - User can select Lab value from the dropdown field
+2022-12-20 10:41:26 INFO  Log:22 - PcP = PcP(Actual Matched with Expected
+2022-12-20 10:41:26 INFO  Log:22 - User can select PcP value from the dropdown field
+2022-12-20 10:41:26 INFO  Log:22 - Specialist = Specialist(Actual Matched with Expected
+2022-12-20 10:41:26 INFO  Log:22 - User can select Specialist value from the dropdown field
+2022-12-20 10:41:26 INFO  Log:22 - Clinical Staff = Clinical Staff(Actual Matched with Expected
+2022-12-20 10:41:26 INFO  Log:22 - User can select Clinical Staff value from the dropdown field
+2022-12-20 10:41:26 INFO  Log:22 - Hospital = Hospital(Actual Matched with Expected
+2022-12-20 10:41:26 INFO  Log:22 - User can select Hospital value from the dropdown field
+2022-12-20 10:41:26 INFO  Log:22 - Other = Other(Actual Matched with Expected
+2022-12-20 10:41:26 INFO  Log:22 - User can select Other value from the dropdown field
+2022-12-20 10:41:27 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:41:27 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:41:27 INFO  Log:22 - Administrative = Administrative(Actual Matched with Expected
+2022-12-20 10:41:27 INFO  Log:22 - User can select Administrative value from the dropdown field
+2022-12-20 10:41:27 INFO  Log:22 - Clinical Question = Clinical Question(Actual Matched with Expected
+2022-12-20 10:41:27 INFO  Log:22 - User can select Clinical Question value from the dropdown field
+2022-12-20 10:41:27 INFO  Log:22 - Medical Record- Electronic = Medical Record- Electronic(Actual Matched with Expected
+2022-12-20 10:41:27 INFO  Log:22 - User can select Medical Record- Electronic value from the dropdown field
+2022-12-20 10:41:27 INFO  Log:22 - Medical Record - Paper = Medical Record - Paper(Actual Matched with Expected
+2022-12-20 10:41:27 INFO  Log:22 - User can select Medical Record - Paper value from the dropdown field
+2022-12-20 10:41:27 INFO  Log:22 - Medication = Medication(Actual Matched with Expected
+2022-12-20 10:41:27 INFO  Log:22 - User can select Medication value from the dropdown field
+2022-12-20 10:41:27 INFO  Log:22 - Referral = Referral(Actual Matched with Expected
+2022-12-20 10:41:27 INFO  Log:22 - User can select Referral value from the dropdown field
+2022-12-20 10:41:28 INFO  Log:22 - Refill = Refill(Actual Matched with Expected
+2022-12-20 10:41:28 INFO  Log:22 - User can select Refill value from the dropdown field
+2022-12-20 10:41:28 INFO  Log:22 - Patient No Show = Patient No Show(Actual Matched with Expected
+2022-12-20 10:41:28 INFO  Log:22 - User can select Patient No Show value from the dropdown field
+2022-12-20 10:41:28 INFO  Log:22 - Lab = Lab(Actual Matched with Expected
+2022-12-20 10:41:28 INFO  Log:22 - User can select Lab value from the dropdown field
+2022-12-20 10:41:28 INFO  Log:22 - Imaging = Imaging(Actual Matched with Expected
+2022-12-20 10:41:28 INFO  Log:22 - User can select Imaging value from the dropdown field
+2022-12-20 10:41:28 INFO  Log:22 - Procedure = Procedure(Actual Matched with Expected
+2022-12-20 10:41:29 INFO  Log:22 - User can select Procedure value from the dropdown field
+2022-12-20 10:41:29 INFO  Log:22 - DME = DME(Actual Matched with Expected
+2022-12-20 10:41:29 INFO  Log:22 - User can select DME value from the dropdown field
+2022-12-20 10:41:29 INFO  Log:22 - Refund = Refund(Actual Matched with Expected
+2022-12-20 10:41:29 INFO  Log:22 - User can select Refund value from the dropdown field
+2022-12-20 10:41:29 INFO  Log:22 - Other = Other(Actual Matched with Expected
+2022-12-20 10:41:29 INFO  Log:22 - User can select Other value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:41:30 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - Ahmar, Wasim = Ahmar, Wasim(Actual Matched with Expected
+2022-12-20 10:41:30 INFO  Log:22 - User can select Ahmar, Wasim value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - Rosselot, Eric = Rosselot, Eric(Actual Matched with Expected
+2022-12-20 10:41:30 INFO  Log:22 - User can select Rosselot, Eric value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - TEHRANI, ALI REZAZADEH = TEHRANI, ALI REZAZADEH(Actual Matched with Expected
+2022-12-20 10:41:30 INFO  Log:22 - User can select TEHRANI, ALI REZAZADEH value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:41:30 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - High = High(Actual Matched with Expected
+2022-12-20 10:41:30 INFO  Log:22 - User can select High value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - Medium = Medium(Actual Matched with Expected
+2022-12-20 10:41:30 INFO  Log:22 - User can select Medium value from the dropdown field
+2022-12-20 10:41:30 INFO  Log:22 - Low = Low(Actual Matched with Expected
+2022-12-20 10:41:31 INFO  Log:22 - User can select Low value from the dropdown field
+2022-12-20 10:41:31 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 10:41:31 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 10:41:31 INFO  Log:22 - Facility = Facility(Actual Matched with Expected
+2022-12-20 10:41:31 INFO  Log:22 - User can select Facility value from the dropdown field
+2022-12-20 10:41:31 INFO  Log:22 - North Bethesda Maryland = North Bethesda Maryland(Actual Matched with Expected
+2022-12-20 10:41:31 INFO  Log:22 - User can select North Bethesda Maryland value from the dropdown field
+2022-12-20 10:41:31 INFO  Log:22 - All checkboxes are displayed and checkable
+2022-12-20 10:41:32 INFO  Log:22 - values entered in /Person to Call
+2022-12-20 10:41:32 INFO  Log:22 - /Person to Call TextBox is present
+2022-12-20 10:41:32 INFO  Log:22 - /Person to Call TextBox is editable
+2022-12-20 10:41:32 INFO  Log:22 - values entered in /Test Subject
+2022-12-20 10:41:32 INFO  Log:22 - /Test Subject TextBox is present
+2022-12-20 10:41:32 INFO  Log:22 - /Test Subject TextBox is editable
+2022-12-20 10:41:33 INFO  Log:22 - values entered in /
+2022-12-20 10:41:33 INFO  Log:22 - / TextBox is present
+2022-12-20 10:41:33 INFO  Log:22 - / TextBox is disabled to type
+2022-12-20 10:41:33 INFO  Log:22 - 0 textarea is present
+2022-12-20 10:41:33 INFO  Log:22 - 0 Textarea's description verified
+2022-12-20 10:41:34 INFO  Log:22 - 1 textarea is present
+2022-12-20 10:41:34 INFO  Log:22 - 1 Textarea's description verified
+2022-12-20 10:41:34 INFO  Log:22 - 1 option is checked
+2022-12-20 10:41:34 INFO  Log:22 - 1 only option is checked
+2022-12-20 10:41:34 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 10:41:34 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 10:41:34 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 10:41:34 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 10:41:34 INFO  Log:22 - 2 option is checked
+2022-12-20 10:41:34 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 10:41:34 INFO  Log:22 - 2 only option is checked
+2022-12-20 10:41:34 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 10:41:34 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 3 option is checked
+2022-12-20 10:41:35 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 3 only option is checked
+2022-12-20 10:41:35 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 4 option is checked
+2022-12-20 10:41:35 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 10:41:35 INFO  Log:22 - 4 only option is checked
+2022-12-20 10:41:35 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 10:41:36 INFO  Log:22 - 5 option is checked
+2022-12-20 10:41:36 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 10:41:36 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 10:41:36 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 10:41:36 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 10:41:36 INFO  Log:22 - 5 only option is checked
+2022-12-20 10:41:36 INFO  Log:15 - =====================================patientCase_TC3_8_9_toValidateFields_PatientCaseModel TEST END=========================================
+2022-12-20 10:41:36 INFO  Log:11 - =====================================patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel TEST START=========================================
+2022-12-20 10:41:36 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 10:41:36 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 10:41:36 INFO  Log:22 - All mandatory fields are filled
+2022-12-20 10:41:36 INFO  Log:22 - mandatory fields are verified
+2022-12-20 10:41:36 INFO  Log:15 - =====================================patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel TEST END=========================================
+2022-12-20 10:41:36 INFO  Log:11 - =====================================patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed TEST START=========================================
+2022-12-20 10:41:36 INFO  Log:22 - Validating Alert message once clicked on Save&Schedule button if patient is not selected
+2022-12-20 10:41:37 INFO  Log:22 - Alert Present(Please Select Patient)
+2022-12-20 10:41:37 INFO  Log:22 - Alert message validated once clicked on Save&Schedule button if patient is not selected
+2022-12-20 10:41:37 INFO  Log:22 - Validating Alert message once clicked on Save button if patient is not selected
+2022-12-20 10:41:37 INFO  Log:22 - Alert Present(Please Select Patient)
+2022-12-20 10:41:37 INFO  Log:22 - Alert message validated once clicked on Save button if patient is not selected
+2022-12-20 10:41:37 INFO  Log:15 - =====================================patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed TEST END=========================================
+2022-12-20 10:41:37 INFO  Log:11 - =====================================patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed TEST START=========================================
+2022-12-20 10:41:38 INFO  Log:22 - Select PatientModel/Popup appears
+2022-12-20 10:41:38 INFO  Log:22 - User clicked on Select Patient button
+2022-12-20 10:41:38 INFO  Log:22 - Patient Search Model displayed
+2022-12-20 10:41:38 INFO  Log:15 - =====================================patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed TEST END=========================================
+2022-12-20 10:41:38 INFO  Log:11 - =====================================patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed TEST START=========================================
+2022-12-20 10:41:38 INFO  Log:22 - Alert Present(Please select patient first)
+2022-12-20 10:41:38 INFO  Log:15 - =====================================patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed TEST END=========================================
+2022-12-20 10:41:38 INFO  Log:11 - =====================================patientCase_TC4_toValidateFields_SelectPatientModel TEST START=========================================
+2022-12-20 10:41:38 INFO  Log:22 - values entered in /Patient Name
+2022-12-20 10:41:39 INFO  Log:22 - /Patient Name TextBox is present
+2022-12-20 10:41:39 INFO  Log:22 - /Patient Name TextBox is editable
+2022-12-20 10:41:39 INFO  Log:22 - values entered in /786-868-0792
+2022-12-20 10:41:39 INFO  Log:22 - /786-868-0792 TextBox is present
+2022-12-20 10:41:39 INFO  Log:22 - /786-868-0792 TextBox is editable
+2022-12-20 10:41:39 INFO  Log:22 - values entered in /8680792
+2022-12-20 10:41:39 INFO  Log:22 - /8680792 TextBox is present
+2022-12-20 10:41:40 INFO  Log:22 - /8680792 TextBox is editable
+2022-12-20 10:41:40 INFO  Log:22 - values entered in /0792
+2022-12-20 10:41:40 INFO  Log:22 - /0792 TextBox is present
+2022-12-20 10:41:40 INFO  Log:22 - /0792 TextBox is editable
+2022-12-20 10:41:40 INFO  Log:22 - values entered in /01/01/1981
+2022-12-20 10:41:40 INFO  Log:22 - /01/01/1981 TextBox is present
+2022-12-20 10:41:40 INFO  Log:22 - /01/01/1981 TextBox is editable
+2022-12-20 10:41:41 INFO  Log:22 - 1 option is checked
+2022-12-20 10:41:41 INFO  Log:22 - 1 only option is checked
+2022-12-20 10:41:41 INFO  Log:22 - 0 other option is unchecked
+2022-12-20 10:41:41 INFO  Log:22 - 0 option is checked
+2022-12-20 10:41:41 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 10:41:41 INFO  Log:22 - 0 only option is checked
+2022-12-20 10:41:41 INFO  Log:22 - Search/ Button is displayed
+2022-12-20 10:41:41 INFO  Log:22 - Search/ Button is enabled to click
+2022-12-20 10:41:41 INFO  Log:22 - Close/ Button is displayed
+2022-12-20 10:41:41 INFO  Log:22 - Close/ Button is enabled to click
+2022-12-20 10:41:41 INFO  Log:22 - Select/ Button is displayed
+2022-12-20 10:41:41 INFO  Log:22 - Select/ Button is enabled to click
+2022-12-20 10:41:41 INFO  Log:15 - =====================================patientCase_TC4_toValidateFields_SelectPatientModel TEST END=========================================
+2022-12-20 10:41:41 INFO  Log:11 - =====================================patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected TEST START=========================================
+2022-12-20 10:41:44 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:41:44 INFO  Log:22 - Select PatientModel/Popup appears
+2022-12-20 10:41:46 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:41:46 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 10:41:46 INFO  Log:22 - Patient Selected, Search Result Appeared and Patient selected succesfully
+2022-12-20 10:41:46 INFO  Log:15 - =====================================patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected TEST END=========================================
+2022-12-20 10:41:46 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 10:41:48 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:41:48 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 10:41:48 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 10:41:48 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 10:41:48 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 10:41:48 INFO  Log:22 - Typing 2022/12/20 10:41:48 currentDateTime into the Subject textBox
+2022-12-20 10:41:49 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 10:41:51 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:41:51 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 10:41:51 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 10:41:51 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 10:41:53 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 10:41:53 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-20 10:41:53 INFO  Log:22 - User is redirected
+2022-12-20 10:41:56 INFO  Log:22 - There is a paging in Patient Case List
+2022-12-20 10:41:56 INFO  Log:22 - Got to the last page of Patient Case List
+2022-12-20 10:41:57 INFO  Log:22 - Going to click on last result edit button of the last page
+2022-12-20 10:41:57 INFO  Log:22 - clicked on last result edit button
+2022-12-20 10:41:57 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:41:57 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 10:41:48 with CurrentDateTime-2022/12/20 10:41:48
+2022-12-20 10:41:57 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the Schedular screen
+2022-12-20 10:41:57 INFO  Log:15 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST END=========================================
+2022-12-20 10:41:57 INFO  Log:11 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST START=========================================
+2022-12-20 10:41:59 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:41:59 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 10:41:59 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 10:41:59 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 10:42:00 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 10:42:00 INFO  Log:22 - Typing 2022/12/20 10:42:00 currentDateTime into the Subject textBox
+2022-12-20 10:42:00 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 10:42:02 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:42:02 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 10:42:02 INFO  Log:22 - Clicking Save button to add the automated test case that will close this patient case model
+2022-12-20 10:42:02 INFO  Log:22 - Save button is clicked
+2022-12-20 10:42:05 INFO  Log:22 - There is a paging in Patient Case List
+2022-12-20 10:42:05 INFO  Log:22 - Got to the last page of Patient Case List
+2022-12-20 10:42:06 INFO  Log:22 - Going to click on last result edit button of the last page
+2022-12-20 10:42:06 INFO  Log:22 - clicked on last result edit button
+2022-12-20 10:42:07 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 10:42:07 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 10:42:00 with CurrentDateTime-2022/12/20 10:42:00
+2022-12-20 10:42:07 INFO  Log:22 - Patient case is saved successfully
+2022-12-20 10:42:07 INFO  Log:22 - Patient Case Edited successfully
+2022-12-20 10:42:07 INFO  Log:15 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST END=========================================
+2022-12-20 11:53:47 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 11:53:50 INFO  Log:22 - User is logged in successfully
+2022-12-20 11:53:56 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 11:53:57 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 11:53:57 INFO  Log:22 - User is on Patient List Page
+2022-12-20 11:53:57 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 11:53:58 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 11:53:59 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 11:53:59 INFO  Log:22 - User landed on Patient case page
+2022-12-20 11:53:59 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 11:53:59 INFO  Log:11 - =====================================patientCase_TC1a_toValidateFields_page TEST START=========================================
+2022-12-20 11:53:59 INFO  Log:22 - LabelPatient Nameis present
+2022-12-20 11:53:59 INFO  Log:22 - Patient Nameis matched with Patient Name(Expected Text)
+2022-12-20 11:53:59 INFO  Log:22 - values entered in /Test Patient
+2022-12-20 11:53:59 INFO  Log:22 - /Test Patient TextBox is present
+2022-12-20 11:53:59 INFO  Log:22 - /Test Patient TextBox is editable
+2022-12-20 11:54:00 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 11:54:00 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 11:54:00 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 11:54:01 INFO  Log:22 - 0 checkBox is selected
+2022-12-20 11:54:01 INFO  Log:22 - 1 checkBox is selected
+2022-12-20 11:54:01 INFO  Log:22 - 2 checkBox is selected
+2022-12-20 11:54:02 INFO  Log:22 - 3 checkBox is selected
+2022-12-20 11:54:02 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 11:54:02 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 11:54:02 INFO  Log:22 - Open = Open(Actual Matched with Expected
+2022-12-20 11:54:02 INFO  Log:22 - User can select Open value from the dropdown field
+2022-12-20 11:54:02 INFO  Log:22 - Close = Close(Actual Matched with Expected
+2022-12-20 11:54:02 INFO  Log:22 - User can select Close value from the dropdown field
+2022-12-20 11:54:02 INFO  Log:22 - Expected values matched with Actual values, and user can select any value
+2022-12-20 11:54:02 INFO  Log:22 - Search/null Button is displayed
+2022-12-20 11:54:02 INFO  Log:22 - Search/null Button is enabled to click
+2022-12-20 11:54:02 INFO  Log:22 - Add Patient Case/ Button is displayed
+2022-12-20 11:54:02 INFO  Log:22 - Add Patient Case/ Button is enabled to click
+2022-12-20 11:54:03 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 11:54:03 INFO  Log:22 - 12/20/2022
+2022-12-20 11:54:03 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 11:54:03 INFO  Log:22 - Date Textbox is displayed with current date of 12/20/2022
+2022-12-20 11:54:03 INFO  Log:22 - 12/20/2022
+2022-12-20 11:54:03 INFO  Log:22 - Textbox date is compared with current date sucessfully
+2022-12-20 11:54:03 INFO  Log:22 - MR Number = MR Number
+2022-12-20 11:54:03 INFO  Log:22 - Patient Name = Patient Name
+2022-12-20 11:54:03 INFO  Log:22 - Location Name = Location Name
+2022-12-20 11:54:03 INFO  Log:22 - Provider Name = Provider Name
+2022-12-20 11:54:03 INFO  Log:22 - Source = Source
+2022-12-20 11:54:03 INFO  Log:22 - Recipient = Recipient
+2022-12-20 11:54:03 INFO  Log:22 - Edit = Edit
+2022-12-20 11:54:03 INFO  Log:22 - All expected headings are present in search table
+2022-12-20 11:54:03 INFO  Log:15 - =====================================patientCase_TC1a_toValidateFields_page TEST END=========================================
+2022-12-20 11:54:03 INFO  Log:11 - =====================================patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed TEST START=========================================
+2022-12-20 11:54:04 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:04 INFO  Log:15 - =====================================patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed TEST END=========================================
+2022-12-20 11:54:04 INFO  Log:11 - =====================================patientCase_TC3_8_9_toValidateFields_PatientCaseModel TEST START=========================================
+2022-12-20 11:54:04 INFO  Log:22 - /Close Button is displayed
+2022-12-20 11:54:04 INFO  Log:22 - /Close Button is enabled to click
+2022-12-20 11:54:04 INFO  Log:22 - /Print Button is displayed
+2022-12-20 11:54:04 INFO  Log:22 - /Print Button is disabled to click
+2022-12-20 11:54:05 INFO  Log:22 - /Save Button is displayed
+2022-12-20 11:54:05 INFO  Log:22 - /Save Button is disabled to click
+2022-12-20 11:54:05 INFO  Log:22 - /Save & Schedule Button is displayed
+2022-12-20 11:54:05 INFO  Log:22 - /Save & Schedule Button is disabled to click
+2022-12-20 11:54:05 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 11:54:05 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 11:54:05 INFO  Log:22 - Patient = Patient(Actual Matched with Expected
+2022-12-20 11:54:05 INFO  Log:22 - User can select Patient value from the dropdown field
+2022-12-20 11:54:05 INFO  Log:22 - Parent/Care Giver = Parent/Care Giver(Actual Matched with Expected
+2022-12-20 11:54:05 INFO  Log:22 - User can select Parent/Care Giver value from the dropdown field
+2022-12-20 11:54:05 INFO  Log:22 - Spouse/Partner = Spouse/Partner(Actual Matched with Expected
+2022-12-20 11:54:05 INFO  Log:22 - User can select Spouse/Partner value from the dropdown field
+2022-12-20 11:54:05 INFO  Log:22 - Pharmacy = Pharmacy(Actual Matched with Expected
+2022-12-20 11:54:06 INFO  Log:22 - User can select Pharmacy value from the dropdown field
+2022-12-20 11:54:06 INFO  Log:22 - Lab = Lab(Actual Matched with Expected
+2022-12-20 11:54:06 INFO  Log:22 - User can select Lab value from the dropdown field
+2022-12-20 11:54:06 INFO  Log:22 - PcP = PcP(Actual Matched with Expected
+2022-12-20 11:54:06 INFO  Log:22 - User can select PcP value from the dropdown field
+2022-12-20 11:54:06 INFO  Log:22 - Specialist = Specialist(Actual Matched with Expected
+2022-12-20 11:54:06 INFO  Log:22 - User can select Specialist value from the dropdown field
+2022-12-20 11:54:06 INFO  Log:22 - Clinical Staff = Clinical Staff(Actual Matched with Expected
+2022-12-20 11:54:07 INFO  Log:22 - User can select Clinical Staff value from the dropdown field
+2022-12-20 11:54:07 INFO  Log:22 - Hospital = Hospital(Actual Matched with Expected
+2022-12-20 11:54:07 INFO  Log:22 - User can select Hospital value from the dropdown field
+2022-12-20 11:54:07 INFO  Log:22 - Other = Other(Actual Matched with Expected
+2022-12-20 11:54:07 INFO  Log:22 - User can select Other value from the dropdown field
+2022-12-20 11:54:07 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 11:54:07 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 11:54:07 INFO  Log:22 - Administrative = Administrative(Actual Matched with Expected
+2022-12-20 11:54:07 INFO  Log:22 - User can select Administrative value from the dropdown field
+2022-12-20 11:54:07 INFO  Log:22 - Clinical Question = Clinical Question(Actual Matched with Expected
+2022-12-20 11:54:08 INFO  Log:22 - User can select Clinical Question value from the dropdown field
+2022-12-20 11:54:08 INFO  Log:22 - Medical Record- Electronic = Medical Record- Electronic(Actual Matched with Expected
+2022-12-20 11:54:08 INFO  Log:22 - User can select Medical Record- Electronic value from the dropdown field
+2022-12-20 11:54:08 INFO  Log:22 - Medical Record - Paper = Medical Record - Paper(Actual Matched with Expected
+2022-12-20 11:54:08 INFO  Log:22 - User can select Medical Record - Paper value from the dropdown field
+2022-12-20 11:54:08 INFO  Log:22 - Medication = Medication(Actual Matched with Expected
+2022-12-20 11:54:08 INFO  Log:22 - User can select Medication value from the dropdown field
+2022-12-20 11:54:08 INFO  Log:22 - Referral = Referral(Actual Matched with Expected
+2022-12-20 11:54:08 INFO  Log:22 - User can select Referral value from the dropdown field
+2022-12-20 11:54:08 INFO  Log:22 - Refill = Refill(Actual Matched with Expected
+2022-12-20 11:54:08 INFO  Log:22 - User can select Refill value from the dropdown field
+2022-12-20 11:54:09 INFO  Log:22 - Patient No Show = Patient No Show(Actual Matched with Expected
+2022-12-20 11:54:09 INFO  Log:22 - User can select Patient No Show value from the dropdown field
+2022-12-20 11:54:09 INFO  Log:22 - Lab = Lab(Actual Matched with Expected
+2022-12-20 11:54:09 INFO  Log:22 - User can select Lab value from the dropdown field
+2022-12-20 11:54:09 INFO  Log:22 - Imaging = Imaging(Actual Matched with Expected
+2022-12-20 11:54:09 INFO  Log:22 - User can select Imaging value from the dropdown field
+2022-12-20 11:54:09 INFO  Log:22 - Procedure = Procedure(Actual Matched with Expected
+2022-12-20 11:54:09 INFO  Log:22 - User can select Procedure value from the dropdown field
+2022-12-20 11:54:09 INFO  Log:22 - DME = DME(Actual Matched with Expected
+2022-12-20 11:54:09 INFO  Log:22 - User can select DME value from the dropdown field
+2022-12-20 11:54:09 INFO  Log:22 - Refund = Refund(Actual Matched with Expected
+2022-12-20 11:54:10 INFO  Log:22 - User can select Refund value from the dropdown field
+2022-12-20 11:54:10 INFO  Log:22 - Other = Other(Actual Matched with Expected
+2022-12-20 11:54:10 INFO  Log:22 - User can select Other value from the dropdown field
+2022-12-20 11:54:10 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 11:54:10 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 11:54:10 INFO  Log:22 - Ahmar, Wasim = Ahmar, Wasim(Actual Matched with Expected
+2022-12-20 11:54:10 INFO  Log:22 - User can select Ahmar, Wasim value from the dropdown field
+2022-12-20 11:54:10 INFO  Log:22 - Rosselot, Eric = Rosselot, Eric(Actual Matched with Expected
+2022-12-20 11:54:10 INFO  Log:22 - User can select Rosselot, Eric value from the dropdown field
+2022-12-20 11:54:10 INFO  Log:22 - TEHRANI, ALI REZAZADEH = TEHRANI, ALI REZAZADEH(Actual Matched with Expected
+2022-12-20 11:54:10 INFO  Log:22 - User can select TEHRANI, ALI REZAZADEH value from the dropdown field
+2022-12-20 11:54:11 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 11:54:11 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 11:54:11 INFO  Log:22 - High = High(Actual Matched with Expected
+2022-12-20 11:54:11 INFO  Log:22 - User can select High value from the dropdown field
+2022-12-20 11:54:11 INFO  Log:22 - Medium = Medium(Actual Matched with Expected
+2022-12-20 11:54:11 INFO  Log:22 - User can select Medium value from the dropdown field
+2022-12-20 11:54:11 INFO  Log:22 - Low = Low(Actual Matched with Expected
+2022-12-20 11:54:11 INFO  Log:22 - User can select Low value from the dropdown field
+2022-12-20 11:54:11 INFO  Log:22 - Please Select = Please Select(Actual Matched with Expected
+2022-12-20 11:54:11 INFO  Log:22 - User can select Please Select value from the dropdown field
+2022-12-20 11:54:11 INFO  Log:22 - Facility = Facility(Actual Matched with Expected
+2022-12-20 11:54:11 INFO  Log:22 - User can select Facility value from the dropdown field
+2022-12-20 11:54:12 INFO  Log:22 - North Bethesda Maryland = North Bethesda Maryland(Actual Matched with Expected
+2022-12-20 11:54:12 INFO  Log:22 - User can select North Bethesda Maryland value from the dropdown field
+2022-12-20 11:54:12 INFO  Log:22 - All checkboxes are displayed and checkable
+2022-12-20 11:54:12 INFO  Log:22 - values entered in /Person to Call
+2022-12-20 11:54:13 INFO  Log:22 - /Person to Call TextBox is present
+2022-12-20 11:54:13 INFO  Log:22 - /Person to Call TextBox is editable
+2022-12-20 11:54:13 INFO  Log:22 - values entered in /Test Subject
+2022-12-20 11:54:13 INFO  Log:22 - /Test Subject TextBox is present
+2022-12-20 11:54:13 INFO  Log:22 - /Test Subject TextBox is editable
+2022-12-20 11:54:14 INFO  Log:22 - values entered in /
+2022-12-20 11:54:14 INFO  Log:22 - / TextBox is present
+2022-12-20 11:54:14 INFO  Log:22 - / TextBox is disabled to type
+2022-12-20 11:54:14 INFO  Log:22 - 0 textarea is present
+2022-12-20 11:54:14 INFO  Log:22 - 0 Textarea's description verified
+2022-12-20 11:54:15 INFO  Log:22 - 1 textarea is present
+2022-12-20 11:54:15 INFO  Log:22 - 1 Textarea's description verified
+2022-12-20 11:54:15 INFO  Log:22 - 1 option is checked
+2022-12-20 11:54:15 INFO  Log:22 - 1 only option is checked
+2022-12-20 11:54:15 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 11:54:15 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 11:54:15 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 11:54:15 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 11:54:15 INFO  Log:22 - 2 option is checked
+2022-12-20 11:54:15 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 2 only option is checked
+2022-12-20 11:54:16 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 3 option is checked
+2022-12-20 11:54:16 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 3 only option is checked
+2022-12-20 11:54:16 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 4 option is checked
+2022-12-20 11:54:16 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 11:54:16 INFO  Log:22 - 4 only option is checked
+2022-12-20 11:54:16 INFO  Log:22 - 5 other option is unchecked
+2022-12-20 11:54:17 INFO  Log:22 - 5 option is checked
+2022-12-20 11:54:17 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 11:54:17 INFO  Log:22 - 2 other option is unchecked
+2022-12-20 11:54:17 INFO  Log:22 - 3 other option is unchecked
+2022-12-20 11:54:17 INFO  Log:22 - 4 other option is unchecked
+2022-12-20 11:54:17 INFO  Log:22 - 5 only option is checked
+2022-12-20 11:54:17 INFO  Log:15 - =====================================patientCase_TC3_8_9_toValidateFields_PatientCaseModel TEST END=========================================
+2022-12-20 11:54:17 INFO  Log:11 - =====================================patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel TEST START=========================================
+2022-12-20 11:54:17 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 11:54:17 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 11:54:17 INFO  Log:22 - All mandatory fields are filled
+2022-12-20 11:54:18 INFO  Log:22 - mandatory fields are verified
+2022-12-20 11:54:18 INFO  Log:15 - =====================================patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel TEST END=========================================
+2022-12-20 11:54:18 INFO  Log:11 - =====================================patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed TEST START=========================================
+2022-12-20 11:54:18 INFO  Log:22 - Validating Alert message once clicked on Save&Schedule button if patient is not selected
+2022-12-20 11:54:18 INFO  Log:22 - Alert Present(Please Select Patient)
+2022-12-20 11:54:18 INFO  Log:22 - Alert message validated once clicked on Save&Schedule button if patient is not selected
+2022-12-20 11:54:18 INFO  Log:22 - Validating Alert message once clicked on Save button if patient is not selected
+2022-12-20 11:54:18 INFO  Log:22 - Alert Present(Please Select Patient)
+2022-12-20 11:54:18 INFO  Log:22 - Alert message validated once clicked on Save button if patient is not selected
+2022-12-20 11:54:18 INFO  Log:15 - =====================================patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed TEST END=========================================
+2022-12-20 11:54:18 INFO  Log:11 - =====================================patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed TEST START=========================================
+2022-12-20 11:54:19 INFO  Log:22 - Select PatientModel/Popup appears
+2022-12-20 11:54:19 INFO  Log:22 - User clicked on Select Patient button
+2022-12-20 11:54:19 INFO  Log:22 - Patient Search Model displayed
+2022-12-20 11:54:19 INFO  Log:15 - =====================================patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed TEST END=========================================
+2022-12-20 11:54:19 INFO  Log:11 - =====================================patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed TEST START=========================================
+2022-12-20 11:54:19 INFO  Log:22 - Alert Present(Please select patient first)
+2022-12-20 11:54:19 INFO  Log:15 - =====================================patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed TEST END=========================================
+2022-12-20 11:54:19 INFO  Log:11 - =====================================patientCase_TC4_toValidateFields_SelectPatientModel TEST START=========================================
+2022-12-20 11:54:20 INFO  Log:22 - values entered in /Patient Name
+2022-12-20 11:54:20 INFO  Log:22 - /Patient Name TextBox is present
+2022-12-20 11:54:20 INFO  Log:22 - /Patient Name TextBox is editable
+2022-12-20 11:54:20 INFO  Log:22 - values entered in /786-868-0792
+2022-12-20 11:54:20 INFO  Log:22 - /786-868-0792 TextBox is present
+2022-12-20 11:54:20 INFO  Log:22 - /786-868-0792 TextBox is editable
+2022-12-20 11:54:20 INFO  Log:22 - values entered in /8680792
+2022-12-20 11:54:21 INFO  Log:22 - /8680792 TextBox is present
+2022-12-20 11:54:21 INFO  Log:22 - /8680792 TextBox is editable
+2022-12-20 11:54:21 INFO  Log:22 - values entered in /0792
+2022-12-20 11:54:21 INFO  Log:22 - /0792 TextBox is present
+2022-12-20 11:54:21 INFO  Log:22 - /0792 TextBox is editable
+2022-12-20 11:54:21 INFO  Log:22 - values entered in /01/01/1981
+2022-12-20 11:54:21 INFO  Log:22 - /01/01/1981 TextBox is present
+2022-12-20 11:54:21 INFO  Log:22 - /01/01/1981 TextBox is editable
+2022-12-20 11:54:22 INFO  Log:22 - 1 option is checked
+2022-12-20 11:54:22 INFO  Log:22 - 1 only option is checked
+2022-12-20 11:54:22 INFO  Log:22 - 0 other option is unchecked
+2022-12-20 11:54:22 INFO  Log:22 - 0 option is checked
+2022-12-20 11:54:22 INFO  Log:22 - 1 other option is unchecked
+2022-12-20 11:54:22 INFO  Log:22 - 0 only option is checked
+2022-12-20 11:54:22 INFO  Log:22 - Search/ Button is displayed
+2022-12-20 11:54:22 INFO  Log:22 - Search/ Button is enabled to click
+2022-12-20 11:54:22 INFO  Log:22 - Close/ Button is displayed
+2022-12-20 11:54:22 INFO  Log:22 - Close/ Button is enabled to click
+2022-12-20 11:54:22 INFO  Log:22 - Select/ Button is displayed
+2022-12-20 11:54:22 INFO  Log:22 - Select/ Button is enabled to click
+2022-12-20 11:54:22 INFO  Log:15 - =====================================patientCase_TC4_toValidateFields_SelectPatientModel TEST END=========================================
+2022-12-20 11:54:22 INFO  Log:11 - =====================================patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected TEST START=========================================
+2022-12-20 11:54:26 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:27 INFO  Log:22 - Select PatientModel/Popup appears
+2022-12-20 11:54:28 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:28 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 11:54:28 INFO  Log:22 - Patient Selected, Search Result Appeared and Patient selected succesfully
+2022-12-20 11:54:28 INFO  Log:15 - =====================================patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected TEST END=========================================
+2022-12-20 11:54:28 INFO  Log:11 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST START=========================================
+2022-12-20 11:54:30 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:30 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 11:54:30 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 11:54:30 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 11:54:30 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 11:54:30 INFO  Log:22 - Typing 2022/12/20 11:54:30 currentDateTime into the Subject textBox
+2022-12-20 11:54:31 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 11:54:33 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:33 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 11:54:33 INFO  Log:22 - Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen
+2022-12-20 11:54:33 INFO  Log:22 - Save&Schedule button is clicked
+2022-12-20 11:54:36 INFO  Log:22 - Button TodaySchedule displayed on SchedularAppointmentPage
+2022-12-20 11:54:36 INFO  Log:22 - User is going to be redirected to Expected URL of ShedulerAppointment
+2022-12-20 11:54:36 INFO  Log:22 - User is redirected
+2022-12-20 11:54:39 INFO  Log:22 - There is a paging in Patient Case List
+2022-12-20 11:54:39 INFO  Log:22 - Got to the last page of Patient Case List
+2022-12-20 11:54:40 INFO  Log:22 - Going to click on last result edit button of the last page
+2022-12-20 11:54:40 INFO  Log:22 - clicked on last result edit button
+2022-12-20 11:54:40 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:40 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 11:54:30 with CurrentDateTime-2022/12/20 11:54:30
+2022-12-20 11:54:40 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the Schedular screen
+2022-12-20 11:54:40 INFO  Log:15 - =====================================patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed TEST END=========================================
+2022-12-20 11:54:40 INFO  Log:11 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST START=========================================
+2022-12-20 11:54:42 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:42 INFO  Log:22 - Selecting last value of the Source Dropdown
+2022-12-20 11:54:42 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 11:54:42 INFO  Log:22 - Selecting last value of the Provider Dropdown
+2022-12-20 11:54:42 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 11:54:42 INFO  Log:22 - Typing 2022/12/20 11:54:42 currentDateTime into the Subject textBox
+2022-12-20 11:54:43 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-20 11:54:45 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:45 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 11:54:45 INFO  Log:22 - Clicking Save button to add the automated test case that will close this patient case model
+2022-12-20 11:54:45 INFO  Log:22 - Save button is clicked
+2022-12-20 11:54:48 INFO  Log:22 - There is a paging in Patient Case List
+2022-12-20 11:54:48 INFO  Log:22 - Got to the last page of Patient Case List
+2022-12-20 11:54:49 INFO  Log:22 - Going to click on last result edit button of the last page
+2022-12-20 11:54:49 INFO  Log:22 - clicked on last result edit button
+2022-12-20 11:54:49 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 11:54:49 INFO  Log:22 - Comparing Actual DateTime-2022/12/20 11:54:42 with CurrentDateTime-2022/12/20 11:54:42
+2022-12-20 11:54:49 INFO  Log:22 - Patient case is saved successfully
+2022-12-20 11:54:49 INFO  Log:22 - Patient Case Edited successfully
+2022-12-20 11:54:49 INFO  Log:15 - =====================================patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST END=========================================
+2022-12-20 13:00:48 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 13:00:51 INFO  Log:22 - User is logged in successfully
+2022-12-20 13:00:57 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 13:00:57 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 13:00:57 INFO  Log:22 - User is on Patient List Page
+2022-12-20 13:00:57 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 13:00:59 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 13:00:59 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 13:00:59 INFO  Log:22 - User landed on Patient case page
+2022-12-20 13:00:59 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 13:00:59 INFO  Log:11 - =====================================patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstAssignedBucket TEST START=========================================
+2022-12-20 13:05:54 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 13:05:56 INFO  Log:22 - User is logged in successfully
+2022-12-20 13:06:02 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 13:06:02 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 13:06:02 INFO  Log:22 - User is on Patient List Page
+2022-12-20 13:06:03 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 13:06:04 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 13:06:04 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 13:06:04 INFO  Log:22 - User landed on Patient case page
+2022-12-20 13:06:04 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 13:06:04 INFO  Log:11 - =====================================patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstAssignedBucket TEST START=========================================
+2022-12-20 13:06:07 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 13:06:07 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 13:06:07 INFO  Log:22 - All mandatory fields are filled
+2022-12-20 13:06:07 INFO  Log:22 - mandatory fields are verified
+2022-12-20 13:06:10 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 13:06:10 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 13:11:39 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-20 13:11:42 INFO  Log:22 - User is logged in successfully
+2022-12-20 13:11:48 INFO  Log:22 - Patient Widget is clicked
+2022-12-20 13:11:48 INFO  Log:22 - Verifying if user explored to the Patient List Page
+2022-12-20 13:11:48 INFO  Log:22 - User is on Patient List Page
+2022-12-20 13:11:48 INFO  Log:22 - Patients Menu is clicked
+2022-12-20 13:11:50 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-20 13:11:50 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-20 13:11:50 INFO  Log:22 - User landed on Patient case page
+2022-12-20 13:11:50 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-20 13:11:50 INFO  Log:11 - =====================================patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstAssignedBucket TEST START=========================================
+2022-12-20 13:11:52 INFO  Log:22 -                                         Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                    /10: One of values from the dropdown field is selected
+2022-12-20 13:11:52 INFO  Log:22 -                                         Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                    /1: One of values from the dropdown field is selected
+2022-12-20 13:11:53 INFO  Log:22 - All mandatory fields are filled
+2022-12-20 13:11:53 INFO  Log:22 - mandatory fields are verified
+2022-12-20 13:11:58 INFO  Log:22 - Add Patient CaseModel/Popup appears
+2022-12-20 13:11:58 INFO  Log:22 - Required patient is selected sucessfully
+2022-12-20 13:11:59 INFO  Log:15 - =====================================patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider TEST END=========================================

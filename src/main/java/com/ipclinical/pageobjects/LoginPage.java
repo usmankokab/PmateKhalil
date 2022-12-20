@@ -44,7 +44,7 @@ public class LoginPage extends BaseClass {
 	
 	Action action = new Action();
 	
-	public DashboardPage login(String uname, String pwd, String code, DashboardPage dashboardPage) {
+	public DashboardPage login(String uname, String pwd, String code) {
 		
 		action.type(txtUserName, uname);
 		action.type(txtPassword, pwd);
@@ -56,8 +56,8 @@ public class LoginPage extends BaseClass {
 		action.selectByIndex(drpLocation, 1);
 		action.click(getDriver(), btnProceedNow);
 		
-		dashboardPage = new DashboardPage();
-		return dashboardPage;
+		return new DashboardPage();
+		
 	}
 	
 	
