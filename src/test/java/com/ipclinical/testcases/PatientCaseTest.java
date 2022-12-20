@@ -497,10 +497,10 @@ public class PatientCaseTest extends BaseClass{
 	}
 
 
-	
-	
+
 	@Test(priority = 9, enabled=false)
-	public void patientCase_TC7_10_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
+	public void patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
+
 	{
 		
 		Log.startTestCase("patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase");
