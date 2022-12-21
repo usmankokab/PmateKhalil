@@ -1115,17 +1115,17 @@ public class Action extends BaseClass implements ActionInterface {
 			}
 		}
 
-		public boolean waitForModelDisplayed(WebElement element, WebElement waitElement, WebElement verifyElement) {
+		public boolean waitForModelDisplayed(WebElement waitElement, WebElement verifyElement) {
 			waitPreloader();
 			explicitWait(getDriver(), waitElement, 50);
 			if(isDisplayed(getDriver(), verifyElement)) 
 		    {
-		    	Log.info(element.getText()+ "Model/Popup appears");
+		    	Log.info(waitElement.getText()+ "Model/Popup appears");
 		    	Assert.assertTrue(true);
 		    	return true;
 		    }else
 		    {
-		    	Log.error(element.getText()+ "Model does not appear");
+		    	Log.error(waitElement.getText()+ "Model does not appear");
 		    	return false;
 		    }
 		}

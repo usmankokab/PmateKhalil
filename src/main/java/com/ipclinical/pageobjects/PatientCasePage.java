@@ -7,6 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -164,6 +165,12 @@ public class PatientCasePage extends BaseClass{
 	@FindBy(id="assignTo")
 	public WebElement txtAssignTo;
 	
+	@FindBy(xpath="//a[text() = 'Ali,Saim (ClinicalStaff)']")
+	public WebElement AssigneeElementaliSaim;
+	
+	
+	
+	
 	
 	
 	
@@ -191,20 +198,20 @@ public class PatientCasePage extends BaseClass{
 	Action action = new Action();
 	
 	
-	public boolean openPatientCaseModel_btnAddPatientCase()
+	public boolean openPatientCaseModel()
 	{
 		
 		action.click(getDriver(), btnAddPatientCase);
-		action.waitForModelDisplayed(btnAddPatientCase, PatientCaseModel, chkOutBoundOnly);
+		action.waitForModelDisplayed(PatientCaseModel, chkOutBoundOnly);
 		return true;
 	}
 
 	
-	public boolean openPatientSearchModel_btnSelectPatient()
+	public boolean openPatientSearchModel()
 	{
-		
+		action.click(getDriver(), btnAddPatientCase);
 		action.click(getDriver(), btnSelectPatient);
-		action.waitForModelDisplayed(btnSelectPatient, modelPatientSearch, btnSearchPatientModel);
+		action.waitForModelDisplayed(modelPatientSearch, btnSearchPatientModel);
 		return true;
 	}
 	
@@ -215,7 +222,7 @@ public class PatientCasePage extends BaseClass{
 		action.click(getDriver(), btnSearchPatientModel);
 		action.click(getDriver(), resultSearchPatient);
 		action.click(getDriver(), btnSelectPatientModel);
-		action.waitForModelDisplayed(btnAddPatientCase, PatientCaseModel, chkOutBoundOnly);
+		action.waitForModelDisplayed(PatientCaseModel, chkOutBoundOnly);
 		
 		if(action.isDisplayed(getDriver(), selectedPatientShowed)) {
 			
@@ -252,5 +259,46 @@ public class PatientCasePage extends BaseClass{
 		
 		
 	}
+	
+	public void assignPatientCase(String assignee, WebElement assigneeElement) {
+		
+		action.click(getDriver(), radioButtons.get(3));
+		action.type(txtAssignTo, "saim");
+		action.explicitWait(getDriver(), AssigneeElementaliSaim, 10);
+		
+		//action.click(getDriver(), page.aliSaim);
+		txtAssignTo.sendKeys(Keys.DOWN);
+		txtAssignTo.sendKeys(Keys.ENTER);
+		action.click(getDriver(), btnSave);
+
+	}
+	
+	
+	public void clickOnLastResultOfPtCaseList() {
+		
+		//power of isDisplayed from our action class
+		//if paging happens
+		if(action.isDisplayed(getDriver(), btnLastPage)){ 
+			Log.info("There is a paging in Patient Case List");
+			btnLastPage.click();
+			Log.info("Got to the last page of Patient Case List");
+			action.waitPreloader();
+			Log.info("Going to click on last result edit button of the last page");
+			action.JSClick(getDriver(), lastPatientCaseInList);
+			Log.info("clicked on last result edit button");
+		//if paging does not happens
+		}else {
+			
+			//Click edit button of last result of the first page
+			//Never use direct IsDisplayed, can give NoSuchElementException and stop the test case
+			Log.info("Going to click on last result edit button");
+			action.JSClick(getDriver(), lastPatientCaseInList);
+			Log.info("clicked on last result edit button");
+			
+		}
+
+	}
+	
+	
 	
 }

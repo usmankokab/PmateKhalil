@@ -2,32 +2,32 @@
 <testng-results ignored="11" total="13" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-20T13:11:29 EST" name="Default suite" finished-at="2022-12-20T13:11:59 EST" duration-ms="29484">
+  <suite started-at="2022-12-21T13:05:22 EST" name="Default suite" finished-at="2022-12-21T13:05:45 EST" duration-ms="23700">
     <groups>
     </groups>
-    <test started-at="2022-12-20T13:11:29 EST" name="Default test" finished-at="2022-12-20T13:11:59 EST" duration-ms="29484">
+    <test started-at="2022-12-21T13:05:22 EST" name="Default test" finished-at="2022-12-21T13:05:45 EST" duration-ms="23700">
       <class name="com.ipclinical.testcases.PatientCaseTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-20T13:11:29 EST" name="loadConfig" finished-at="2022-12-20T13:11:29 EST" duration-ms="331" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-21T13:05:21 EST" name="loadConfig" finished-at="2022-12-21T13:05:22 EST" duration-ms="398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-20T13:11:29 EST" name="setup" finished-at="2022-12-20T13:11:39 EST" duration-ms="9794" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-21T13:05:22 EST" name="setup" finished-at="2022-12-21T13:05:30 EST" duration-ms="8738" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="patientCase_TC1_toNavigatePatientCase()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-20T13:11:39 EST" name="patientCase_TC1_toNavigatePatientCase" finished-at="2022-12-20T13:11:50 EST" duration-ms="11216" status="PASS">
+        <test-method signature="patientCase_TC1_toNavigatePatientCase()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-21T13:05:30 EST" name="patientCase_TC1_toNavigatePatientCase" finished-at="2022-12-21T13:05:41 EST" duration-ms="10370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientCase_TC1_toNavigatePatientCase -->
-        <test-method signature="patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider()[pri:10, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-20T13:11:50 EST" name="patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider" finished-at="2022-12-20T13:11:59 EST" duration-ms="8423" status="PASS">
+        <test-method signature="patientCase_TC1a_toValidateFields_page()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-21T13:05:41 EST" name="patientCase_TC1a_toValidateFields_page" finished-at="2022-12-21T13:05:45 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC1_toNavigatePatientCase" duration-ms="4534" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-20T13:11:59 EST" name="tearDown" finished-at="2022-12-20T13:11:59 EST" duration-ms="1" status="PASS">
+        </test-method> <!-- patientCase_TC1a_toValidateFields_page -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-21T13:05:45 EST" name="tearDown" finished-at="2022-12-21T13:05:45 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-20T13:11:59 EST" name="afterSuite" finished-at="2022-12-20T13:11:59 EST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@5223e5ee]" started-at="2022-12-21T13:05:45 EST" name="afterSuite" finished-at="2022-12-21T13:05:45 EST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->

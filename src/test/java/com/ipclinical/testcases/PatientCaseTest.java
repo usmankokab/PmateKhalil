@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -18,6 +19,7 @@ import org.testng.asserts.SoftAssert;
 
 import com.ipclinical.actiondriver.Action;
 import com.ipclinical.base.BaseClass;
+import com.ipclinical.pageobjects.ClinicalInboxPage;
 import com.ipclinical.pageobjects.DashboardPage;
 import com.ipclinical.pageobjects.LoginPage;
 import com.ipclinical.pageobjects.PatientCasePage;
@@ -141,23 +143,34 @@ public class PatientCaseTest extends BaseClass{
 	}
 
 	
-	@Test(priority = 2, enabled=false)
+	@Test(priority = 2, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed()
 	{
 		Log.startTestCase("patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed");
 		//page = new PatientCasePage();
+		
+		getDriver().navigate().refresh();
+		action.waitPreloader();
+		page.openPatientCaseModel();
+		action.waitPreloader();
+
 		action.click(getDriver(), page.btnAddPatientCase);
-		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
 	    Log.endTestCase("patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed");
 
 	}
 	
 	
-	@Test(priority = 3, enabled=false)
+	@Test(priority = 3, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC3_8_9_toValidateFields_PatientCaseModel()
 	{
 		Log.startTestCase("patientCase_TC3_8_9_toValidateFields_PatientCaseModel");
 		//page = new PatientCasePage();
+		
+		getDriver().navigate().refresh();
+		action.waitPreloader();
+		page.openPatientCaseModel();
+		action.waitPreloader();
 		
 		//Validating buttons
 		action.validateButton(page.btnClose);
@@ -210,11 +223,16 @@ public class PatientCaseTest extends BaseClass{
 	    
 	}
 	
-	@Test (priority = 4, enabled=false)
+	@Test (priority = 4, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel()
 	{
 		Log.startTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
 		//page = new PatientCasePage();
+		
+		getDriver().navigate().refresh();
+		action.waitPreloader();
+		page.openPatientCaseModel();
+		action.waitPreloader();
 		
 		//Filling all all mandatory fields
 		page.fillMandatoryFields("Subject");
@@ -223,12 +241,19 @@ public class PatientCaseTest extends BaseClass{
 		
 	}
 	
-	@Test(priority = 4, enabled=false, dependsOnMethods = { "patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel" })
+	@Test(priority = 4, enabled=false, dependsOnMethods = { "patientCase_TC1_toNavigatePatientCase" })
 	public void patientCase_TC5_clickBtnSaveSchudular_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed() throws InterruptedException
 	{
 		
 		Log.startTestCase("patientCase_TC5_clickBtnSaveSchudular_withoutPatienSelecting_AlertShouldBeDisplayed");
 		//page = new page();
+		
+		getDriver().navigate().refresh();
+		action.waitPreloader();
+		page.openPatientCaseModel();
+		action.waitPreloader();
+		
+		page.fillMandatoryFields("Subject");
 		
 		Log.info("Validating Alert message once clicked on Save&Schedule button if patient is not selected");
 		action.click(getDriver(), page.btnSave$Schedule);
@@ -266,14 +291,19 @@ public class PatientCaseTest extends BaseClass{
 	}
 
 	
-	@Test(priority = 5, enabled=false)
+	@Test(priority = 5, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed()
 	{
 		
 		Log.startTestCase("patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed");
 		//page = new PatientCasePage();
+		getDriver().navigate().refresh();
+		action.waitPreloader();
 		
-		if(page.openPatientSearchModel_btnSelectPatient()) {
+		page.openPatientCaseModel();
+		action.waitPreloader();
+		
+		if(page.openPatientSearchModel()) {
 			Assert.assertTrue(true);
 			Log.info("User clicked on Select Patient button");
 			Log.info("Patient Search Model displayed");
@@ -287,12 +317,20 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test(priority = 5, enabled=false, dependsOnMethods = { "patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed" })
-	public void patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed() throws InterruptedException
+	@Test(priority = 5, enabled=false, dependsOnMethods = { "patientCase_TC1_toNavigatePatientCase" })
+	public void patientCase_TC4b_clickBtnSave_withoutPatienSelecting_AlertShouldBeDisplayed() throws InterruptedException
 	{
 		
 		Log.startTestCase("patientCase_TC4b_clickBtnSelect_withoutPatienSelecting_AlertShouldBeDisplayed");
 		//page = new PatientCasePage();
+		
+		getDriver().navigate().refresh();
+		action.waitPreloader();
+		action.click(getDriver(), page.btnAddPatientCase);
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		
+		action.click(getDriver(), page.btnSelectPatient);
+		action.waitForModelDisplayed(page.modelPatientSearch, page.txtPatientName);
 		
 		action.click(getDriver(), page.btnSelectPatientModel);
 		if(action.isAlertPresent(getDriver())) {
@@ -314,13 +352,19 @@ public class PatientCaseTest extends BaseClass{
 
 
 	
-	@Test(priority = 6, enabled=false)
+	@Test(priority = 6, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC4a_toValidateFields_SelectPatientModel() 
 	{
 		Log.startTestCase("patientCase_TC4_toValidateFields_SelectPatientModel");
 		//page = new PatientCasePage();	
 		
+		getDriver().navigate().refresh();
+		action.waitPreloader();
+		action.click(getDriver(), page.btnAddPatientCase);
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		
 		//Validating textboxes of Select Patient Model
+		action.click(getDriver(), page.btnSelectPatient);
 		action.validateTextBox(page.txtPatientPortalName, "Patient Name");
 		action.validateTextBox(page.txtPatientPortalPhoneNumber, "786-868-0792");
 		action.validateTextBox(page.txtPatientPortalSSN, "8680792");
@@ -339,7 +383,7 @@ public class PatientCaseTest extends BaseClass{
 		
 	}
 	
-	@Test(priority = 7, enabled=false)
+	@Test(priority = 7, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected()
 	{
 		
@@ -351,8 +395,8 @@ public class PatientCaseTest extends BaseClass{
 		action.waitPreloader();
 		action.pageLoadTimeOut(getDriver(), 50);
 		
-		page.openPatientCaseModel_btnAddPatientCase();
-		page.openPatientSearchModel_btnSelectPatient();
+		page.openPatientCaseModel();
+		page.openPatientSearchModel();
 		page.searchAndSelectPatient("5");
 		
 		Log.info("Patient Selected, Search Result Appeared and Patient selected succesfully");
@@ -362,7 +406,7 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test(priority = 8, enabled=false)
+	@Test(priority = 8, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed() throws Throwable
 	{
 		
@@ -373,20 +417,15 @@ public class PatientCaseTest extends BaseClass{
 		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
 		action.pageLoadTimeOut(getDriver(), 50);
 		action.JSClick(getDriver(), page.btnAddPatientCase);
-		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
 		
-		Log.info("Selecting last value of the Source Dropdown");
-		action.selectDropdown(page.dropdownSource);
-		
-		Log.info("Selecting last value of the Provider Dropdown");
-		action.selectDropdown(page.dropdownProvider);
-		
+		//Filling mandatory fields 
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 		LocalDateTime now = LocalDateTime.now();  
 		String currentDateTime = dtf.format(now);
 		
-		Log.info("Typing " +currentDateTime+ " currentDateTime into the Subject textBox");
-		action.type(page.txtSubject, currentDateTime);
+		page.fillMandatoryFields(currentDateTime);
+		
 		
 		Log.info("Typing text into the Description TextArea");
 		action.type(page.textAreas.get(0), "This is an automated test case saving after clicking the Save&Schedule button");
@@ -427,29 +466,12 @@ public class PatientCaseTest extends BaseClass{
 		action.click(getDriver(), page.chkboxesProviders.get(0));
 		action.click(getDriver(), page.btnSearch);
 		action.waitPreloader();
-		//if paging happens
-		//power of isDisplayed from our action class
-		//if paging happens
-		if(action.isDisplayed(getDriver(), page.btnLastPage)){ 
-			Log.info("There is a paging in Patient Case List");
-			page.btnLastPage.click();
-			Log.info("Got to the last page of Patient Case List");
-			action.waitPreloader();
-			Log.info("Going to click on last result edit button of the last page");
-			action.JSClick(getDriver(), page.lastPatientCaseInList);
-			Log.info("clicked on last result edit button");
-		//if paging does not happens
-		}else {
-			
-			//Click edit button of last result of the first page
-			//Never use direct IsDisplayed, can give NoSuchElementException and stop the test case
-			Log.info("Going to click on last result edit button");
-			action.JSClick(getDriver(), page.lastPatientCaseInList);
-			Log.info("clicked on last result edit button");
-			
-		}
 		
-		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
+		//clicking on last result of the patient case list
+		page.clickOnLastResultOfPtCaseList();
+
+		
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
 		String actualDateTime = page.txtSubject.getAttribute("value");
 		Log.info("Comparing Actual DateTime-" +actualDateTime+ " with CurrentDateTime-" +currentDateTime);
 		
@@ -467,7 +489,7 @@ public class PatientCaseTest extends BaseClass{
 
 
 
-	@Test(priority = 9, enabled=false)
+	@Test(priority = 9, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC7_TC10_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
 
 	{
@@ -478,23 +500,15 @@ public class PatientCaseTest extends BaseClass{
 		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
 		action.pageLoadTimeOut(getDriver(), 50);
 		action.JSClick(getDriver(), page.btnAddPatientCase);
-		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
 		
-		Log.info("Selecting last value of the Source Dropdown");
-		action.selectDropdown(page.dropdownSource);
-		
-		Log.info("Selecting last value of the Provider Dropdown");
-		action.selectDropdown(page.dropdownProvider);
-		
+		//Filling mandatory fields 
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 		LocalDateTime now = LocalDateTime.now();  
 		String currentDateTime = dtf.format(now);
 		
-		Log.info("Typing " +currentDateTime+ " currentDateTime into the Subject textBox");
-		action.type(page.txtSubject, currentDateTime);
-		
-		Log.info("Typing text into the Description TextArea");
-		action.type(page.textAreas.get(0), "This is an automated test case saving after clicking the Save button");
+		page.fillMandatoryFields(currentDateTime);
+				
 		
 		//Selecting the patient
 		action.JSClick(getDriver(), page.btnSelectPatient);
@@ -506,38 +520,21 @@ public class PatientCaseTest extends BaseClass{
 		action.waitPreloader();
 		
 		//exploring to the patient case page again
-		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
+		//getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
 		
 		//To verify all added cases of relevant patients are shown
 		//to verify user can edit the patient case
 		//To verify whether or not patient case is saved
-		action.waitPreloader();
+		//action.waitPreloader();
+		
 		action.click(getDriver(), page.chkboxesProviders.get(0));
 		action.click(getDriver(), page.btnSearch);
 		action.waitPreloader();
-		//if paging happens
-		//power of isDisplayed from our action class
-		//if paging happens
-		if(action.isDisplayed(getDriver(), page.btnLastPage)){ 
-			Log.info("There is a paging in Patient Case List");
-			page.btnLastPage.click();
-			Log.info("Got to the last page of Patient Case List");
-			action.waitPreloader();
-			Log.info("Going to click on last result edit button of the last page");
-			action.JSClick(getDriver(), page.lastPatientCaseInList);
-			Log.info("clicked on last result edit button");
-		//if paging does not happens
-		}else {
-			
-			//Click edit button of last result of the first page
-			//Never use direct IsDisplayed, can give NoSuchElementException and stop the test case
-			Log.info("Going to click on last result edit button");
-			action.JSClick(getDriver(), page.lastPatientCaseInList);
-			Log.info("clicked on last result edit button");
-			
-		}
 		
-		action.waitForModelDisplayed(page.btnAddPatientCase, page.PatientCaseModel, page.chkOutBoundOnly);
+		//clicking on last result of the patient case list
+		page.clickOnLastResultOfPtCaseList();
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		
 		String actualDateTime = page.txtSubject.getAttribute("value");
 		Log.info("Comparing Actual DateTime-" +actualDateTime+ " with CurrentDateTime-" +currentDateTime);
 		
@@ -558,7 +555,7 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test (priority = 10, enabled=true)
+	@Test (priority = 10, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider() {
 	
 		Log.startTestCase("patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstAssignedBucket");
@@ -569,7 +566,7 @@ public class PatientCaseTest extends BaseClass{
 		action.click(getDriver(), page.btnAddPatientCase);
 		action.waitPreloader();
 		
-		//filing mandatory fields
+		//filling mandatory fields
 		String currentTime = action.getCurrentTime();
 		page.fillMandatoryFields(currentTime);
 		action.selectBySendkeys("Refund", page.dropdownType);
@@ -578,10 +575,25 @@ public class PatientCaseTest extends BaseClass{
 		page.btnSelectPatient.click();
 		page.searchAndSelectPatient("5");
 		
-		elements = page.radioButtons;
-		action.click(getDriver(), page.radioButtons.get(3));
-		action.type(page.txtAssignTo, "saim");
-		//page.txtAssignTo.sendKeys(Keys.DOWN, Keys.ENTER);
+		//Assigning the patient case
+		page.assignPatientCase("saim", page.AssigneeElementaliSaim);
+		
+		
+		getDriver().navigate().to("https://staging.pemr.com/ClinicalInbox.aspx");
+		action.waitPreloader();
+		
+		ClinicalInboxPage clinicalInboxPage = new ClinicalInboxPage();
+		action.explicitWait(getDriver(), clinicalInboxPage.refundAgainstSaim, 50);
+		action.click(getDriver(), clinicalInboxPage.refundAgainstSaim);
+		
+		action.fluentWait(getDriver(), clinicalInboxPage.refundHeading, 50);
+		action.click(getDriver(), getDriver().findElement(By.linkText(currentTime)));
+		
+		//Verifying added and assigned Patient Case in Clinical Inbox
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		String subjectText = page.txtSubject.getAttribute("value");
+		Assert.assertEquals(currentTime, subjectText);
+		Log.info("Patient case is saved successfully and shown in the Clinical Inbox under Patient Refund against the assigned bucket");
 		
 		
 		Log.endTestCase("patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider");

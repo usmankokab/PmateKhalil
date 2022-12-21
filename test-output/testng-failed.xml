@@ -6,9 +6,10 @@
       <class name="com.ipclinical.testcases.PatientCaseTest">
         <methods>
           <include name="afterSuite"/>
+          <include name="patientCase_TC5_clickBtnSaveSchudular_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed"/>
           <include name="tearDown"/>
-          <include name="patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider"/>
           <include name="loadConfig"/>
+          <include name="patientCase_TC1_toNavigatePatientCase"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.ipclinical.testcases.PatientCaseTest -->
