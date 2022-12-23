@@ -32,7 +32,8 @@ public class PatientCaseTest extends BaseClass{
 	PatientListPage patientListPage;
 	LoginPage loginPage;
 	
-	PatientCasePage page; 
+	PatientCasePage page;
+	
 	
 	WebElement element;
 	List<WebElement> elements;
@@ -44,6 +45,7 @@ public class PatientCaseTest extends BaseClass{
 	//@Parameters("browser")
 	@BeforeClass
 	public void setup() {
+		
 		launchApp(prop.getProperty("browser")); 
 		//Verifying user is logged in
 				
@@ -68,7 +70,7 @@ public class PatientCaseTest extends BaseClass{
 		action.pageLoadTimeOut(getDriver(), 50);
 		
 		String actualURL = patientListPage.getCurrURL();
-		String expectedURL = "https://staging.pemr.com/Patient/PatientList.aspx";
+		String expectedURL = prop.getProperty("url")+ "Patient/PatientList.aspx";
 		Log.info("Verifying if user explored to the Patient List Page");
 	    Assert.assertEquals(actualURL, expectedURL);
 	    Log.info("User is on Patient List Page");
@@ -83,7 +85,7 @@ public class PatientCaseTest extends BaseClass{
 	    //User should land on Patient case page
 	    //page = new page();
 	    actualURL = action.getCurrURL();
-	    expectedURL = "https://staging.pemr.com/Patient/Patientcase.aspx";
+	    expectedURL = prop.getProperty("url") +"Patient/Patientcase.aspx";
 		Log.info("Verifying if user explored to the Patient Case Page");
 	    Assert.assertEquals(actualURL, expectedURL);
 	    Log.info("User landed on Patient case page");
@@ -113,8 +115,8 @@ public class PatientCaseTest extends BaseClass{
 	    action.validateCheckboxes(page.chkboxesProviders);
 
 	    //Validating Status dropdown and its option values
-	    String[] expected = {"Please Select","Open","Close"};	
-	    action.validateDropdown(expected, page.ddStatus);
+	    //String[] expected = {"Please Select","Open","Close"};	
+	    action.validateDropdown(page.ddStatus);
 	    Log.info("Expected values matched with Actual values, and user can select any value");
 	    
 	    
@@ -179,20 +181,20 @@ public class PatientCaseTest extends BaseClass{
 		action.validateButtonDisabled(page.btnSave$Schedule);
 		
 		//Validating dropdowns and their values
-		String[] expected = {"Please Select","Patient","Parent/Care Giver", "Spouse/Partner", "Pharmacy", "Lab", "PcP", "Specialist", "Clinical Staff", "Hospital", "Other"};	
-		action.validateDropdown(expected, page.dropdownSource);
+		//String[] expected = {"Please Select","Patient","Parent/Care Giver", "Spouse/Partner", "Pharmacy", "Lab", "PcP", "Specialist", "Clinical Staff", "Hospital", "Other"};	
+		action.validateDropdown(page.dropdownSource);
 	    
-	    String[] expected1 = {"Please Select","Administrative","Clinical Question", "Medical Record- Electronic", "Medical Record - Paper", "Medication", "Referral", "Refill", "Patient No Show", "Lab", "Imaging", "Procedure", "DME", "Refund", "Other"};	
-	    action.validateDropdown(expected1, page.dropdownType);
+	    //String[] expected1 = {"Please Select","Administrative","Clinical Question", "Medical Record- Electronic", "Medical Record - Paper", "Medication", "Referral", "Refill", "Patient No Show", "Lab", "Imaging", "Procedure", "DME", "Refund", "Other"};	
+	    action.validateDropdown(page.dropdownType);
 
-	    String[] expected2 = {"Please Select", "Ahmar, Wasim","Rosselot, Eric", "TEHRANI, ALI REZAZADEH"};	
-	    action.validateDropdown(expected2, page.dropdownProvider);
+	    //String[] expected2 = {"Please Select", "Ahmar, Wasim","Rosselot, Eric", "TEHRANI, ALI REZAZADEH"};	
+	    action.validateDropdown(page.dropdownProvider);
 		
-	    String[] expected3 = {"Please Select","High","Medium", "Low"};	
-	    action.validateDropdown(expected3, page.ddPriority);
+	    //String[] expected3 = {"Please Select","High","Medium", "Low"};	
+	    action.validateDropdown(page.ddPriority);
 	    
-	    String[] expected4 = {"Please Select","Facility","North Bethesda Maryland"};	
-	    action.validateDropdown(expected4, page.dropdownLocation);
+	    //String[] expected4 = {"Please Select","Facility","North Bethesda Maryland"};	
+	    action.validateDropdown(page.dropdownLocation);
 		
 	    
 	    //Validating checkboxes
@@ -366,7 +368,7 @@ public class PatientCaseTest extends BaseClass{
 		//Validating textboxes of Select Patient Model
 		action.click(getDriver(), page.btnSelectPatient);
 		action.validateTextBox(page.txtPatientPortalName, "Patient Name");
-		action.validateTextBox(page.txtPatientPortalPhoneNumber, "786-868-0792");
+		action.validateTextBox(page.txtPatientPortalPhoneNumber, "(786) 868-0792");
 		action.validateTextBox(page.txtPatientPortalSSN, "8680792");
 		action.validateTextBox(page.txtPatientPortalEMRNo, "0792");
 		action.validateTextBox(page.txtPatientPortalDOB, "01/01/1981"); //Verifying data types of each fields still pending
@@ -388,7 +390,7 @@ public class PatientCaseTest extends BaseClass{
 	{
 		
 		Log.startTestCase("patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected");
-		page = new PatientCasePage();
+		//page = new PatientCasePage();
 		
 		//clear all fields
 		getDriver().navigate().refresh();
@@ -397,7 +399,8 @@ public class PatientCaseTest extends BaseClass{
 		
 		page.openPatientCaseModel();
 		page.openPatientSearchModel();
-		page.searchAndSelectPatient("5");
+		page.searchAndSelectPatient(prop.getProperty("MRN"));
+		action.waitPreloader();
 		
 		Log.info("Patient Selected, Search Result Appeared and Patient selected succesfully");
 		
@@ -414,7 +417,7 @@ public class PatientCaseTest extends BaseClass{
 		//page = new PatientCasePage();
 		
 		//ReOpening the Patient Case Page and exploring to the patient case model
-		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
+		getDriver().navigate().to(prop.getProperty("url") +"Patient/Patientcase.aspx");
 		action.pageLoadTimeOut(getDriver(), 50);
 		action.JSClick(getDriver(), page.btnAddPatientCase);
 		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
@@ -432,7 +435,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		//Selecting the patient
 		action.JSClick(getDriver(), page.btnSelectPatient);
-		page.searchAndSelectPatient("5");
+		page.searchAndSelectPatient((prop.getProperty("MRN")));
 		
 		Log.info("Going to click Save&Schedule button to add the automated test case and navigate to the appointment screen");
 		action.click(getDriver(), page.btnSave$Schedule);
@@ -446,7 +449,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		//Verification of redirection
 		String currentURL = action.getCurrURL();
-		if(currentURL.contains("https://staging.pemr.com/Scheduler/SchedulerAppointment.aspx")) {
+		if(currentURL.contains(prop.getProperty("url")+ "Scheduler/SchedulerAppointment.aspx")) {
 			Log.info("User is going to be redirected to Expected URL of ShedulerAppointment");
 			Assert.assertTrue(true);
 			Log.info("User is redirected");
@@ -460,7 +463,7 @@ public class PatientCaseTest extends BaseClass{
 		//to verify user can be able to click on edit of a specific patient case
 		//To verify whether or not patient case is saved once clicked on Save and Schedule
 		action.implicitWait(getDriver(), 20);		
-		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
+		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
 		
 		action.waitPreloader();
 		action.click(getDriver(), page.chkboxesProviders.get(0));
@@ -497,7 +500,7 @@ public class PatientCaseTest extends BaseClass{
 		Log.startTestCase("patientCase_TC7_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase");
 		//page = new PatientCasePage();
 		
-		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
+		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
 		action.pageLoadTimeOut(getDriver(), 50);
 		action.JSClick(getDriver(), page.btnAddPatientCase);
 		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
@@ -512,7 +515,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		//Selecting the patient
 		action.JSClick(getDriver(), page.btnSelectPatient);
-		page.searchAndSelectPatient("5");
+		page.searchAndSelectPatient((prop.getProperty("MRN")));
 			
 		Log.info("Clicking Save button to add the automated test case that will close this patient case model");
 		action.click(getDriver(), page.btnSave);
@@ -561,7 +564,7 @@ public class PatientCaseTest extends BaseClass{
 		Log.startTestCase("patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstAssignedBucket");
 		
 		//Navigate to patient case
-		getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
+		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
 		action.waitPreloader();
 		action.click(getDriver(), page.btnAddPatientCase);
 		action.waitPreloader();
@@ -573,13 +576,13 @@ public class PatientCaseTest extends BaseClass{
 		
 		//Search and Select patient
 		page.btnSelectPatient.click();
-		page.searchAndSelectPatient("5");
+		page.searchAndSelectPatient((prop.getProperty("MRN")));
 		
 		//Assigning the patient case
 		page.assignPatientCase("saim", page.AssigneeElementaliSaim);
 		
 		
-		getDriver().navigate().to("https://staging.pemr.com/ClinicalInbox.aspx");
+		getDriver().navigate().to(prop.getProperty("url")+ "ClinicalInbox.aspx");
 		action.waitPreloader();
 		
 		ClinicalInboxPage clinicalInboxPage = new ClinicalInboxPage();

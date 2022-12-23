@@ -211,7 +211,7 @@ public class PatientCasePage extends BaseClass{
 	{
 		action.click(getDriver(), btnAddPatientCase);
 		action.click(getDriver(), btnSelectPatient);
-		action.waitForModelDisplayed(modelPatientSearch, btnSearchPatientModel);
+		action.waitForModelDisplayed(modelPatientSearch, this.txtPatientPortalEMRNo);
 		return true;
 	}
 	

@@ -6,9 +6,9 @@
       <class name="com.ipclinical.testcases.PatientCaseTest">
         <methods>
           <include name="afterSuite"/>
-          <include name="patientCase_TC5_clickBtnSaveSchudular_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed"/>
           <include name="tearDown"/>
           <include name="loadConfig"/>
+          <include name="patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected"/>
           <include name="patientCase_TC1_toNavigatePatientCase"/>
           <include name="setup"/>
         </methods>

@@ -33,6 +33,7 @@ import org.testng.Assert;
 import com.ipclinical.actioninterface.ActionInterface;
 import com.ipclinical.base.BaseClass;
 import com.ipclinical.utility.Log;
+import com.paulhammant.ngwebdriver.NgWebDriver;
 
 
 /**
@@ -815,6 +816,20 @@ public class Action extends BaseClass implements ActionInterface {
 	//================================CUSTOM FUNCTIONS FOR IPICLINICAL BY USMAN KOKAB===================================
 	
 	
+		public NgWebDriver getNgDriver() {
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			return new NgWebDriver(js);
+		}
+		
+		public void waitForAngularRequestsToFinish() {
+			try {
+				getNgDriver().waitForAngularRequestsToFinish();
+			}catch (Exception e){
+				Assert.fail("Error while waiting for angular requests to finish" + e.getMessage());
+			}
+			
+		}
+	
 		//Validating any label
 		public void validateLabel(WebElement element, String fieldText) {
 		String labelText = element.getText();
@@ -954,15 +969,15 @@ public class Action extends BaseClass implements ActionInterface {
 		}
 		
 		
-		public void validateDropdown(String[] exp, WebElement element) 
+		public void validateDropdown(WebElement element) 
 		{
 			Select select = new Select(element);
 			List<WebElement> options = select.getOptions();
 			
 				for(int i=0; i<options.size(); i++) 
 				{
-					Assert.assertEquals(options.get(i).getText(), exp[i]);
-					Log.info(options.get(i).getText() + " = "+ exp[i] +"(Actual Matched with Expected");
+					//Assert.assertEquals(options.get(i).getText(), exp[i]);
+					//Log.info(options.get(i).getText() + " = "+ exp[i] +"(Actual Matched with Expected");
 					
 					//selecting all values
 					select.selectByIndex(i);
