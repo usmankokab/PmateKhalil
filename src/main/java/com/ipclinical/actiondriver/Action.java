@@ -23,6 +23,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
@@ -771,6 +772,51 @@ public class Action extends BaseClass implements ActionInterface {
 		driver.manage().timeouts().pageLoadTimeout(timeOut, TimeUnit.SECONDS);
 	}
 	
+	//Custom
+	/** https://blog.testproject.io/2021/07/12/all-possible-solutions-to-the-click-problem-with-selenium-and-java/
+	  * waits for backgrounds processes on the browser to complete
+	  *
+	  * @param timeOutInSeconds
+	  */
+	 public static void waitForPageToLoad(long timeOutInSeconds) {
+	     ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
+	         public Boolean apply(WebDriver driver) {
+	             return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+	         }
+	     };
+	     try {
+	         WebDriverWait wait = new WebDriverWait(getDriver(), timeOutInSeconds);
+	         wait.until(expectation);
+	     } catch (Throwable error) {
+	         error.printStackTrace();
+	     }
+	 }
+	
+	 /**
+	  * Waits for provided element to be clickable
+	  *
+	  * @param element
+	  * @param timeout
+	  * @return
+	  */
+	 public static WebElement waitForClickablility(WebElement element, int timeout) {
+	     WebDriverWait wait = new WebDriverWait(getDriver(), timeout);
+	     return wait.until(ExpectedConditions.elementToBeClickable(element));
+	 }
+	 
+	 /**
+	  * Waits for the provided element to be invisible on the page
+	  *
+	  * @param element
+	  * @param timeToWaitInSec
+	  * @return
+	  */
+	 public static Boolean waitForInvisibility(WebElement element, int timeToWaitInSec) {
+	     WebDriverWait wait = new WebDriverWait(getDriver(), timeToWaitInSec);
+	     return wait.until(ExpectedConditions.invisibilityOf(element));
+	 }
+	 
+	 
 	//Custom for PEMR
 	public void waitPreloader() {
 		
@@ -817,7 +863,7 @@ public class Action extends BaseClass implements ActionInterface {
 	
 	
 		public NgWebDriver getNgDriver() {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
+			JavascriptExecutor js = (JavascriptExecutor) getDriver();
 			return new NgWebDriver(js);
 		}
 		
@@ -882,6 +928,18 @@ public class Action extends BaseClass implements ActionInterface {
 			
 		}
 		
+		//Validating TextAreas
+		public void validateTextArea(WebElement element, String sentDescription) 
+		{
+			WebElement txtArea =  element;
+			
+				Assert.assertTrue(isDisplayed(getDriver(), txtArea));
+				type(txtArea, sentDescription);
+				Log.info(txtArea + " textarea is present");
+				Assert.assertEquals(txtArea.getAttribute("value"), sentDescription);
+				Log.info(txtArea+ " Textarea's description verified");
+				
+		}
 		
 		//Validating all checkboxes
 		public void validateCheckboxes(List<WebElement> elements) {

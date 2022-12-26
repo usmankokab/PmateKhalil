@@ -23,6 +23,7 @@ import com.ipclinical.pageobjects.ClinicalInboxPage;
 import com.ipclinical.pageobjects.DashboardPage;
 import com.ipclinical.pageobjects.LoginPage;
 import com.ipclinical.pageobjects.PatientCasePage;
+import com.ipclinical.pageobjects.PatientChartPage;
 import com.ipclinical.pageobjects.PatientListPage;
 import com.ipclinical.pageobjects.SchedulerAppointmentPage;
 import com.ipclinical.utility.Log;
@@ -31,6 +32,7 @@ public class PatientCaseTest extends BaseClass{
 	DashboardPage dashboardPage;
 	PatientListPage patientListPage;
 	LoginPage loginPage;
+	PatientChartPage chartPage;
 	
 	PatientCasePage page;
 	
@@ -68,12 +70,7 @@ public class PatientCaseTest extends BaseClass{
 		Log.info("Patient Widget is clicked");
 		action.waitPreloader();
 		action.pageLoadTimeOut(getDriver(), 50);
-		
-		String actualURL = patientListPage.getCurrURL();
-		String expectedURL = prop.getProperty("url")+ "Patient/PatientList.aspx";
-		Log.info("Verifying if user explored to the Patient List Page");
-	    Assert.assertEquals(actualURL, expectedURL);
-	    Log.info("User is on Patient List Page");
+		Log.info("User is on Patient List Page");
 	    
 	    patientListPage.clickPatientsMenu();
 	    Log.info("Patients Menu is clicked");
@@ -84,8 +81,8 @@ public class PatientCaseTest extends BaseClass{
 	    
 	    //User should land on Patient case page
 	    //page = new page();
-	    actualURL = action.getCurrURL();
-	    expectedURL = prop.getProperty("url") +"Patient/Patientcase.aspx";
+	    String actualURL = action.getCurrURL();
+	    String expectedURL = prop.getProperty("url") +"Patient/Patientcase.aspx";
 		Log.info("Verifying if user explored to the Patient Case Page");
 	    Assert.assertEquals(actualURL, expectedURL);
 	    Log.info("User landed on Patient case page");
@@ -602,6 +599,119 @@ public class PatientCaseTest extends BaseClass{
 		Log.endTestCase("patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider");
 		
 	}
+	
+	
+	@Test(priority = 15)
+	public void patientCase_TC12_toNavigateto_PatientChart_PatientCase() throws Throwable {
+		Log.startTestCase("patientCase_TC12_toNavigateto_PatientChart_PatientCase");
+		
+		//loginPage = new LoginPage();
+		//dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"), prop.getProperty("code"));
+		//Log.info("User is logged in successfully");
+		getDriver().navigate().to("https://staging.pemr.com/Patient/PatientList.aspx");
+		action.waitPreloader();
+		
+		action.getNgDriver().waitForAngularRequestsToFinish();
+		chartPage = patientListPage.goToPatientChart(prop.getProperty("MRN"));
+		Log.info("Patient Landed on Patient Chart page");
+		
+
+		action.getNgDriver().waitForAngularRequestsToFinish();
+		action.waitPreloader();
+		action.click(getDriver(), chartPage.tabPatientCase);
+
+		
+	    Log.endTestCase("patientCase_TC12_toNavigateto_PatientChart_PatientCase");
+	    
+    		
+	}
+	
+	
+	@Test(priority = 16, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	public void patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed()
+	{
+		Log.startTestCase("patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed");
+		
+		
+		action.getNgDriver().waitForAngularRequestsToFinish();
+
+		chartPage.openPatientCaseModel_fromChart();
+		action.click(getDriver(), chartPage.btnClose);
+		
+		Log.info("Patient Case Model opened in Patient Chart Page");
+		
+	    Log.endTestCase("patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed");
+
+	}
+	
+	
+	
+	
+	@Test(priority = 17, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	public void patientCase_TC14_toValidateFields_PatientCaseModel()
+	{
+		Log.startTestCase("patientCase_TC13b_toValidateFields_PatientCaseModel");
+		//page = new PatientCasePage();
+		
+		chartPage.openPatientCaseModel_fromChart();
+		
+		//Validating buttons
+		action.validateButton(page.btnClose);
+		action.validateButtonDisabled(page.btnPrint);
+		action.validateButtonDisabled(page.btnSave);
+		action.validateButtonDisabled(page.btnSave$AddOrders);
+		
+		//Validating dropdowns and their values
+		action.validateDropdown(page.dropdownSource);
+	    action.validateDropdown(page.dropdownType);
+	    action.validateDropdown(page.dropdownProvider);
+	    action.validateDropdown(page.ddCallBackNumber);
+	    action.validateDropdown(page.ddPriority);
+	    action.validateDropdown(page.dropdownLocation);
+	
+	    //Validating checkboxes
+	    if(action.validateCheckbox(page.chkOutBoundOnly) && action.validateCheckbox(page.chkOutSideProvider)) 
+	    {
+	    	Log.info("All checkboxes are displayed and checkable");
+	    }else
+	    {
+	    	Log.error("All or any of the checkbox in the Model window does not appear");
+	    	
+	    }
+	    
+	    //Validating TextBoxes
+	    action.validateTextBox(page.txtPersonToCall, "Person to Call");
+	    action.validateTextBox(page.txtSubject, "Test Subject");
+	    action.validateTextBox(page.txtOther, "Other");
+	    
+	    //Validating Text Areas
+	    action.validateTextArea(chartPage.textAreaDescription, "This is test description for textarea");
+	    action.validateTextArea(chartPage.textAreaActionNote, "This is test Action note");
+	    
+	    //Validating Radio Buttons
+	    action.validateRadioButtons(page.radioButtons);
+	    
+	    action.click(getDriver(),page.btnClose);
+	    	    
+	    Log.endTestCase("patientCase_TC13b_toValidateFields_PatientCaseModel");
+	}
+	
+	@Test (priority = 4, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	public void patientCase_TC15_toValidateMandatoryFields_PatientCaseModel()
+	{
+		Log.startTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
+				
+		chartPage.openPatientCaseModel_fromChart();
+		
+		//Filling all all mandatory fields
+		page.fillMandatoryFields("Subject");
+		
+		Log.endTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
+		
+	}
+
+
+
 	
 	
 }

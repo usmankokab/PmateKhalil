@@ -65,17 +65,17 @@ public class PatientCasePage extends BaseClass{
 	@FindBy(id= "PatientCaseModel")
 	public WebElement PatientCaseModel;
 	
-	@FindBy(xpath= "//*[@id='PatientCaseModel']/div[1]/div/div[4]/input[1]")
+	@FindBy(xpath= "//div[@id='PatientCaseModel']/.//input[@type='button' and @value='Close']")
 	public WebElement btnClose;
 	
-	@FindBy(xpath= "//*[@id='PatientCaseModel']/div[1]/div/div[4]/input[2]")
+	@FindBy(xpath= "//div[@id='PatientCaseModel']/.//input[@type='button' and @value='Print']")
 	public WebElement btnPrint;
 	
-	@FindBy(xpath= "//*[@id='PatientCaseModel']/div[1]/div/div[4]/input[3]")
+	@FindBy(xpath= "//div[@id='PatientCaseModel']/.//input[@type='button' and @value='Save']")
 	public WebElement btnSave;
 	
-	@FindBy(xpath= "//*[@id='PatientCaseModel']/div[1]/div/div[4]/input[4]")
-	public WebElement btnSave$Schedule;
+	@FindBy(xpath= "//div[@id='PatientCaseModel']/.//input[@type='button' and @value='Save & Schedule']")
+	public WebElement btnSave$Schedule;	
 	
 	@FindBy(id= "DropdownSource")
 	public WebElement dropdownSource;
@@ -168,8 +168,10 @@ public class PatientCasePage extends BaseClass{
 	@FindBy(xpath="//a[text() = 'Ali,Saim (ClinicalStaff)']")
 	public WebElement AssigneeElementaliSaim;
 	
-	
-	
+	//Patient Chart Page
+	@FindBy(xpath= "//div[@id='PatientCaseModel']/.//input[@type='button' and @value='Save & Add Orders']")
+	public WebElement btnSave$AddOrders;
+		
 	
 	
 	
@@ -201,9 +203,18 @@ public class PatientCasePage extends BaseClass{
 	public boolean openPatientCaseModel()
 	{
 		
-		action.click(getDriver(), btnAddPatientCase);
-		action.waitForModelDisplayed(PatientCaseModel, chkOutBoundOnly);
-		return true;
+		if(action.isDisplayed(getDriver(), btnAddPatientCase)) {
+			
+			action.click(getDriver(), btnAddPatientCase);
+			action.waitForModelDisplayed(PatientCaseModel, chkOutBoundOnly);
+			return true;
+		} else {
+			
+			PatientChartPage patientChartPage = new PatientChartPage();
+			patientChartPage.openPatientCaseModel_fromChart();
+			return true;
+		}
+		
 	}
 
 	
@@ -245,8 +256,9 @@ public class PatientCasePage extends BaseClass{
 		boolean flag1 = action.isEnabled(getDriver(), btnPrint);
 		boolean flag2 = action.isEnabled(getDriver(), btnSave);
 		boolean flag3 = action.isEnabled(getDriver(), btnSave$Schedule);
+		boolean flag4 = action.isEnabled(getDriver(), btnSave$AddOrders);
 		
-		if(flag1 && flag2 &flag3) {
+		if(flag1 && flag2 && (flag3 || flag4)) {
 			
 			Assert.assertTrue(true);
 			Log.info("mandatory fields are verified");

@@ -7,15 +7,31 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ipclinical.actiondriver.Action;
 import com.ipclinical.base.BaseClass;
+import com.ipclinical.utility.Log;
 import com.paulhammant.ngwebdriver.NgWebDriver;
 
 public class PatientListPage extends BaseClass{
 	
-	@FindBy(xpath = "input[ng-model='EmrNo']")
+	@FindBy(xpath = "//a[@title='Patients']")
 	WebElement menuPatient;
 	
 	@FindBy(css = "a[href='/Patient/Patientcase.aspx']")
 	WebElement linkPatientCase;
+	
+	@FindBy(xpath = "//input[@ng-model='EmrNo']")
+	WebElement txtEmrNo;
+	
+	@FindBy(xpath = "//button[normalize-space()='Search Patient']")
+	WebElement btnSearchPatient;
+	
+	@FindBy(xpath = "(//input[@ng-model='Patient.IsCCCDChecked'])[1]")
+	WebElement chkFirstSelectPatient;
+	
+	@FindBy(xpath = "(//img[@src='../App_Themes/AvicenTheme-test/img/svg/icons/patient-chart.svg'])[1]")
+	WebElement btnActionPatientChart;
+	
+	
+	
 	
 	
 	
@@ -45,9 +61,22 @@ public class PatientListPage extends BaseClass{
 		return pageURL;
 	}
 	
-	public void goToPatientChart() {
+	public PatientChartPage goToPatientChart(String MRN) {
 		
+		action.type(txtEmrNo, MRN);
+		action.click(getDriver(), btnSearchPatient);
+		Log.info("Patient Serached");
+		action.waitPreloader();
+		
+		action.click(getDriver(), chkFirstSelectPatient);
+		action.click(getDriver(), btnActionPatientChart);
+		Log.info("Clicked on patient chart icon");
+		action.waitPreloader();
+		
+		return (new PatientChartPage());
 		
 	}
+	
+	
 
 }

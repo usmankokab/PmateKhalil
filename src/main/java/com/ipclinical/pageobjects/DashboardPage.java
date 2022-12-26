@@ -12,7 +12,7 @@ public class DashboardPage extends BaseClass{
 
 	//Page Elements
 	
-	@FindBy(css = "a[href='./Patient/PatientList.aspx']")
+	@FindBy(xpath = "//a[normalize-space()='Patients']")
 	WebElement linkPatients;
 	
 	public DashboardPage() {
