@@ -778,7 +778,7 @@ public class Action extends BaseClass implements ActionInterface {
 	  *
 	  * @param timeOutInSeconds
 	  */
-	 public static void waitForPageToLoad(long timeOutInSeconds) {
+	 public void waitForPageToLoad(long timeOutInSeconds) {
 	     ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
 	         public Boolean apply(WebDriver driver) {
 	             return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");

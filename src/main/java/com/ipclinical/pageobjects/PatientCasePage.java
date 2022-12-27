@@ -104,7 +104,7 @@ public class PatientCasePage extends BaseClass{
 	@FindBy(id = "otherfield")
 	public WebElement txtOther;
 	
-	@FindBy(xpath = "//label/input[@type='radio']")
+	@FindBy(xpath = "//div[@id='PatientCaseModel']/.//label/input[@type='radio']")
 	public List<WebElement> radioButtons;
 	
 	@FindBy(xpath = "//textarea")

@@ -601,7 +601,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 	
-	@Test(priority = 15)
+	@Test(priority = 15, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC12_toNavigateto_PatientChart_PatientCase() throws Throwable {
 		Log.startTestCase("patientCase_TC12_toNavigateto_PatientChart_PatientCase");
 		
@@ -611,12 +611,9 @@ public class PatientCaseTest extends BaseClass{
 		getDriver().navigate().to("https://staging.pemr.com/Patient/PatientList.aspx");
 		action.waitPreloader();
 		
-		action.getNgDriver().waitForAngularRequestsToFinish();
 		chartPage = patientListPage.goToPatientChart(prop.getProperty("MRN"));
 		Log.info("Patient Landed on Patient Chart page");
 		
-
-		action.getNgDriver().waitForAngularRequestsToFinish();
 		action.waitPreloader();
 		action.click(getDriver(), chartPage.tabPatientCase);
 
@@ -636,9 +633,9 @@ public class PatientCaseTest extends BaseClass{
 		action.getNgDriver().waitForAngularRequestsToFinish();
 
 		chartPage.openPatientCaseModel_fromChart();
-		action.click(getDriver(), chartPage.btnClose);
-		
 		Log.info("Patient Case Model opened in Patient Chart Page");
+		
+		page.btnClose.click();
 		
 	    Log.endTestCase("patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed");
 
@@ -647,7 +644,7 @@ public class PatientCaseTest extends BaseClass{
 	
 	
 	
-	@Test(priority = 17, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test(priority = 17, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_TC14_toValidateFields_PatientCaseModel()
 	{
 		Log.startTestCase("patientCase_TC13b_toValidateFields_PatientCaseModel");
@@ -696,21 +693,272 @@ public class PatientCaseTest extends BaseClass{
 	    Log.endTestCase("patientCase_TC13b_toValidateFields_PatientCaseModel");
 	}
 	
-	@Test (priority = 4, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test (priority = 18, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_TC15_toValidateMandatoryFields_PatientCaseModel()
 	{
-		Log.startTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
+		Log.startTestCase("patientCase_TC15_toValidateMandatoryFields_PatientCaseModel");
 				
 		chartPage.openPatientCaseModel_fromChart();
 		
 		//Filling all all mandatory fields
 		page.fillMandatoryFields("Subject");
+		page.btnClose.click();
 		
-		Log.endTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
+		Log.endTestCase("patientCase_TC15_toValidateMandatoryFields_PatientCaseModel");
 		
 	}
 
 
+	@Test(priority = 19, enabled=false, dependsOnMethods = { "patientCase_TC12_toNavigateto_PatientChart_PatientCase" })
+	public void patientCase_patientChart_TC16_clickBtnSaveAddOrder_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed() throws InterruptedException
+	{
+		
+		Log.startTestCase("patientCase_patientChart_TC16_clickBtnSaveAddOrder_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed");
+		//page = new page();
+		
+		chartPage.openPatientCaseModel_fromChart();
+		
+		page.fillMandatoryFields("Subject");
+		
+		Log.info("Validating Alert message should not be appear once clicked on Save&AddOrders button because user is on specific patient's chart");
+		action.click(getDriver(), chartPage.btnSave$AddOrders);
+		if(action.isAlertPresent(getDriver())) {
+			Log.info("Alert Present"+ "(Please Select Patient)");
+			Alert alert = getDriver().switchTo().alert();
+			//String alertMessage = alert.getText();
+			Assert.assertTrue(false);
+			alert.accept();
+			Log.info("Alert message appeared even expected was not to appear because user is on specific patient's chart");
+			//Thread.sleep(5000);
+		}else {
+			Log.info("Alert does not present, test pass");
+			Assert.assertTrue(true);
+		}
+		
+		Log.info("Validating Alert message should not be appear once clicked on Save button because user is on specific patient's chart");
+		action.click(getDriver(), chartPage.btnSave);
+		if(action.isAlertPresent(getDriver())) {
+			Log.info("Alert Present"+ "(Please Select Patient)");
+			Alert alert = getDriver().switchTo().alert();
+			//String alertMessage = alert.getText();
+			Assert.assertTrue(false);
+			alert.accept();
+			Log.info("Alert message appeared even expected was not to appear because user is on specific patient's chart");
+			//Thread.sleep(5000);
+		}else {
+			Log.info("Alert does not present, test pass");
+			Assert.assertTrue(true);
+		}
+		
+	    
+	    Log.endTestCase("patientCase_patientChart_TC16_clickBtnSaveSchudular_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed");
+
+	}
+
+	
+	@Test(priority = 20, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	public void patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed()
+	{
+		
+		Log.startTestCase("patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed");
+		//page = new PatientCasePage();
+		chartPage.openPatientCaseModel_fromChart();
+		
+		
+		if(!action.isDisplayed(getDriver(), page.btnSelectPatient)) {
+			Assert.assertTrue(true);
+			Log.info("Select Patient button is not available as expected");
+		}else {
+			Log.info("Patient Search Model appear, but should not be present as expected, test faled.");
+			Assert.assertTrue(false);
+		}
+		
+		
+	    Log.endTestCase("patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed");
+
+	}
+	
+		
+	@Test(priority = 24, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	public void patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed() throws Throwable
+	{
+		
+		Log.startTestCase("patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed");
+		//page = new PatientCasePage();
+		
+		chartPage.openPatientCaseModel_fromChart();
+		
+		//Filling mandatory fields 
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		LocalDateTime now = LocalDateTime.now();  
+		String currentDateTime = dtf.format(now);
+		
+		page.fillMandatoryFields(currentDateTime);
+		
+		
+		Log.info("Typing text into the Description TextArea");
+		action.type(page.textAreas.get(0), "This is an automated test case saving after clicking the Save&Schedule button");
+		
+		//Selecting referral from Type dropdown
+		action.selectByValue(page.dropdownType, "Referral");
+		Log.info("Going to click Save&AddOrder button to add the automated test case and navigate to the appointment screen");
+		action.JSClick(getDriver(), chartPage.btnSave$AddOrders);
+		Log.info("Save&AddOrder clicked");
+		
+		action.waitForModelDisplayed(chartPage.referralSearchModel, chartPage.referralModalLabel);
+		Log.info("Referral label displayed on Referral Search Model");
+		
+		//Verification of redirection
+		if(action.isDisplayed(getDriver(), chartPage.referralSearchModel)) {
+			Log.info("User is redirected to Referral Model");
+			Assert.assertTrue(true);
+			
+		}else {
+			Log.info("User is not redirected to Expected Referral Model");
+			Assert.assertTrue(false);
+		}
+		
+		
+		//To verify all added cases of relevant patients are shown
+		//to verify user can be able to click on edit of a specific patient case
+		//To verify whether or not patient case is saved once clicked on Save and AddOrder button
+		action.implicitWait(getDriver(), 20);		
+		getDriver().navigate().refresh();
+		chartPage.openPatientCaseModel_fromChart();
+		action.waitPreloader();
+		
+		
+		//clicking on first result of the patient case list
+		chartPage.clickOnFirstResultOfPtCaseList();
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		
+		String actualDateTime = page.txtSubject.getAttribute("value");
+		Log.info("Comparing Actual DateTime-" +actualDateTime+ " with CurrentDateTime-" +currentDateTime);
+		
+		if(actualDateTime.equals(currentDateTime)) {
+			Log.info("Patient case is saved successfully before or after redirecting to the referral model");
+			Assert.assertEquals(actualDateTime, currentDateTime);
+		} else {
+			Log.info("Patient case is not saved before or after redirecting to the referral model");
+			Assert.assertEquals(actualDateTime, currentDateTime);
+		}
+		
+	    Log.endTestCase("patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed");
+
+	}
+
+
+
+	@Test(priority = 25, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	public void patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
+
+	{
+		
+		Log.startTestCase("patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase");
+		//page = new PatientCasePage();
+		
+		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
+		action.pageLoadTimeOut(getDriver(), 50);
+		action.JSClick(getDriver(), page.btnAddPatientCase);
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		
+		//Filling mandatory fields 
+		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		LocalDateTime now = LocalDateTime.now();  
+		String currentDateTime = dtf.format(now);
+		
+		page.fillMandatoryFields(currentDateTime);
+				
+		
+		//Selecting the patient
+		action.JSClick(getDriver(), page.btnSelectPatient);
+		page.searchAndSelectPatient((prop.getProperty("MRN")));
+			
+		Log.info("Clicking Save button to add the automated test case that will close this patient case model");
+		action.click(getDriver(), page.btnSave);
+		Log.info("Save button is clicked");
+		action.waitPreloader();
+		
+		//exploring to the patient case page again
+		//getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
+		
+		//To verify all added cases of relevant patients are shown
+		//to verify user can edit the patient case
+		//To verify whether or not patient case is saved
+		//action.waitPreloader();
+		
+		action.click(getDriver(), page.chkboxesProviders.get(0));
+		action.click(getDriver(), page.btnSearch);
+		action.waitPreloader();
+		
+		//clicking on last result of the patient case list
+		page.clickOnLastResultOfPtCaseList();
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		
+		String actualDateTime = page.txtSubject.getAttribute("value");
+		Log.info("Comparing Actual DateTime-" +actualDateTime+ " with CurrentDateTime-" +currentDateTime);
+		
+		if(actualDateTime.equals(currentDateTime)) {
+			Log.info("Patient case is saved successfully");
+			Assert.assertEquals(actualDateTime, currentDateTime);
+		} else {
+			Log.info("Patient case is not saved");
+			Assert.assertEquals(actualDateTime, currentDateTime);
+		}
+		
+		//Editing textarea and saving
+		page.textAreas.get(0).sendKeys(" (Edited)");
+		page.btnSave.click();
+		Log.info("Patient Case Edited successfully");
+		
+	    Log.endTestCase("patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase");
+
+	}
+	
+	@Test (priority = 26, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	public void patientCase_patientChart_TC23_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider() {
+	
+		Log.startTestCase("patientCase_patientChart_TC23_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider");
+		
+		//Navigate to patient case
+		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
+		action.waitPreloader();
+		action.click(getDriver(), page.btnAddPatientCase);
+		action.waitPreloader();
+		
+		//filling mandatory fields
+		String currentTime = action.getCurrentTime();
+		page.fillMandatoryFields(currentTime);
+		action.selectBySendkeys("Refund", page.dropdownType);
+		
+		//Search and Select patient
+		page.btnSelectPatient.click();
+		page.searchAndSelectPatient((prop.getProperty("MRN")));
+		
+		//Assigning the patient case
+		page.assignPatientCase("saim", page.AssigneeElementaliSaim);
+		
+		
+		getDriver().navigate().to(prop.getProperty("url")+ "ClinicalInbox.aspx");
+		action.waitPreloader();
+		
+		ClinicalInboxPage clinicalInboxPage = new ClinicalInboxPage();
+		action.explicitWait(getDriver(), clinicalInboxPage.refundAgainstSaim, 50);
+		action.click(getDriver(), clinicalInboxPage.refundAgainstSaim);
+		
+		action.fluentWait(getDriver(), clinicalInboxPage.refundHeading, 50);
+		action.click(getDriver(), getDriver().findElement(By.linkText(currentTime)));
+		
+		//Verifying added and assigned Patient Case in Clinical Inbox
+		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		String subjectText = page.txtSubject.getAttribute("value");
+		Assert.assertEquals(currentTime, subjectText);
+		Log.info("Patient case is saved successfully and shown in the Clinical Inbox under Patient Refund against the assigned bucket");
+		
+		
+		Log.endTestCase("patientCase_patientChart_TC23_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider");
+		
+	}
 
 	
 	

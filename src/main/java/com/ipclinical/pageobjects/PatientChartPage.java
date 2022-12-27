@@ -8,11 +8,20 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.ipclinical.actiondriver.Action;
 import com.ipclinical.base.BaseClass;
+import com.ipclinical.utility.Log;
 
 public class PatientChartPage extends BaseClass {
 	
 	@FindBy(id = "tabPatientCase")
 	public WebElement tabPatientCase;
+	
+	@FindBy(id = "ReferralSearch")
+	public WebElement referralSearchModel;
+	
+	@FindBy(id = "myModalLabel")
+	public WebElement referralModalLabel;
+	
+	
 	
 	//@ByAngularModel.FindBy(model = "")
 	@FindBy(xpath = "//a[@ng-click='OpenPatientCaseModel()']")
@@ -157,8 +166,8 @@ public class PatientChartPage extends BaseClass {
 		@FindBy(xpath="(//div[@ng-show='Patient != null'])[1]")
 		public WebElement selectedPatientShowed;
 		
-		@FindBy(xpath="(//img[@class='btn-22'])[position()>=1 and position() <= (last() - 1)][last()]")
-		public WebElement lastPatientCaseInList;
+		@FindBy(xpath="(//img[@class='btn-22'])[position()>=1 and position() <= (last())][3]")
+		public WebElement firstPatientCaseInListChart;
 		
 		@FindBy(xpath="(//a[@class='Style5'])[1]")
 		public WebElement btnLastPage;
@@ -179,7 +188,7 @@ public class PatientChartPage extends BaseClass {
 	
 	
 	
-	public void openPatientCaseModel_fromChart() {
+	public boolean openPatientCaseModel_fromChart() {
 		
 		action.waitForAngularRequestsToFinish();
 		action.click(getDriver(), tabPatientCase);
@@ -187,9 +196,18 @@ public class PatientChartPage extends BaseClass {
 		action.click(getDriver(), btnAdd);
 		action.waitForModelDisplayed(PatientCaseModel, chkOutBoundOnly);
 		action.waitPreloader();
+		
+		return true;
 	}
 
 	
+	public void clickOnFirstResultOfPtCaseList() {
+		
+		Log.info("Going to click on first result edit button of the first page");
+		action.JSClick(getDriver(), firstPatientCaseInListChart);
+		Log.info("clicked on first result edit button");
+		
+	}
 
 
 }
