@@ -329,7 +329,7 @@ public class Action extends BaseClass implements ActionInterface {
 	public boolean switchToFrameByIndex(WebDriver driver,int index) {
 		boolean flag = false;
 		try {
-			new WebDriverWait(driver, 15).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
+			new WebDriverWait(driver, Duration.ofSeconds(15)).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//iframe")));
 			driver.switchTo().frame(index);
 			flag = true;
 			return true;
@@ -750,7 +750,7 @@ public class Action extends BaseClass implements ActionInterface {
 	    Wait<WebDriver> wait = null;
 	    try {
 	        wait = new FluentWait<WebDriver>((WebDriver) driver)
-	        		.withTimeout(Duration.ofSeconds(20))
+	        		.withTimeout(Duration.ofSeconds(timeOut))
 	        	    .pollingEvery(Duration.ofSeconds(2))
 	        	    .ignoring(Exception.class);
 	        wait.until(ExpectedConditions.visibilityOf(element));
@@ -760,16 +760,16 @@ public class Action extends BaseClass implements ActionInterface {
 	}
 	@Override
 	public void implicitWait(WebDriver driver, int timeOut) {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeOut));
 	}
 	@Override
 	public void explicitWait(WebDriver driver, WebElement element, int timeOut ) {
-		WebDriverWait wait = new WebDriverWait(driver,timeOut);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	@Override
 	public void pageLoadTimeOut(WebDriver driver, int timeOut) {
-		driver.manage().timeouts().pageLoadTimeout(timeOut, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(timeOut));
 	}
 	
 	//Custom
@@ -785,7 +785,7 @@ public class Action extends BaseClass implements ActionInterface {
 	         }
 	     };
 	     try {
-	         WebDriverWait wait = new WebDriverWait(getDriver(), timeOutInSeconds);
+	         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timeOutInSeconds));
 	         wait.until(expectation);
 	     } catch (Throwable error) {
 	         error.printStackTrace();
@@ -799,8 +799,8 @@ public class Action extends BaseClass implements ActionInterface {
 	  * @param timeout
 	  * @return
 	  */
-	 public static WebElement waitForClickablility(WebElement element, int timeout) {
-	     WebDriverWait wait = new WebDriverWait(getDriver(), timeout);
+	 public WebElement waitForClickablility(WebElement element, int timeout) {
+	     WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timeout));
 	     return wait.until(ExpectedConditions.elementToBeClickable(element));
 	 }
 	 
@@ -812,15 +812,15 @@ public class Action extends BaseClass implements ActionInterface {
 	  * @return
 	  */
 	 public static Boolean waitForInvisibility(WebElement element, int timeToWaitInSec) {
-	     WebDriverWait wait = new WebDriverWait(getDriver(), timeToWaitInSec);
+	     WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timeToWaitInSec));
 	     return wait.until(ExpectedConditions.invisibilityOf(element));
 	 }
 	 
 	 
 	//Custom for PEMR
-	public void waitPreloader() {
+	public void waitPreloader(int timeToWaitForInvisibilityOf) {
 		
-		WebDriverWait wait = new WebDriverWait(getDriver(), 30);
+		WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(timeToWaitForInvisibilityOf));
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("Preloader")));
 	}
 	
@@ -1045,14 +1045,14 @@ public class Action extends BaseClass implements ActionInterface {
 				}
 		}
 
-		public void selectDropdown(WebElement element) 
+		public void selectLastValueOfDropdown(WebElement element) 
 		{
 			Select select = new Select(element);
 			List<WebElement> options = select.getOptions();
 					
 					select.selectByIndex(options.size()-1);
 					Assert.assertTrue(true);
-					Log.info(element.getText()+"/"+element.getAttribute("value")+ ": One of values from the dropdown field is selected");
+					Log.info("Last One of values from the dropdown field is selected");
 				}
 
 		public void validateButton(WebElement element) 
@@ -1189,7 +1189,6 @@ public class Action extends BaseClass implements ActionInterface {
 		}
 
 		public boolean waitForModelDisplayed(WebElement waitElement, WebElement verifyElement) {
-			waitPreloader();
 			explicitWait(getDriver(), waitElement, 50);
 			if(isDisplayed(getDriver(), verifyElement)) 
 		    {

@@ -25,7 +25,7 @@ public class DashboardPage extends BaseClass{
 	//Action Methods
 	public PatientListPage clickPatientWidget() {
 		
-		action.click(getDriver(), linkPatients);
+		action.JSClick(getDriver(), linkPatients);
 		return new PatientListPage();
 	}
 	

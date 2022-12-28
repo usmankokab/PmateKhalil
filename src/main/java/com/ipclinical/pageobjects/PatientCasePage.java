@@ -248,8 +248,8 @@ public class PatientCasePage extends BaseClass{
 	
 	public void fillMandatoryFields(String Subject) {
 		
-		action.selectDropdown(dropdownSource);
-		action.selectDropdown(dropdownProvider);
+		action.selectLastValueOfDropdown(dropdownSource);
+		action.selectLastValueOfDropdown(dropdownProvider);
 		action.type(txtSubject, Subject);
 		Log.info("All mandatory fields are filled");
 		
@@ -261,7 +261,7 @@ public class PatientCasePage extends BaseClass{
 		if(flag1 && flag2 && (flag3 || flag4)) {
 			
 			Assert.assertTrue(true);
-			Log.info("mandatory fields are verified");
+			Log.info("mandatory fields, enabled and disabled buttons are verified");
 		}else {
 			
 			Log.info("mandatory fields are not verified, something went wrong");
@@ -294,7 +294,7 @@ public class PatientCasePage extends BaseClass{
 			Log.info("There is a paging in Patient Case List");
 			btnLastPage.click();
 			Log.info("Got to the last page of Patient Case List");
-			action.waitPreloader();
+			action.waitPreloader(30);
 			Log.info("Going to click on last result edit button of the last page");
 			action.JSClick(getDriver(), lastPatientCaseInList);
 			Log.info("clicked on last result edit button");

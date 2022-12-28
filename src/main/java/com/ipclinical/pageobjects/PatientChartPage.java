@@ -27,6 +27,9 @@ public class PatientChartPage extends BaseClass {
 	@FindBy(xpath = "//a[@ng-click='OpenPatientCaseModel()']")
 	WebElement btnAdd;
 	
+	@FindBy(xpath = "//a[@ng-click='RefreshPage()']")
+	public WebElement btnRefresh;
+	
 	@FindBy(id= "PatientCaseModel")
 	public WebElement PatientCaseModel;
 	
@@ -68,6 +71,9 @@ public class PatientChartPage extends BaseClass {
 	@FindBy(xpath= "//div[@id='PatientCaseModel']/.//input[@type='button' and @value='Close']")
 	public WebElement btnClose;
 	
+	@FindBy(xpath= "//div[@id='ReferralSearch']/.//input[@type='button' and @value='Close']")
+	public WebElement btnCloseReferralModel;
+	
 	@FindBy(xpath= "//div[@id='PatientCaseModel']/.//input[@type='button' and @value='Print']")
 	public WebElement btnPrint;
 	
@@ -107,10 +113,10 @@ public class PatientChartPage extends BaseClass {
 	@FindBy(xpath = "//div[@id='PatientCaseModel']/.//label/input[@type='radio']")
 	public List<WebElement> radioButtons;
 	
-	@FindBy(css = "textarea[ng-model='PatientCase.Description']")
+	@FindBy(xpath = "(//div[@id='PatientCaseModel']/.//textarea)[1]")
 	public WebElement textAreaDescription;
 	
-	@FindBy(css = "textarea[ng-model='PatientCase.Activity.ActionNote']")
+	@FindBy(xpath = "(//div[@id='PatientCaseModel']/.//textarea)[2]")
 	public WebElement textAreaActionNote;
 	
 	
@@ -190,12 +196,9 @@ public class PatientChartPage extends BaseClass {
 	
 	public boolean openPatientCaseModel_fromChart() {
 		
-		action.waitForAngularRequestsToFinish();
 		action.click(getDriver(), tabPatientCase);
-		action.waitPreloader();
 		action.click(getDriver(), btnAdd);
 		action.waitForModelDisplayed(PatientCaseModel, chkOutBoundOnly);
-		action.waitPreloader();
 		
 		return true;
 	}

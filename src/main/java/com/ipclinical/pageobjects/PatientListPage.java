@@ -52,6 +52,7 @@ public class PatientListPage extends BaseClass{
 	
 	public void clickPatientsMenu() {
 		
+		action.waitPreloader(30);
 		action.click(getDriver(), menuPatient);
 		
 	}
@@ -66,13 +67,12 @@ public class PatientListPage extends BaseClass{
 		action.type(txtEmrNo, MRN);
 		action.click(getDriver(), btnSearchPatient);
 		Log.info("Patient Serached");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
-		action.click(getDriver(), chkFirstSelectPatient);
+		//action.click(getDriver(), chkFirstSelectPatient);
 		action.click(getDriver(), btnActionPatientChart);
 		Log.info("Clicked on patient chart icon");
-		action.waitPreloader();
-		
+			
 		return (new PatientChartPage());
 		
 	}

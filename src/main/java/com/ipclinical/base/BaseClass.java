@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -41,7 +42,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
  */
 public class BaseClass {
 	public static Properties prop;
-
+	
 	// Declare ThreadLocal Driver
 	public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
 
@@ -88,11 +89,11 @@ public class BaseClass {
 		//Delete all the cookies
 		getDriver().manage().deleteAllCookies();
 		//Implicit TimeOuts
-		getDriver().manage().timeouts().implicitlyWait
-		(Integer.parseInt(prop.getProperty("implicitWait")),TimeUnit.SECONDS);
+		//getDriver().manage().timeouts().implicitlyWait
+		//(Duration.ofSeconds(Integer.parseInt(prop.getProperty("implicitWait"))));
 		//PageLoad TimeOuts
-		getDriver().manage().timeouts().pageLoadTimeout
-		(Integer.parseInt(prop.getProperty("pageLoadTimeOut")),TimeUnit.SECONDS);
+		//getDriver().manage().timeouts().pageLoadTimeout
+		//(Duration.ofSeconds(Integer.parseInt(prop.getProperty("pageLoadTimeOut"))));
 		//Launching the URL
 		getDriver().get(prop.getProperty("url"));
 	}

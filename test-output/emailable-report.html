@@ -9,56 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">330,566</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">100,740</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.ipclinical.testcases.PatientCaseTest</td><td><a href="#m0">patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed</a></td><td rowspan="1">1672163360491</td><td rowspan="1">147126</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.ipclinical.testcases.PatientCaseTest</td><td><a href="#m1">patientCase_TC12_toNavigateto_PatientChart_PatientCase</a></td><td rowspan="1">1672163195201</td><td rowspan="1">21795</td></tr><tr class="passedeven"><td><a href="#m2">patientCase_TC14_toValidateFields_PatientCaseModel</a></td><td rowspan="1">1672163220173</td><td rowspan="1">39973</td></tr><tr class="passedeven"><td><a href="#m3">patientCase_TC15_toValidateMandatoryFields_PatientCaseModel</a></td><td rowspan="1">1672163260149</td><td rowspan="1">33785</td></tr><tr class="passedeven"><td><a href="#m4">patientCase_TC1_toNavigatePatientCase</a></td><td rowspan="1">1672163184149</td><td rowspan="1">11043</td></tr><tr class="passedeven"><td><a href="#m5">patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed</a></td><td rowspan="1">1672163216998</td><td rowspan="1">3172</td></tr><tr class="passedeven"><td><a href="#m6">patientCase_patientChart_TC16_clickBtnSaveAddOrder_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed</a></td><td rowspan="1">1672163293939</td><td rowspan="1">34011</td></tr><tr class="passedeven"><td><a href="#m7">patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed</a></td><td rowspan="1">1672163327953</td><td rowspan="1">32531</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.ipclinical.testcases.PatientCaseTest</td><td><a href="#m0">patientCase_TC12_toNavigateto_PatientChart_PatientCase</a></td><td rowspan="1">1672249357998</td><td rowspan="1">37784</td></tr><tr class="passedeven"><td><a href="#m1">patientCase_TC1_toNavigatePatientCase</a></td><td rowspan="1">1672249343307</td><td rowspan="1">14682</td></tr><tr class="passedeven"><td><a href="#m2">patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed</a></td><td rowspan="1">1672249395787</td><td rowspan="1">38434</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.ipclinical.testcases.PatientCaseTest#patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (baee0075f48ae223ac15e36d2347e0ec)] -&gt; id: ReferralSearch] (tried for 50 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;PEMRPK-NB1&apos;, ip: &apos;192.168.1.26&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\uali\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60008}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: baee0075f48ae223ac15e36d2347e0ec
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at com.ipclinical.actiondriver.Action.explicitWait(Action.java:768)
-	at com.ipclinical.actiondriver.Action.waitForModelDisplayed(Action.java:1193)
-	at com.ipclinical.testcases.PatientCaseTest.patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed(PatientCaseTest.java:808)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.ipclinical.testcases.PatientCaseTest#patientCase_TC12_toNavigateto_PatientChart_PatientCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.ipclinical.testcases.PatientCaseTest#patientCase_TC14_toValidateFields_PatientCaseModel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.ipclinical.testcases.PatientCaseTest#patientCase_TC15_toValidateMandatoryFields_PatientCaseModel</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.ipclinical.testcases.PatientCaseTest#patientCase_TC1_toNavigatePatientCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.ipclinical.testcases.PatientCaseTest#patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.ipclinical.testcases.PatientCaseTest#patientCase_patientChart_TC16_clickBtnSaveAddOrder_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.ipclinical.testcases.PatientCaseTest#patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.ipclinical.testcases.PatientCaseTest#patientCase_TC12_toNavigateto_PatientChart_PatientCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ipclinical.testcases.PatientCaseTest#patientCase_TC1_toNavigatePatientCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ipclinical.testcases.PatientCaseTest#patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -8,6 +8,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -66,9 +67,10 @@ public class PatientCaseTest extends BaseClass{
 		dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"), prop.getProperty("code"));
 		Log.info("User is logged in successfully");
 		
+		action.waitPreloader(30);
 		patientListPage = dashboardPage.clickPatientWidget();
 		Log.info("Patient Widget is clicked");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		action.pageLoadTimeOut(getDriver(), 50);
 		Log.info("User is on Patient List Page");
 	    
@@ -76,7 +78,7 @@ public class PatientCaseTest extends BaseClass{
 	    Log.info("Patients Menu is clicked");
 	    page = patientListPage.clickPatientCaseLink();
 	    Log.info("Patient Case in Patients menu is clicked");
-	    action.waitPreloader();
+	    action.waitPreloader(30);
 	    action.pageLoadTimeOut(getDriver(), 20);
 	    
 	    //User should land on Patient case page
@@ -149,9 +151,9 @@ public class PatientCaseTest extends BaseClass{
 		//page = new PatientCasePage();
 		
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		page.openPatientCaseModel();
-		action.waitPreloader();
+		action.waitPreloader(30);
 
 		action.click(getDriver(), page.btnAddPatientCase);
 		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
@@ -167,9 +169,9 @@ public class PatientCaseTest extends BaseClass{
 		//page = new PatientCasePage();
 		
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		page.openPatientCaseModel();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//Validating buttons
 		action.validateButton(page.btnClose);
@@ -229,9 +231,9 @@ public class PatientCaseTest extends BaseClass{
 		//page = new PatientCasePage();
 		
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		page.openPatientCaseModel();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//Filling all all mandatory fields
 		page.fillMandatoryFields("Subject");
@@ -248,9 +250,9 @@ public class PatientCaseTest extends BaseClass{
 		//page = new page();
 		
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		page.openPatientCaseModel();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		page.fillMandatoryFields("Subject");
 		
@@ -297,10 +299,10 @@ public class PatientCaseTest extends BaseClass{
 		Log.startTestCase("patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed");
 		//page = new PatientCasePage();
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		page.openPatientCaseModel();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		if(page.openPatientSearchModel()) {
 			Assert.assertTrue(true);
@@ -324,7 +326,7 @@ public class PatientCaseTest extends BaseClass{
 		//page = new PatientCasePage();
 		
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		action.click(getDriver(), page.btnAddPatientCase);
 		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
 		
@@ -358,7 +360,7 @@ public class PatientCaseTest extends BaseClass{
 		//page = new PatientCasePage();	
 		
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		action.click(getDriver(), page.btnAddPatientCase);
 		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
 		
@@ -391,13 +393,13 @@ public class PatientCaseTest extends BaseClass{
 		
 		//clear all fields
 		getDriver().navigate().refresh();
-		action.waitPreloader();
+		action.waitPreloader(30);
 		action.pageLoadTimeOut(getDriver(), 50);
 		
 		page.openPatientCaseModel();
 		page.openPatientSearchModel();
 		page.searchAndSelectPatient(prop.getProperty("MRN"));
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		Log.info("Patient Selected, Search Result Appeared and Patient selected succesfully");
 		
@@ -462,10 +464,10 @@ public class PatientCaseTest extends BaseClass{
 		action.implicitWait(getDriver(), 20);		
 		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
 		
-		action.waitPreloader();
+		action.waitPreloader(30);
 		action.click(getDriver(), page.chkboxesProviders.get(0));
 		action.click(getDriver(), page.btnSearch);
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//clicking on last result of the patient case list
 		page.clickOnLastResultOfPtCaseList();
@@ -517,7 +519,7 @@ public class PatientCaseTest extends BaseClass{
 		Log.info("Clicking Save button to add the automated test case that will close this patient case model");
 		action.click(getDriver(), page.btnSave);
 		Log.info("Save button is clicked");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//exploring to the patient case page again
 		//getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
@@ -529,7 +531,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		action.click(getDriver(), page.chkboxesProviders.get(0));
 		action.click(getDriver(), page.btnSearch);
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//clicking on last result of the patient case list
 		page.clickOnLastResultOfPtCaseList();
@@ -562,9 +564,9 @@ public class PatientCaseTest extends BaseClass{
 		
 		//Navigate to patient case
 		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		action.click(getDriver(), page.btnAddPatientCase);
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//filling mandatory fields
 		String currentTime = action.getCurrentTime();
@@ -580,7 +582,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		
 		getDriver().navigate().to(prop.getProperty("url")+ "ClinicalInbox.aspx");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		ClinicalInboxPage clinicalInboxPage = new ClinicalInboxPage();
 		action.explicitWait(getDriver(), clinicalInboxPage.refundAgainstSaim, 50);
@@ -601,6 +603,11 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 	
+	
+	///////////////////////////////////////////////Paient Chart Patient Case Tests////////////////////////
+	
+	
+	
 	@Test(priority = 15, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC12_toNavigateto_PatientChart_PatientCase() throws Throwable {
 		Log.startTestCase("patientCase_TC12_toNavigateto_PatientChart_PatientCase");
@@ -609,14 +616,15 @@ public class PatientCaseTest extends BaseClass{
 		//dashboardPage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"), prop.getProperty("code"));
 		//Log.info("User is logged in successfully");
 		getDriver().navigate().to("https://staging.pemr.com/Patient/PatientList.aspx");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		chartPage = patientListPage.goToPatientChart(prop.getProperty("MRN"));
-		Log.info("Patient Landed on Patient Chart page");
+		Log.info("User Landed on Patient Chart page");
 		
-		action.waitPreloader();
-		action.click(getDriver(), chartPage.tabPatientCase);
-
+		action.pageLoadTimeOut(getDriver(), 100);
+		action.waitForClickablility(chartPage.tabPatientCase, 100);
+		action.JSClick(getDriver(), chartPage.tabPatientCase);
+		Log.info("User clicked on Patient Case Tab");
 		
 	    Log.endTestCase("patientCase_TC12_toNavigateto_PatientChart_PatientCase");
 	    
@@ -694,9 +702,9 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 	@Test (priority = 18, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
-	public void patientCase_TC15_toValidateMandatoryFields_PatientCaseModel()
+	public void patientCase_TC15_toValidateMandatoryFields_PatientCaseModel_VerifyingDisabledButtons()
 	{
-		Log.startTestCase("patientCase_TC15_toValidateMandatoryFields_PatientCaseModel");
+		Log.startTestCase("patientCase_TC15_toValidateMandatoryFields_PatientCaseModel_VerifyingDisabledButtons");
 				
 		chartPage.openPatientCaseModel_fromChart();
 		
@@ -704,55 +712,8 @@ public class PatientCaseTest extends BaseClass{
 		page.fillMandatoryFields("Subject");
 		page.btnClose.click();
 		
-		Log.endTestCase("patientCase_TC15_toValidateMandatoryFields_PatientCaseModel");
+		Log.endTestCase("patientCase_TC15_toValidateMandatoryFields_PatientCaseModel_VerifyingDisabledButtons");
 		
-	}
-
-
-	@Test(priority = 19, enabled=false, dependsOnMethods = { "patientCase_TC12_toNavigateto_PatientChart_PatientCase" })
-	public void patientCase_patientChart_TC16_clickBtnSaveAddOrder_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed() throws InterruptedException
-	{
-		
-		Log.startTestCase("patientCase_patientChart_TC16_clickBtnSaveAddOrder_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed");
-		//page = new page();
-		
-		chartPage.openPatientCaseModel_fromChart();
-		
-		page.fillMandatoryFields("Subject");
-		
-		Log.info("Validating Alert message should not be appear once clicked on Save&AddOrders button because user is on specific patient's chart");
-		action.click(getDriver(), chartPage.btnSave$AddOrders);
-		if(action.isAlertPresent(getDriver())) {
-			Log.info("Alert Present"+ "(Please Select Patient)");
-			Alert alert = getDriver().switchTo().alert();
-			//String alertMessage = alert.getText();
-			Assert.assertTrue(false);
-			alert.accept();
-			Log.info("Alert message appeared even expected was not to appear because user is on specific patient's chart");
-			//Thread.sleep(5000);
-		}else {
-			Log.info("Alert does not present, test pass");
-			Assert.assertTrue(true);
-		}
-		
-		Log.info("Validating Alert message should not be appear once clicked on Save button because user is on specific patient's chart");
-		action.click(getDriver(), chartPage.btnSave);
-		if(action.isAlertPresent(getDriver())) {
-			Log.info("Alert Present"+ "(Please Select Patient)");
-			Alert alert = getDriver().switchTo().alert();
-			//String alertMessage = alert.getText();
-			Assert.assertTrue(false);
-			alert.accept();
-			Log.info("Alert message appeared even expected was not to appear because user is on specific patient's chart");
-			//Thread.sleep(5000);
-		}else {
-			Log.info("Alert does not present, test pass");
-			Assert.assertTrue(true);
-		}
-		
-	    
-	    Log.endTestCase("patientCase_patientChart_TC16_clickBtnSaveSchudular_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed");
-
 	}
 
 	
@@ -772,7 +733,7 @@ public class PatientCaseTest extends BaseClass{
 			Log.info("Patient Search Model appear, but should not be present as expected, test faled.");
 			Assert.assertTrue(false);
 		}
-		
+		action.click(getDriver(), page.btnClose);
 		
 	    Log.endTestCase("patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed");
 
@@ -793,41 +754,41 @@ public class PatientCaseTest extends BaseClass{
 		LocalDateTime now = LocalDateTime.now();  
 		String currentDateTime = dtf.format(now);
 		
+		
+		//Select select = new Select(page.dropdownType);
+		
+		if(action.selectByVisibleText("Referral", page.dropdownType)) {
+			Log.info("Type as Referral selected");
+			Assert.assertTrue(true);
+		}else {
+			Log.info("Type as Referral not selected");
+			Assert.assertTrue(false);
+		}
 		page.fillMandatoryFields(currentDateTime);
 		
 		
 		Log.info("Typing text into the Description TextArea");
-		action.type(page.textAreas.get(0), "This is an automated test case saving after clicking the Save&Schedule button");
+		action.type(chartPage.textAreaDescription, "This is an automated test case saving after clicking the Save&Schedule button");
 		
 		//Selecting referral from Type dropdown
-		action.selectByValue(page.dropdownType, "Referral");
-		Log.info("Going to click Save&AddOrder button to add the automated test case and navigate to the appointment screen");
-		action.JSClick(getDriver(), chartPage.btnSave$AddOrders);
-		Log.info("Save&AddOrder clicked");
 		
-		action.waitForModelDisplayed(chartPage.referralSearchModel, chartPage.referralModalLabel);
-		Log.info("Referral label displayed on Referral Search Model");
+		Log.info("Going to click Save&AddOrder button to add the automated test case and navigate to the referral model");
+		action.JSClick(getDriver(), chartPage.btnSave$AddOrders);
+		Log.info("Save&AddOrder button clicked");
 		
 		//Verification of redirection
-		if(action.isDisplayed(getDriver(), chartPage.referralSearchModel)) {
-			Log.info("User is redirected to Referral Model");
-			Assert.assertTrue(true);
-			
-		}else {
-			Log.info("User is not redirected to Expected Referral Model");
-			Assert.assertTrue(false);
-		}
-		
+		action.waitForModelDisplayed(chartPage.referralSearchModel, chartPage.referralModalLabel);
+		Log.info("User is redirected to Referral Model");
 		
 		//To verify all added cases of relevant patients are shown
 		//to verify user can be able to click on edit of a specific patient case
 		//To verify whether or not patient case is saved once clicked on Save and AddOrder button
-		action.implicitWait(getDriver(), 20);		
-		getDriver().navigate().refresh();
-		chartPage.openPatientCaseModel_fromChart();
-		action.waitPreloader();
 		
-		
+		chartPage.btnCloseReferralModel.click();
+		action.waitPreloader(30);
+	
+		chartPage.btnRefresh.click();
+		action.waitPreloader(30);
 		//clicking on first result of the patient case list
 		chartPage.clickOnFirstResultOfPtCaseList();
 		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
@@ -877,7 +838,7 @@ public class PatientCaseTest extends BaseClass{
 		Log.info("Clicking Save button to add the automated test case that will close this patient case model");
 		action.click(getDriver(), page.btnSave);
 		Log.info("Save button is clicked");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//exploring to the patient case page again
 		//getDriver().navigate().to("https://staging.pemr.com/Patient/Patientcase.aspx");
@@ -889,7 +850,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		action.click(getDriver(), page.chkboxesProviders.get(0));
 		action.click(getDriver(), page.btnSearch);
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//clicking on last result of the patient case list
 		page.clickOnLastResultOfPtCaseList();
@@ -922,9 +883,9 @@ public class PatientCaseTest extends BaseClass{
 		
 		//Navigate to patient case
 		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		action.click(getDriver(), page.btnAddPatientCase);
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		//filling mandatory fields
 		String currentTime = action.getCurrentTime();
@@ -940,7 +901,7 @@ public class PatientCaseTest extends BaseClass{
 		
 		
 		getDriver().navigate().to(prop.getProperty("url")+ "ClinicalInbox.aspx");
-		action.waitPreloader();
+		action.waitPreloader(30);
 		
 		ClinicalInboxPage clinicalInboxPage = new ClinicalInboxPage();
 		action.explicitWait(getDriver(), clinicalInboxPage.refundAgainstSaim, 50);

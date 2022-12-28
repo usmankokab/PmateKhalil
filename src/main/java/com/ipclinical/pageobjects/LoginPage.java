@@ -50,7 +50,7 @@ public class LoginPage extends BaseClass {
 		action.type(txtPassword, pwd);
 		action.type(txtCode, code);
 		action.click(getDriver(), btnLogin);
-		action.waitPreloader();
+		action.waitPreloader(30);
 		WebElement webElement = getDriver().findElement(By.xpath("//select[@name='Location']/option[@value='1']"));
 		action.explicitWait(getDriver(), webElement, 30);
 		action.selectByIndex(drpLocation, 1);
