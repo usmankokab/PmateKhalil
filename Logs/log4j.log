@@ -50038,3 +50038,21 @@ Delete
 2022-12-29 07:53:35 INFO  Log:11 - =====================================patientCase_TC12_toNavigateto_PatientChart_PatientCase TEST START=========================================
 2022-12-29 07:53:36 INFO  Log:22 - Patient Serached
 2022-12-29 08:47:16 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-29 09:04:43 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-29 09:07:35 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-29 09:19:07 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-29 09:19:10 INFO  Log:22 - User is logged in successfully
+2022-12-29 09:19:18 INFO  Log:22 - Patient Widget is clicked
+2022-12-29 09:19:18 INFO  Log:22 - User is on Patient List Page
+2022-12-29 09:19:18 INFO  Log:22 - Patients Menu is clicked
+2022-12-29 09:19:20 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-29 09:19:21 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-29 09:19:21 INFO  Log:22 - User landed on Patient case page
+2022-12-29 09:19:21 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-29 09:19:21 INFO  Log:11 - =====================================patientCase_TC12_toNavigateto_PatientChart_PatientCase TEST START=========================================
+2022-12-29 09:19:22 INFO  Log:22 - Patient Serached
+2022-12-29 09:19:41 INFO  Log:22 - Clicked on patient chart icon
+2022-12-29 09:19:41 INFO  Log:22 - User Landed on Patient Chart page
+2022-12-29 09:19:42 INFO  Log:22 - User clicked on Patient Case Tab
+2022-12-29 09:19:42 INFO  Log:15 - =====================================patientCase_TC12_toNavigateto_PatientChart_PatientCase TEST END=========================================
+2022-12-29 09:19:42 INFO  Log:11 - =====================================patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase TEST START=========================================

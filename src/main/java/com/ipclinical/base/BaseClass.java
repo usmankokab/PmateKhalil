@@ -70,7 +70,9 @@ public class BaseClass {
 
 	public static WebDriver getDriver() {
 		// Get Driver from threadLocalmap
+		
 		return driver.get();
+		
 	}
 
 	public void launchApp(String browserName) {
@@ -78,11 +80,8 @@ public class BaseClass {
 		if (browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			//mention the below chrome option to solve timeout exception issue
-			ChromeOptions options = new ChromeOptions();
-			options.setPageLoadStrategy(PageLoadStrategy.NONE);
-			
 			// Set Browser to ThreadLocalMap
-			driver.set(new ChromeDriver(options));
+			driver.set(new ChromeDriver());
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());

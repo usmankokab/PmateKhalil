@@ -2,38 +2,38 @@
 <testng-results ignored="18" total="21" passed="0" failed="1" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-29T08:47:04 EST" name="Default suite" finished-at="2022-12-29T08:47:18 EST" duration-ms="14310">
+  <suite started-at="2022-12-29T09:07:31 EST" name="Default suite" finished-at="2022-12-29T09:07:37 EST" duration-ms="6078">
     <groups>
     </groups>
-    <test started-at="2022-12-29T08:47:04 EST" name="Default test" finished-at="2022-12-29T08:47:18 EST" duration-ms="14310">
+    <test started-at="2022-12-29T09:07:31 EST" name="Default test" finished-at="2022-12-29T09:07:37 EST" duration-ms="6078">
       <class name="com.ipclinical.testcases.PatientCaseTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T08:47:03 EST" name="loadConfig" finished-at="2022-12-29T08:47:04 EST" duration-ms="376" status="PASS">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T09:07:30 EST" name="loadConfig" finished-at="2022-12-29T09:07:31 EST" duration-ms="373" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T08:47:04 EST" name="setup" finished-at="2022-12-29T08:47:16 EST" duration-ms="12013" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T09:07:31 EST" name="setup" finished-at="2022-12-29T09:07:35 EST" duration-ms="4639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="patientCase_TC1_toNavigatePatientCase()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T08:47:16 EST" name="patientCase_TC1_toNavigatePatientCase" finished-at="2022-12-29T08:47:18 EST" duration-ms="1979" status="FAIL">
+        <test-method signature="patientCase_TC1_toNavigatePatientCase()[pri:1, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T09:07:35 EST" name="patientCase_TC1_toNavigatePatientCase" finished-at="2022-12-29T09:07:37 EST" duration-ms="1316" status="FAIL">
           <exception class="org.openqa.selenium.json.JsonException">
             <message>
               <![CDATA[java.lang.reflect.InvocationTargetException
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16d8cd7834f815e7416cce57b870677f, actions {actions=[org.openqa.selenium.interactions.Sequence@8deb645]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\uali\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58383}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58383/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 16d8cd7834f815e7416cce57b870677f]]>
+Command: [9eeefd089f7c40c95f1d460d5e0f7f46, actions {actions=[org.openqa.selenium.interactions.Sequence@35f639fa]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\uali\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55957}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55957/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eeefd089f7c40c95f1d460d5e0f7f46]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16d8cd7834f815e7416cce57b870677f, actions {actions=[org.openqa.selenium.interactions.Sequence@8deb645]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\uali\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58383}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58383/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 16d8cd7834f815e7416cce57b870677f
+Command: [9eeefd089f7c40c95f1d460d5e0f7f46, actions {actions=[org.openqa.selenium.interactions.Sequence@35f639fa]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\uali\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55957}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55957/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eeefd089f7c40c95f1d460d5e0f7f46
 at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
 at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
 at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
@@ -115,9 +115,9 @@ For documentation on this error, please visit: https://selenium.dev/exceptions/#
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [16d8cd7834f815e7416cce57b870677f, findElement {using=id, value=btnsubmit}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\uali\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58383}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58383/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 16d8cd7834f815e7416cce57b870677f
+Command: [9eeefd089f7c40c95f1d460d5e0f7f46, findElement {using=id, value=btnsubmit}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\uali\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:55957}, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55957/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9eeefd089f7c40c95f1d460d5e0f7f46
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -148,7 +148,7 @@ at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientCase_TC1_toNavigatePatientCase -->
-        <test-method signature="patientCase_TC12_toNavigateto_PatientChart_PatientCase()[pri:15, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T08:47:18 EST" name="patientCase_TC12_toNavigateto_PatientChart_PatientCase" finished-at="2022-12-29T08:47:18 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC1_toNavigatePatientCase" duration-ms="0" status="SKIP">
+        <test-method signature="patientCase_TC12_toNavigateto_PatientChart_PatientCase()[pri:15, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T09:07:37 EST" name="patientCase_TC12_toNavigateto_PatientChart_PatientCase" finished-at="2022-12-29T09:07:37 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC1_toNavigatePatientCase" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method PatientCaseTest.patientCase_TC12_toNavigateto_PatientChart_PatientCase()[pri:15, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb] depends on not successfully finished methods]]>
@@ -180,7 +180,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientCase_TC12_toNavigateto_PatientChart_PatientCase -->
-        <test-method signature="patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()[pri:25, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T08:47:18 EST" name="patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase" finished-at="2022-12-29T08:47:18 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC12_toNavigateto_PatientChart_PatientCase" duration-ms="0" status="SKIP">
+        <test-method signature="patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()[pri:25, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T09:07:37 EST" name="patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase" finished-at="2022-12-29T09:07:37 EST" depends-on-methods="com.ipclinical.testcases.PatientCaseTest.patientCase_TC12_toNavigateto_PatientChart_PatientCase" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method PatientCaseTest.patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()[pri:25, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb] depends on not successfully finished methods]]>
@@ -212,11 +212,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T08:47:18 EST" name="tearDown" finished-at="2022-12-29T08:47:18 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T09:07:37 EST" name="tearDown" finished-at="2022-12-29T09:07:37 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T08:47:18 EST" name="afterSuite" finished-at="2022-12-29T08:47:18 EST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.ipclinical.testcases.PatientCaseTest@1afd44cb]" started-at="2022-12-29T09:07:37 EST" name="afterSuite" finished-at="2022-12-29T09:07:37 EST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
