@@ -49829,3 +49829,212 @@ Delete
 2022-12-28 12:43:54 INFO  Log:22 - Comparing Actual DateTime-2022/12/28 12:43:19 with CurrentDateTime-2022/12/28 12:43:19
 2022-12-28 12:43:54 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the referral model
 2022-12-28 12:43:54 INFO  Log:15 - =====================================patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed TEST END=========================================
+2022-12-29 06:55:58 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-29 06:56:01 INFO  Log:22 - User is logged in successfully
+2022-12-29 06:56:08 INFO  Log:22 - Patient Widget is clicked
+2022-12-29 06:56:08 INFO  Log:22 - User is on Patient List Page
+2022-12-29 06:56:09 INFO  Log:22 - Patients Menu is clicked
+2022-12-29 06:56:10 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-29 06:56:10 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-29 06:56:10 INFO  Log:22 - User landed on Patient case page
+2022-12-29 06:56:10 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-29 06:56:10 INFO  Log:11 - =====================================patientCase_TC12_toNavigateto_PatientChart_PatientCase TEST START=========================================
+2022-12-29 06:56:15 INFO  Log:22 - Patient Serached
+2022-12-29 06:56:35 INFO  Log:22 - Clicked on patient chart icon
+2022-12-29 06:56:35 INFO  Log:22 - User Landed on Patient Chart page
+2022-12-29 06:56:36 INFO  Log:22 - User clicked on Patient Case Tab
+2022-12-29 06:56:36 INFO  Log:15 - =====================================patientCase_TC12_toNavigateto_PatientChart_PatientCase TEST END=========================================
+2022-12-29 06:56:36 INFO  Log:11 - =====================================patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed TEST START=========================================
+2022-12-29 06:56:38 INFO  Log:22 - Patient Case
+Source/Recipient
+                                        Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                     Type
+                                        Please Select
+                                        Administrative
+                                        Clinical Question
+                                        Medical Record- Electronic
+                                        Medical Record - Paper
+                                        Medication
+                                        Referral
+                                        Refill
+                                        Patient No Show
+                                        Lab
+                                        Imaging
+                                        Procedure
+                                        DME
+                                        Refund
+                                        Other
+                                     Outbound Only
+Provider
+                                        Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                     Department
+                                        Please Select
+                                        Facility
+North Bethesda Maryland
+                                     Outside Provider/Lab/Pharmacy
+Person To Call
+Desired Callback Number
+                                        Please Select
+                                        4078989898- Patient Home Phone #
+Other
+                                     Other
+Subject
+Priority
+                                        Please Select
+                                        High
+                                        Medium
+                                        Low
+                                     Case Description
+History
+Date / Time Action Action By Assigned To Note
+Action
+Reply to
+Close
+                                        Please Select
+                                        Patient/caller contacted
+                                        Completed
+                                        Unable to complete
+                                        Scheduled
+                                     Failed Contact Attempt
+                                        Please Select
+                                        
+                                        Phone Disconnected / NIS
+                                        Left Voice Message
+                                        No Answer / Unable to leave message
+                                        Wrong Phone Number
+                                     Leave in REVIEW
+Delete
+                                        Please Select
+                                        Duplicate
+                                        Other
+                                     Action NoteModel/Popup appears
+2022-12-29 06:56:38 INFO  Log:22 - Type as Referral selected
+2022-12-29 06:56:40 INFO  Log:22 - Last One of values from the dropdown field is selected
+2022-12-29 06:56:40 INFO  Log:22 - Last One of values from the dropdown field is selected
+2022-12-29 06:56:43 INFO  Log:22 - All mandatory fields are filled
+2022-12-29 06:56:43 INFO  Log:22 - mandatory fields, enabled and disabled buttons are verified
+2022-12-29 06:56:43 INFO  Log:22 - Typing text into the Description TextArea
+2022-12-29 06:56:52 INFO  Log:22 - Going to click Save&AddOrder button to add the automated test case and navigate to the referral model
+2022-12-29 06:56:52 INFO  Log:22 - Save&AddOrder button clicked
+2022-12-29 06:56:53 ERROR Log:34 - Referral Order
+ICD
+                                    
+                                    Urinary tract infection, site not specified (N39.0)
+Gastro-esophageal reflux disease with esophagitis (K21.0)
+Other viral pneumonia (J12.89)
+                                 Search
+Order Send Date
+Ordering Provider
+                                    Rosselot, Eric
+TEHRANI, ALI
+                                 Quickpicks
+Search
+Selected Orders:Model does not appear
+2022-12-29 06:56:53 INFO  Log:22 - User is redirected to Referral Model
+2022-12-29 06:56:55 INFO  Log:22 - Going to click on first result edit button of the first page
+2022-12-29 06:56:55 INFO  Log:22 - clicked on first result edit button
+2022-12-29 06:56:56 INFO  Log:22 - Patient Case
+Source/Recipient
+                                        Please Select
+                                        Patient
+                                        Parent/Care Giver
+                                        Spouse/Partner
+                                        Pharmacy
+                                        Lab
+                                        PcP
+                                        Specialist
+                                        Clinical Staff
+                                        Hospital
+                                        Other
+                                     Type
+                                        Please Select
+                                        Administrative
+                                        Clinical Question
+                                        Medical Record- Electronic
+                                        Medical Record - Paper
+                                        Medication
+                                        Referral
+                                        Refill
+                                        Patient No Show
+                                        Lab
+                                        Imaging
+                                        Procedure
+                                        DME
+                                        Refund
+                                        Other
+                                     Outbound Only
+Provider
+                                        Please Select
+                                        Ahmar, Wasim
+Rosselot, Eric
+TEHRANI, ALI REZAZADEH
+                                     Department
+                                        Please Select
+                                        Facility
+North Bethesda Maryland
+                                     Outside Provider/Lab/Pharmacy
+Person To Call
+Desired Callback Number
+                                        Please Select
+                                        4078989898- Patient Home Phone #
+Other
+                                     Other
+Subject
+Priority
+                                        Please Select
+                                        High
+                                        Medium
+                                        Low
+                                     Case Description
+History
+Date / Time Action Action By Assigned To Note
+12/29/2022 6:58:37 AM Created Saim
+Action
+Reply to
+Close
+                                        Please Select
+                                        Patient/caller contacted
+                                        Completed
+                                        Unable to complete
+                                        Scheduled
+                                     Failed Contact Attempt
+                                        Please Select
+                                        
+                                        Phone Disconnected / NIS
+                                        Left Voice Message
+                                        No Answer / Unable to leave message
+                                        Wrong Phone Number
+                                     Leave in REVIEW
+Delete
+                                        Please Select
+                                        Duplicate
+                                        Other
+                                     Action NoteModel/Popup appears
+2022-12-29 06:56:56 INFO  Log:22 - Comparing Actual DateTime-2022/12/29 06:56:38 with CurrentDateTime-2022/12/29 06:56:38
+2022-12-29 06:56:56 INFO  Log:22 - Patient case is saved successfully before or after redirecting to the referral model
+2022-12-29 06:56:56 INFO  Log:15 - =====================================patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed TEST END=========================================
+2022-12-29 07:53:22 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================
+2022-12-29 07:53:25 INFO  Log:22 - User is logged in successfully
+2022-12-29 07:53:33 INFO  Log:22 - Patient Widget is clicked
+2022-12-29 07:53:33 INFO  Log:22 - User is on Patient List Page
+2022-12-29 07:53:33 INFO  Log:22 - Patients Menu is clicked
+2022-12-29 07:53:34 INFO  Log:22 - Patient Case in Patients menu is clicked
+2022-12-29 07:53:35 INFO  Log:22 - Verifying if user explored to the Patient Case Page
+2022-12-29 07:53:35 INFO  Log:22 - User landed on Patient case page
+2022-12-29 07:53:35 INFO  Log:15 - =====================================patientCase_TC1_toNavigatePatientCase TEST END=========================================
+2022-12-29 07:53:35 INFO  Log:11 - =====================================patientCase_TC12_toNavigateto_PatientChart_PatientCase TEST START=========================================
+2022-12-29 07:53:36 INFO  Log:22 - Patient Serached
+2022-12-29 08:47:16 INFO  Log:11 - =====================================patientCase_TC1_toNavigatePatientCase TEST START=========================================

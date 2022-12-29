@@ -6,9 +6,9 @@
       <class name="com.ipclinical.testcases.PatientCaseTest">
         <methods>
           <include name="patientCase_TC12_toNavigateto_PatientChart_PatientCase"/>
+          <include name="patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase"/>
           <include name="afterSuite"/>
           <include name="tearDown"/>
-          <include name="patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed"/>
           <include name="loadConfig"/>
           <include name="patientCase_TC1_toNavigatePatientCase"/>
           <include name="setup"/>

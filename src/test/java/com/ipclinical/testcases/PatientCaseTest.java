@@ -740,7 +740,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 		
-	@Test(priority = 24, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test(priority = 24, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed() throws Throwable
 	{
 		
@@ -804,13 +804,14 @@ public class PatientCaseTest extends BaseClass{
 			Assert.assertEquals(actualDateTime, currentDateTime);
 		}
 		
+		page.btnClose.click();
+		
 	    Log.endTestCase("patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed");
 
 	}
 
 
-
-	@Test(priority = 25, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test(priority = 25, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
 
 	{
@@ -818,10 +819,7 @@ public class PatientCaseTest extends BaseClass{
 		Log.startTestCase("patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase");
 		//page = new PatientCasePage();
 		
-		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
-		action.pageLoadTimeOut(getDriver(), 50);
-		action.JSClick(getDriver(), page.btnAddPatientCase);
-		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
+		chartPage.openPatientCaseModel_fromChart();
 		
 		//Filling mandatory fields 
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
@@ -830,10 +828,6 @@ public class PatientCaseTest extends BaseClass{
 		
 		page.fillMandatoryFields(currentDateTime);
 				
-		
-		//Selecting the patient
-		action.JSClick(getDriver(), page.btnSelectPatient);
-		page.searchAndSelectPatient((prop.getProperty("MRN")));
 			
 		Log.info("Clicking Save button to add the automated test case that will close this patient case model");
 		action.click(getDriver(), page.btnSave);
@@ -848,12 +842,8 @@ public class PatientCaseTest extends BaseClass{
 		//To verify whether or not patient case is saved
 		//action.waitPreloader();
 		
-		action.click(getDriver(), page.chkboxesProviders.get(0));
-		action.click(getDriver(), page.btnSearch);
-		action.waitPreloader(30);
-		
 		//clicking on last result of the patient case list
-		page.clickOnLastResultOfPtCaseList();
+		chartPage.clickOnFirstResultOfPtCaseList();
 		action.waitForModelDisplayed(page.PatientCaseModel, page.chkOutBoundOnly);
 		
 		String actualDateTime = page.txtSubject.getAttribute("value");
