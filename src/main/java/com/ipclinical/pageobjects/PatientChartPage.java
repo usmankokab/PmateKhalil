@@ -24,7 +24,7 @@ public class PatientChartPage extends BaseClass {
 	
 	
 	//@ByAngularModel.FindBy(model = "")
-	@FindBy(xpath = "//a[@ng-click='OpenPatientCaseModel()']")
+	@FindBy(xpath = "//*[@id=\"PatientCase\"]/div/div/div/div/div[2]/a")
 	WebElement btnAdd;
 	
 	@FindBy(xpath = "//a[@ng-click='RefreshPage()']")
@@ -70,6 +70,7 @@ public class PatientChartPage extends BaseClass {
 	public boolean openPatientCaseModel_fromChart() {
 		
 		action.click(getDriver(), tabPatientCase);
+		action.waitPreloader(30);
 		action.click(getDriver(), btnAdd);
 		action.waitForModelDisplayed(PatientCaseModel, chkOutBoundOnly);
 		

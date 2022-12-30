@@ -9,11 +9,16 @@
     <classes>
       <class name="com.ipclinical.testcases.PatientCaseTest">
         <methods>
+          <include name="patientCase_TC7_TC10_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase"/>
+          <include name="patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed"/>
           <include name="afterSuite"/>
           <include name="tearDown"/>
+          <include name="patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider"/>
           <include name="loadConfig"/>
+          <include name="patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected"/>
+          <include name="patientCase_TC1_toNavigatePatientCase"/>
           <include name="setup"/>
-          <include name="patientCase_TC6_clickSaveScheduler_withSelectingPatient_SchulderPageShouldBeDisplayed"/>
+          <include name="patientCase_TC4a_toValidateFields_SelectPatientModel"/>
         </methods>
       </class> <!-- com.ipclinical.testcases.PatientCaseTest -->
     </classes>

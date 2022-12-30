@@ -274,9 +274,10 @@ public class PatientCasePage extends BaseClass{
 	
 	public void assignPatientCase(String assignee, WebElement assigneeElement) {
 		
-		action.click(getDriver(), radioButtons.get(3));
+		action.JSClick(getDriver(), radioButtons.get(3));
+		action.explicitWait(getDriver(), txtAssignTo, 30);
 		action.type(txtAssignTo, "saim");
-		action.explicitWait(getDriver(), AssigneeElementaliSaim, 10);
+		action.explicitWait(getDriver(), AssigneeElementaliSaim, 50);
 		
 		//action.click(getDriver(), page.aliSaim);
 		txtAssignTo.sendKeys(Keys.DOWN);

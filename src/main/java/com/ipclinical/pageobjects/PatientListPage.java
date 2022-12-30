@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import com.ipclinical.actiondriver.Action;
 import com.ipclinical.base.BaseClass;
 import com.ipclinical.utility.Log;
-import com.paulhammant.ngwebdriver.NgWebDriver;
 
 public class PatientListPage extends BaseClass{
 	
@@ -27,7 +26,7 @@ public class PatientListPage extends BaseClass{
 	@FindBy(xpath = "(//input[@ng-model='Patient.IsCCCDChecked'])[1]")
 	WebElement chkFirstSelectPatient;
 	
-	@FindBy(xpath = "(//img[@src='../App_Themes/AvicenTheme-test/img/svg/icons/patient-chart.svg'])[1]")
+	@FindBy(xpath = "(//*[@id=\"BasicSearch\"]/.//ul/li[2]/a)[1]")
 	WebElement btnActionPatientChart;
 	
 	
@@ -65,12 +64,13 @@ public class PatientListPage extends BaseClass{
 	public PatientChartPage goToPatientChart(String MRN) {
 		
 		action.type(txtEmrNo, MRN);
-		action.click(getDriver(), btnSearchPatient);
+		action.JSClick(getDriver(), btnSearchPatient);
 		Log.info("Patient Serached");
 		action.waitPreloader(30);
 		
 		//action.click(getDriver(), chkFirstSelectPatient);
-		action.click(getDriver(), btnActionPatientChart);
+		action.explicitWait(getDriver(), btnActionPatientChart, 30);
+		action.JSClick(getDriver(), btnActionPatientChart);
 		Log.info("Clicked on patient chart icon");
 			
 		return (new PatientChartPage());

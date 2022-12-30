@@ -34,7 +34,6 @@ import org.testng.Assert;
 import com.ipclinical.actioninterface.ActionInterface;
 import com.ipclinical.base.BaseClass;
 import com.ipclinical.utility.Log;
-import com.paulhammant.ngwebdriver.NgWebDriver;
 
 
 /**
@@ -862,20 +861,7 @@ public class Action extends BaseClass implements ActionInterface {
 	//================================CUSTOM FUNCTIONS FOR IPICLINICAL BY USMAN KOKAB===================================
 	
 	
-		public NgWebDriver getNgDriver() {
-			JavascriptExecutor js = (JavascriptExecutor) getDriver();
-			return new NgWebDriver(js);
-		}
 		
-		public void waitForAngularRequestsToFinish() {
-			try {
-				getNgDriver().waitForAngularRequestsToFinish();
-			}catch (Exception e){
-				Assert.fail("Error while waiting for angular requests to finish" + e.getMessage());
-			}
-			
-		}
-	
 		//Validating any label
 		public void validateLabel(WebElement element, String fieldText) {
 		String labelText = element.getText();
@@ -893,18 +879,18 @@ public class Action extends BaseClass implements ActionInterface {
 				
 		type(element, sendText);
 		String attributeV= element.getAttribute("value");
-		Log.info("values entered in " + element.getText()+ "/" +element.getAttribute("value"));
+		Log.info("values entered in " + element.getText());
 		Assert.assertTrue(isDisplayed(getDriver(), element));
-		Log.info(element.getText()+ "/" +element.getAttribute("value") +  " TextBox is present");
+		Log.info(element.getText()+  " TextBox is present");
 		
 		if(element.isEnabled()) {
 			Assert.assertEquals(attributeV, sendText);
-			Log.info(element.getText()+ "/" +element.getAttribute("value") +  " TextBox is editable");
+			Log.info(element.getText()+" TextBox is editable");
 			}
 		if(!element.isEnabled())
 		{
 			Assert.assertTrue(true);
-			Log.info(element.getText()+"/"+element.getAttribute("value")+ " TextBox is disabled to type");
+			Log.info(element.getText()+ " TextBox is disabled to type");
 			
 		} 
 		

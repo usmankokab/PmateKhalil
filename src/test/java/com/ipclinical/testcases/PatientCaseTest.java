@@ -97,7 +97,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 	
-	@Test (priority=1, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test (priority=1, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC1a_toValidateFields_page() throws Throwable {
 		Log.startTestCase("patientCase_TC1a_toValidateFields_page");
 		
@@ -144,7 +144,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 
 	
-	@Test(priority = 2, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test(priority = 2, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed()
 	{
 		Log.startTestCase("patientCase_TC2_clickBtnAddPatientCase_PatientCaseModelShouldBeDisplayed");
@@ -162,7 +162,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 	
-	@Test(priority = 3, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test(priority = 3, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC3_8_9_toValidateFields_PatientCaseModel()
 	{
 		Log.startTestCase("patientCase_TC3_8_9_toValidateFields_PatientCaseModel");
@@ -224,7 +224,7 @@ public class PatientCaseTest extends BaseClass{
 	    
 	}
 	
-	@Test (priority = 4, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test (priority = 4, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel()
 	{
 		Log.startTestCase("patientCase_TC3a_toValidateMandatoryFields_PatientCaseModel");
@@ -242,7 +242,7 @@ public class PatientCaseTest extends BaseClass{
 		
 	}
 	
-	@Test(priority = 4, enabled=false, dependsOnMethods = { "patientCase_TC1_toNavigatePatientCase" })
+	@Test(priority = 4, enabled=true, dependsOnMethods = { "patientCase_TC1_toNavigatePatientCase" })
 	public void patientCase_TC5_clickBtnSaveSchudular_BtnSave_withoutPatienSelecting_AlertShouldBeDisplayed() throws InterruptedException
 	{
 		
@@ -292,7 +292,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 
 	
-	@Test(priority = 5, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test(priority = 5, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC4_clickBtnSelectPatient_PatientSearchModelShouldBeDisplayed()
 	{
 		
@@ -318,7 +318,7 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test(priority = 5, enabled=false, dependsOnMethods = { "patientCase_TC1_toNavigatePatientCase" })
+	@Test(priority = 5, enabled=true, dependsOnMethods = { "patientCase_TC1_toNavigatePatientCase" })
 	public void patientCase_TC4b_clickBtnSave_withoutPatienSelecting_AlertShouldBeDisplayed() throws InterruptedException
 	{
 		
@@ -353,7 +353,7 @@ public class PatientCaseTest extends BaseClass{
 
 
 	
-	@Test(priority = 6, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test(priority = 6, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC4a_toValidateFields_SelectPatientModel() 
 	{
 		Log.startTestCase("patientCase_TC4_toValidateFields_SelectPatientModel");
@@ -384,7 +384,7 @@ public class PatientCaseTest extends BaseClass{
 		
 	}
 	
-	@Test(priority = 7, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test(priority = 7, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC4c_SelectingPatient_SearchResultShouldAppear_patientShouldBeSelected()
 	{
 		
@@ -408,7 +408,7 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test(priority = 8, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test(priority = 8, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC6_clickSaveScheduler_withSelectingPatient_schedulerPageShouldBeDisplayed() throws Throwable
 	{
 		
@@ -491,7 +491,7 @@ public class PatientCaseTest extends BaseClass{
 
 
 
-	@Test(priority = 9, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test(priority = 9, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC7_TC10_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
 
 	{
@@ -557,7 +557,7 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test (priority = 10, enabled=false, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
+	@Test (priority = 10, enabled=true, dependsOnMethods = {"patientCase_TC1_toNavigatePatientCase"})
 	public void patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider() {
 	
 		Log.startTestCase("patientCase_TC11_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstAssignedBucket");
@@ -621,7 +621,6 @@ public class PatientCaseTest extends BaseClass{
 		chartPage = patientListPage.goToPatientChart(prop.getProperty("MRN"));
 		Log.info("User Landed on Patient Chart page");
 		
-		action.pageLoadTimeOut(getDriver(), 100);
 		action.waitForClickablility(chartPage.tabPatientCase, 100);
 		action.JSClick(getDriver(), chartPage.tabPatientCase);
 		Log.info("User clicked on Patient Case Tab");
@@ -632,14 +631,13 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 	
-	@Test(priority = 16, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test(priority = 16, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed()
 	{
 		Log.startTestCase("patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed");
 		
 		
-		action.getNgDriver().waitForAngularRequestsToFinish();
-
+		
 		chartPage.openPatientCaseModel_fromChart();
 		Log.info("Patient Case Model opened in Patient Chart Page");
 		
@@ -701,7 +699,7 @@ public class PatientCaseTest extends BaseClass{
 	    Log.endTestCase("patientCase_TC13b_toValidateFields_PatientCaseModel");
 	}
 	
-	@Test (priority = 18, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test (priority = 18, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_TC15_toValidateMandatoryFields_PatientCaseModel_VerifyingDisabledButtons()
 	{
 		Log.startTestCase("patientCase_TC15_toValidateMandatoryFields_PatientCaseModel_VerifyingDisabledButtons");
@@ -717,7 +715,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 
 	
-	@Test(priority = 20, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test(priority = 20, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed()
 	{
 		
@@ -740,7 +738,7 @@ public class PatientCaseTest extends BaseClass{
 	}
 	
 		
-	@Test(priority = 24, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test(priority = 24, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed() throws Throwable
 	{
 		
@@ -812,7 +810,7 @@ public class PatientCaseTest extends BaseClass{
 
 
 	@Test(priority = 25, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
-	public void patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
+	public void patientCase_patientChart_TC22_clickSave_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase()
 
 	{
 		
@@ -858,7 +856,7 @@ public class PatientCaseTest extends BaseClass{
 		}
 		
 		//Editing textarea and saving
-		page.textAreas.get(0).sendKeys(" (Edited)");
+		chartPage.textAreaDescription.sendKeys(" (Edited)");
 		page.btnSave.click();
 		Log.info("Patient Case Edited successfully");
 		
@@ -866,25 +864,18 @@ public class PatientCaseTest extends BaseClass{
 
 	}
 	
-	@Test (priority = 26, enabled=false, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
+	@Test (priority = 26, enabled=true, dependsOnMethods = {"patientCase_TC12_toNavigateto_PatientChart_PatientCase"})
 	public void patientCase_patientChart_TC23_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider() {
 	
 		Log.startTestCase("patientCase_patientChart_TC23_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider");
 		
-		//Navigate to patient case
-		getDriver().navigate().to(prop.getProperty("url")+ "Patient/Patientcase.aspx");
-		action.waitPreloader(30);
-		action.click(getDriver(), page.btnAddPatientCase);
-		action.waitPreloader(30);
+		
+		chartPage.openPatientCaseModel_fromChart();
 		
 		//filling mandatory fields
 		String currentTime = action.getCurrentTime();
 		page.fillMandatoryFields(currentTime);
 		action.selectBySendkeys("Refund", page.dropdownType);
-		
-		//Search and Select patient
-		page.btnSelectPatient.click();
-		page.searchAndSelectPatient((prop.getProperty("MRN")));
 		
 		//Assigning the patient case
 		page.assignPatientCase("saim", page.AssigneeElementaliSaim);
@@ -906,6 +897,7 @@ public class PatientCaseTest extends BaseClass{
 		Assert.assertEquals(currentTime, subjectText);
 		Log.info("Patient case is saved successfully and shown in the Clinical Inbox under Patient Refund against the assigned bucket");
 		
+		action.click(getDriver(), page.btnClose);
 		
 		Log.endTestCase("patientCase_patientChart_TC23_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider");
 		

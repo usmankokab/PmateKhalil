@@ -6,10 +6,15 @@
       <class name="com.ipclinical.testcases.PatientCaseTest">
         <methods>
           <include name="patientCase_TC12_toNavigateto_PatientChart_PatientCase"/>
-          <include name="patientCase_patientChart_TC22_clickSave_withSelectingPatient_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase"/>
+          <include name="patientCase_TC15_toValidateMandatoryFields_PatientCaseModel_VerifyingDisabledButtons"/>
           <include name="afterSuite"/>
+          <include name="patientCase_fromPatientChart_TC13_clickBtnAdd_PatientCaseModelShouldBeDisplayed"/>
           <include name="tearDown"/>
+          <include name="patientCase_patientChart_TC22_clickSave_patientCaseMainWindowShouldBeDisplayed_verifyAddedPatientCase"/>
+          <include name="patientCase_patientChart_TC21_clickSaveAddOrders_referralModelShouldBeDisplayed"/>
           <include name="loadConfig"/>
+          <include name="patientCase_patientChart_TC17_BtnSelectPatient_ShouldNotBeDisplayed"/>
+          <include name="patientCase_patientChart_TC23_selectTypeAsRefund_patientCaseShouldbeDisplayedIn_refundColumnInClinicalInbox_againstSelectedProvider"/>
           <include name="patientCase_TC1_toNavigatePatientCase"/>
           <include name="setup"/>
         </methods>

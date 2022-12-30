@@ -18,7 +18,6 @@ import com.ipclinical.pageobjects.PatientCasePage;
 import com.ipclinical.pageobjects.PatientChartPage;
 import com.ipclinical.pageobjects.PatientListPage;
 import com.ipclinical.utility.Log;
-import com.paulhammant.ngwebdriver.NgWebDriver;
 
 public class PatientChartTest extends BaseClass{
 
