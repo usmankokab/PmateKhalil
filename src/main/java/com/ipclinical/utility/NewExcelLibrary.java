@@ -2,8 +2,13 @@ package com.ipclinical.utility;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -12,7 +17,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class NewExcelLibrary {
 
-	public static String path = System.getProperty("user.dir") + "\\src\\test\\resources\\TestData\\TestData.xlsx";
+	public static String path = System.getProperty("user.dir") + "\\src\\main\\resources\\TestData\\Book1.xlsx";
 
 //	public  String path;
 	public FileInputStream fis = null;
@@ -93,16 +98,16 @@ public class NewExcelLibrary {
 				return "";
 			//System.out.println(cell.getCellType());
 			if(cell.getCellType().name().equals("STRING"))
-				  return cell.getStringCellValue();
+				  return cell.getStringCellValue().trim();
 			else if(cell.getCellType().name().equals("NUMERIC") || cell.getCellType().name().equals("FORMULA") ){
 				  
 				  String cellText  = String.valueOf(cell.getNumericCellValue());
-				  if (HSSFDateUtil.isCellDateFormatted(cell)) {
+				  if (DateUtil.isCellDateFormatted(cell)) {
 			           // format in form of M/D/YY
 					  double d = cell.getNumericCellValue();
 
 					  Calendar cal =Calendar.getInstance();
-					  cal.setTime(HSSFDateUtil.getJavaDate(d));
+					  cal.setTime(DateUtil.getJavaDate(d));
 			            cellText =
 			             (String.valueOf(cal.get(Calendar.YEAR))).substring(2);
 			           cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" +
@@ -115,7 +120,7 @@ public class NewExcelLibrary {
 
 				  
 				  
-				  return cellText;
+				  return cellText.trim();
 			  }else if(cell.getCellType().name().equals("BLANK"))
 			      return ""; 
 			  else 
@@ -150,21 +155,32 @@ public class NewExcelLibrary {
 				return "";
 			
 		  if(cell.getCellType().name().equals("STRING"))
-			  return cell.getStringCellValue();
+			  return cell.getStringCellValue().trim();
 		  else if(cell.getCellType().name().equals("NUMERIC") || cell.getCellType().name().equals("FORMULA") ){
 			  
 			  String cellText  = String.valueOf(cell.getNumericCellValue());
-			  if (HSSFDateUtil.isCellDateFormatted(cell)) {
+			  if (DateUtil.isCellDateFormatted(cell)) {
 		           // format in form of M/D/YY
 				  double d = cell.getNumericCellValue();
 
+				  				  
 				  Calendar cal =Calendar.getInstance();
-				  cal.setTime(HSSFDateUtil.getJavaDate(d));
-		            cellText =
-		             (String.valueOf(cal.get(Calendar.YEAR))).substring(2);
-		           cellText = cal.get(Calendar.MONTH)+1 + "/" +
-		                      cal.get(Calendar.DAY_OF_MONTH) + "/" +
-		                      cellText;
+				  cal.setTime(DateUtil.getJavaDate(d));
+				  
+				  //Edited by Usman Kokab
+				  Date date = cal.getTime();             
+				  SimpleDateFormat format1 = new SimpleDateFormat("MM/dd/yyyy");
+				  String date1 = format1.format(date);            
+				  
+				  
+		            
+//				  cellText = (String.valueOf(cal.get(Calendar.YEAR)));
+//		          
+//				  String month = (String.valueOf(cal.get(Calendar.MONTH)+1));
+//				  String day = (String.valueOf(cal.get(Calendar.DAY_OF_MONTH)));
+
+				  //Edited by Usman Kokab  
+				  cellText =  date1; //month + "/" + day + "/" + cellText;
 		           
 		          // System.out.println(cellText);
 
@@ -172,7 +188,7 @@ public class NewExcelLibrary {
 
 			  
 			  
-			  return cellText;
+			  return cellText.trim();
 		  }else if(cell.getCellType().name().equals("BLANK"))
 		      return "";
 		  else 

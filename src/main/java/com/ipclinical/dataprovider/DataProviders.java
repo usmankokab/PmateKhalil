@@ -22,6 +22,99 @@ public class DataProviders {
 
 //Class --> LoginPageTest,HomePageTest Test Case--> loginTest, wishListTest, orderHistoryandDetailsTest
 
+	@DataProvider(name = "dataset")
+	public Object[][] getPatient() {
+		// Totals rows count
+		int rows = obj.getRowCount("Sheet1");
+		// Total Columns
+		int column = obj.getColumnCount("Sheet1");
+		int actRows = rows - 1;
+
+		Object[][] data = new Object[actRows][column];
+
+		for (int i = 0; i < actRows; i++) {
+			for (int j = 0; j < column; j++) {
+				data[i][j] = obj.getCellData("Sheet1", j, i + 2);
+			}
+		}
+		return data;
+	}
+	
+	@DataProvider(name = "dataset2")
+	public Object[][] getPatient2() {
+		// Totals rows count
+		int rows = obj.getRowCount("Sheet2");
+		// Total Columns
+		int column = obj.getColumnCount("Sheet2");
+		int actRows = rows - 1;
+
+		Object[][] data = new Object[actRows][column];
+
+		for (int i = 0; i < actRows; i++) {
+			for (int j = 0; j < column; j++) {
+				data[i][j] = obj.getCellData("Sheet2", j, i + 2);
+			}
+		}
+		return data;
+	}
+	
+	
+	@DataProvider(name = "dataset3")
+	public Object[][] getPatient3() {
+		// Totals rows count
+		int rows = obj.getRowCount("Sheet3");
+		// Total Columns
+		int column = obj.getColumnCount("Sheet3");
+		int actRows = rows - 1;
+
+		Object[][] data = new Object[actRows][column];
+
+		for (int i = 0; i < actRows; i++) {
+			for (int j = 0; j < column; j++) {
+				data[i][j] = obj.getCellData("Sheet3", j, i + 2);
+			}
+		}
+		return data;
+	}
+
+
+	@DataProvider(name = "dataset4")
+	public Object[][] getPatient4() {
+		// Totals rows count
+		int rows = obj.getRowCount("Sheet4");
+		// Total Columns
+		int column = obj.getColumnCount("Sheet4");
+		int actRows = rows - 1;
+
+		Object[][] data = new Object[actRows][column];
+
+		for (int i = 0; i < actRows; i++) {
+			for (int j = 0; j < column; j++) {
+				data[i][j] = obj.getCellData("Sheet4", j, i + 2);
+			}
+		}
+		return data;
+	}
+	
+	@DataProvider(name = "dataset5")
+	public Object[][] getPatient5() {
+		// Totals rows count
+		int rows = obj.getRowCount("Sheet5");
+		// Total Columns
+		int column = obj.getColumnCount("Sheet5");
+		int actRows = rows - 1;
+
+		Object[][] data = new Object[actRows][column];
+
+		for (int i = 0; i < actRows; i++) {
+			for (int j = 0; j < column; j++) {
+				data[i][j] = obj.getCellData("Sheet5", j, i + 2);
+			}
+		}
+		return data;
+	}
+
+	
 	@DataProvider(name = "credentials")
 	public Object[][] getCredentials() {
 		// Totals rows count

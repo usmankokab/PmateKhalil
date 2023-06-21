@@ -20,47 +20,122 @@ public class LoginPage extends BaseClass {
 		PageFactory.initElements(getDriver(), this);
 	}
 		
-	@FindBy(id="txtUserName")
+	@FindBy(id="username")
 	@CacheLookup
 	WebElement txtUserName;
 	
-	@FindBy(id="txtPassword")
+	@FindBy(id="password")
 	@CacheLookup
 	WebElement txtPassword;
 	
-	@FindBy(id="txtCode")
-	@CacheLookup
-	WebElement txtCode;
 	
-	@FindBy(id="btnsubmit")
+	@FindBy(id="Login1_LoginButton")
 	@CacheLookup
 	WebElement btnLogin;
 	
-	@FindBy(name="Location")
-	WebElement drpLocation;
+	@FindBy(id="manage-patients_tab")
+	@CacheLookup
+	WebElement managePatients;
 	
-	@FindBy(id="btnsubmitLocation")
-	WebElement btnProceedNow;
+	@FindBy(id="ctl00_phFolderContent_ucSearch_txtSearch")
+	@CacheLookup
+	WebElement txtSearch;
+	
+	@FindBy(id="ctl00_phFolderContent_ucSearch_ctlArrow")
+	@CacheLookup
+	WebElement searchArrow;
+	
+	@FindBy(id="ctl00_phFolderContent_ucSearch_txtSearchAdvanced")
+	@CacheLookup
+	WebElement txtSearchAdvanced;
+	
+	@FindBy(id="ctl00_phFolderContent_ucSearch_btnSearch")
+	@CacheLookup
+	WebElement btnSearch;
+	
+	@FindBy(css="td:nth-child(6) a:nth-child(1)")
+	@CacheLookup
+	WebElement linkLast;
+	
+	@FindBy(xpath="//a[normalize-space()='Template']")
+	@CacheLookup
+	WebElement tabTemplate;
+	
+	@FindBy(xpath="//a[normalize-space()='Create New Visit']")
+	@CacheLookup
+	WebElement linkNewVisit;
+	
+	@FindBy(id="ctl00_phFolderContent_DateVisited_Month")
+	@CacheLookup
+	WebElement monthVisited;
+	
+	@FindBy(id="ctl00_phFolderContent_DateVisited_Day")
+	@CacheLookup
+	WebElement dayVisited;
+	
+	@FindBy(id="ctl00_phFolderContent_DateVisited_Year")
+	@CacheLookup
+	WebElement yearVisited;
+	
+	
+	@FindBy(xpath="//a[normalize-space()='Billing Info']")
+	@CacheLookup
+	WebElement tabBillingInfo;
+	
+	@FindBy(xpath="//input[@value='Superbill']")
+	@CacheLookup
+	WebElement btnSuperbill;
+	
+	
+	@FindBy(id="lstSuperbill")
+	@CacheLookup
+	WebElement lstSuperbill;
+	
+	
+	@FindBy(id="chkCPT0")
+	@CacheLookup
+	WebElement chkCollect;
+	
+	@FindBy(id="chkDiagnosisCode0")
+	@CacheLookup
+	WebElement chkDx;
+	
+	@FindBy(id="Button1")
+	@CacheLookup
+	WebElement btnClose;
+	
+	
+	@FindBy(id="ctl00_phFolderContent_ucVisitLineItem_ucBillingCPT_DiagnosisCode0")
+	@CacheLookup
+	WebElement txtPointer;
+	
+	
+	@FindBy(xpath="//a[normalize-space()='Billing Options']")
+	@CacheLookup
+	WebElement tabBilligOption;
+	
+	
+	@FindBy(id="ctl00_phFolderContent_CLIA")
+	@CacheLookup
+	WebElement txtCLIA;
+	
+	
+	
+	
+	
+	
 	
 	Action action = new Action();
 	
-	public DashboardPage login(String uname, String pwd, String code) {
+	public HomePage login(String uname, String pwd) {
 		
 		action.type(txtUserName, uname);
 		action.type(txtPassword, pwd);
-		action.type(txtCode, code);
-		action.click(getDriver(), btnLogin);
-		action.waitPreloader(30);
-		WebElement webElement = getDriver().findElement(By.xpath("//select[@name='Location']/option[@value='1']"));
-		action.explicitWait(getDriver(), webElement, 30);
-		action.selectByIndex(drpLocation, 1);
-		action.click(getDriver(), btnProceedNow);
+		txtPassword.submit();
 		
-		return new DashboardPage();
-		
+		//action.click(getDriver(), btnLogin);
+		return new HomePage();
 	}
-	
-	
 	
 }
 

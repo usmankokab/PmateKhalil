@@ -15,6 +15,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 import org.ietf.jgss.Oid;
 import org.openqa.selenium.By;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -27,12 +28,14 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 import com.beust.jcommander.Parameter;
 import com.ipclinical.actiondriver.Action;
+import com.ipclinical.pageobjects.LoginPage;
 import com.ipclinical.utility.ExtentManager;
 import com.ipclinical.utility.Log;
 
@@ -81,7 +84,19 @@ public class BaseClass {
 			WebDriverManager.chromedriver().setup();
 			//mention the below chrome option to solve timeout exception issue
 			// Set Browser to ThreadLocalMap
-			driver.set(new ChromeDriver());
+			String PROXY = "51.81.24.36:4444";
+			ChromeOptions options = new ChromeOptions();
+			//options.addArguments("--proxy-server=https://" + PROXY);
+			Proxy p = new Proxy();
+			p.setHttpProxy(PROXY);
+			options.setCapability("proxy", p);
+			
+			//options.addArguments("--headless");
+			//options.addArguments("user-data-dir=C:\\Users\\Usman Ali Kokab\\AppData\\Local\\Google\\Chrome\\User Data\\Default");
+			//options.addArguments("user-data-dir=C:\\Users\\Usman Ali Kokab\\AppData\\Local\\Google\\Chrome\\User Data");
+			//options.addArguments("--start-maximized");
+			driver.set(new ChromeDriver(options));
+			
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver.set(new FirefoxDriver());
@@ -106,7 +121,8 @@ public class BaseClass {
 	@AfterSuite(groups = { "Smoke", "Regression","Sanity" })
 	public void afterSuite() {
 		ExtentManager.endReport();
+		
+		
 	}
-	
 	
 }
