@@ -85,6 +85,7 @@ public class BaseClass {
 			//mention the below chrome option to solve timeout exception issue
 			// Set Browser to ThreadLocalMap
 			String PROXY = "51.81.24.36:4444";
+			//String PROXY = "50.225.202.9:3128";
 			ChromeOptions options = new ChromeOptions();
 			//options.addArguments("--proxy-server=https://" + PROXY);
 			Proxy p = new Proxy();

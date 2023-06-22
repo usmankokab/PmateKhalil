@@ -183,9 +183,14 @@ public class HomePage extends BaseClass{
 		
 		netCheck();
 		
-		action.fluentWait(getDriver(), managePatients, 50000);
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		//action.explicitWait(getDriver(), managePatients, 50000);
+		action.explicitWait(getDriver(), managePatients, 50000);
 		//Log.info("mange patients tab found");
 		action.JSClick(getDriver(), managePatients);
 		//Log.info("Manage Patient Tab Clicked");

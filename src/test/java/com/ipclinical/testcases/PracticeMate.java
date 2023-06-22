@@ -63,7 +63,7 @@ public class PracticeMate extends BaseClass{
 	
 	@AfterMethod
 	public void tearDown() {
-		getDriver().quit();
+		//getDriver().quit();
 	}
 	
 	
